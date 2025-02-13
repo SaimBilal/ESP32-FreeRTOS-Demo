@@ -1,0 +1,2972 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Fl�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (33) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan 24 2025 05:11:28[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot: efuse block revision: v1.2[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (49) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (59) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (68) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (102) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a7b8h (108472) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=0002a7e0 vaddr=3fc99c00 size=0498ch ( 18828) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=0002f174 vaddr=40374000 size=00ea4h (  3748) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=83a90h (539280) map[0m
+[0;32mI (277) esp_image: segment 4: paddr=000b3ab8 vaddr=40374ea4 size=14c98h ( 85144) load[0m
+[0;32mI (309) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (310) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (331) app_init: Application information:[0m
+[0;32mI (334) app_init: Project name:     nodma_temp_wifi[0m
+[0;32mI (340) app_init: App version:      1[0m
+[0;32mI (344) app_init: Compile time:     Jan 24 2025 06:01:32[0m
+[0;32mI (350) app_init: ELF file SHA256:  61ac42dc6...[0m
+[0;32mI (355) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (360) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (365) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (370) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (375) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (382) heap_init: At 3FCA21D0 len 00047540 (285 KiB): RAM[0m
+[0;32mI (388) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (394) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (400) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;33mW (407) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (417) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (422) spi_flash: flash io: opi_str[0m
+[0;33mW (426) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (440) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (447) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (454) main_task: Started on CPU0[0m
+[0;32mI (464) main_task: Calling app_main()[0m
+[0;32mI (464) main: Starting application...[0m
+[0;32mI (464) main: Shared buffer allocated at 0x3fca71b4[0m
+[0;32mI (484) pp: pp rom version: e7ae62f[0m
+[0;32mI (484) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (494) wifi:wifi driver task: 3fcaccf4, prio:23, stack:6656, core=0[0m
+[0;32mI (494) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (494) wifi:wifi certification version: v7.0[0m
+[0;32mI (494) wifi:config NVS flash: enabled[0m
+[0;32mI (504) wifi:config nano formating: disabled[0m
+[0;32mI (504) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (514) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (514) wifi:Init management short buffer num: 32[0m
+[0;32mI (524) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (524) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (524) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (534) wifi:Init static rx buffer num: 10[0m
+[0;32mI (534) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (544) wifi_init: rx ba win: 6[0m
+[0;32mI (544) wifi_init: accept mbox: 6[0m
+[0;32mI (544) wifi_init: tcpip mbox: 32[0m
+[0;32mI (554) wifi_init: udp mbox: 6[0m
+[0;32mI (554) wifi_init: tcp mbox: 6[0m
+[0;32mI (554) wifi_init: tcp tx win: 5760[0m
+[0;32mI (564) wifi_init: tcp rx win: 5760[0m
+[0;32mI (564) wifi_init: tcp mss: 1440[0m
+[0;32mI (574) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (574) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (584) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (624) wifi:mode : softAP (34:85:18:a1:70:c9)[0m
+[0;32mI (624) wifi:Total power save buffer number: 16[0m
+[0;32mI (624) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (624) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (634) wifi_ap: WiFi AP started with SSID: ESP32-S3_AP[0m
+[0;32mI (634) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (644) wifi_ap: AP IP Address: 192.168.4.1[0m
+[0;32mI (654) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (654) temp_sensor: Temperature sensor initialized and enabled[0m
+[0;32mI (664) main: Tasks created. System is now in STREAM mode.[0m
+[0;32mI (664) wifi_ap: TCP server started on port 3333[0m
+[0;32mI (674) main_task: Returned from app_main()[0m
+[0;32mI (674) main: Waiting for client connection...[0m
+[0;32mI (5854) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5854) wifi:station: c4:23:60:8d:6f:5d join, AID=1, bgn, 40U[0m
+[0;32mI (6014) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (6084) wifi:<ba-add>idx:2 (ifx:1, c4:23:60:8d:6f:5d), tid:0, ssn:22, winSize:64[0m
+[0;32mI (42114) main: Client connected[0m
+[0;32mI (42114) main: Shared buffer contents:[0m
+[0;32mI (42114) main: Buffer[0] = 1.579159[0m
+[0;32mI (42114) main: Buffer[1] = 1.579159[0m
+[0;32mI (42114) main: Buffer[2] = 991219.937500[0m
+[0;32mI (42124) main: Buffer[3] = -350416382459904.000000[0m
+[0;32mI (42124) main: Buffer[4] = 0.000000[0m
+[0;32mI (42134) main: Buffer[5] = 2674.724854[0m
+[0;32mI (42134) main: Buffer[6] = 68770495672555744909616212172865536.000000[0m
+[0;32mI (42144) main: Buffer[7] = 1307721196925616128.000000[0m
+[0;32mI (42144) main: Buffer[8] = 124237.007812[0m
+[0;32mI (42154) main: Buffer[9] = -5135182187313120673792.000000[0m
+[0;32mI (42164) main: Sent 2048 bytes to client[0m
+[0;32mI (43164) main: Shared buffer contents:[0m
+[0;32mI (43164) main: Buffer[0] = 27.600000[0m
+[0;32mI (43164) main: Buffer[1] = 27.600000[0m
+[0;32mI (43164) main: Buffer[2] = 27.600000[0m
+[0;32mI (43174) main: Buffer[3] = 27.600000[0m
+[0;32mI (43174) main: Buffer[4] = 27.600000[0m
+[0;32mI (43184) main: Buffer[5] = 27.600000[0m
+[0;32mI (43184) main: Buffer[6] = 27.600000[0m
+[0;32mI (43184) main: Buffer[7] = 27.600000[0m
+[0;32mI (43194) main: Buffer[8] = 28.600000[0m
+[0;32mI (43194) main: Buffer[9] = 28.600000[0m
+[0;32mI (43204) main: Sent 2048 bytes to client[0m
+[0;32mI (44204) main: Shared buffer contents:[0m
+[0;32mI (44204) main: Buffer[0] = 27.600000[0m
+[0;32mI (44204) main: Buffer[1] = 27.600000[0m
+[0;32mI (44204) main: Buffer[2] = 27.600000[0m
+[0;32mI (44214) main: Buffer[3] = 27.600000[0m
+[0;32mI (44214) main: Buffer[4] = 27.600000[0m
+[0;32mI (44224) main: Buffer[5] = 27.600000[0m
+[0;32mI (44224) main: Buffer[6] = 27.600000[0m
+[0;32mI (44224) main: Buffer[7] = 27.600000[0m
+[0;32mI (44234) main: Buffer[8] = 28.600000[0m
+[0;32mI (44234) main: Buffer[9] = 28.600000[0m
+[0;32mI (44244) main: Sent 2048 bytes to client[0m
+[0;32mI (45244) main: Shared buffer contents:[0m
+[0;32mI (45244) main: Buffer[0] = 27.600000[0m
+[0;32mI (45244) main: Buffer[1] = 27.600000[0m
+[0;32mI (45244) main: Buffer[2] = 27.600000[0m
+[0;32mI (45254) main: Buffer[3] = 27.600000[0m
+[0;32mI (45254) main: Buffer[4] = 27.600000[0m
+[0;32mI (45264) main: Buffer[5] = 27.600000[0m
+[0;32mI (45264) main: Buffer[6] = 27.600000[0m
+[0;32mI (45264) main: Buffer[7] = 27.600000[0m
+[0;32mI (45274) main: Buffer[8] = 28.600000[0m
+[0;32mI (45274) main: Buffer[9] = 28.600000[0m
+[0;32mI (45284) main: Sent 2048 bytes to client[0m
+[0;32mI (46284) main: Shared buffer contents:[0m
+[0;32mI (46284) main: Buffer[0] = 27.600000[0m
+[0;32mI (46284) main: Buffer[1] = 27.600000[0m
+[0;32mI (46284) main: Buffer[2] = 27.600000[0m
+[0;32mI (46294) main: Buffer[3] = 27.600000[0m
+[0;32mI (46294) main: Buffer[4] = 27.600000[0m
+[0;32mI (46304) main: Buffer[5] = 27.600000[0m
+[0;32mI (46304) main: Buffer[6] = 27.600000[0m
+[0;32mI (46304) main: Buffer[7] = 27.600000[0m
+[0;32mI (46314) main: Buffer[8] = 28.600000[0m
+[0;32mI (46314) main: Buffer[9] = 28.600000[0m
+[0;32mI (46324) main: Sent 2048 bytes to client[0m
+[0;32mI (47324) main: Shared buffer contents:[0m
+[0;32mI (47324) main: Buffer[0] = 33.599998[0m
+[0;32mI (47324) main: Buffer[1] = 33.599998[0m
+[0;32mI (47324) main: Buffer[2] = 33.599998[0m
+[0;32mI (47334) main: Buffer[3] = 33.599998[0m
+[0;32mI (47334) main: Buffer[4] = 33.599998[0m
+[0;32mI (47344) main: Buffer[5] = 33.599998[0m
+[0;32mI (47344) main: Buffer[6] = 33.599998[0m
+[0;32mI (47344) main: Buffer[7] = 33.599998[0m
+[0;32mI (47354) main: Buffer[8] = 33.599998[0m
+[0;32mI (47354) main: Buffer[9] = 33.599998[0m
+[0;32mI (47364) main: Sent 2048 bytes to client[0m
+[0;32mI (48364) main: Shared buffer contents:[0m
+[0;32mI (48364) main: Buffer[0] = 33.599998[0m
+[0;32mI (48364) main: Buffer[1] = 33.599998[0m
+[0;32mI (48364) main: Buffer[2] = 33.599998[0m
+[0;32mI (48374) main: Buffer[3] = 33.599998[0m
+[0;32mI (48374) main: Buffer[4] = 33.599998[0m
+[0;32mI (48384) main: Buffer[5] = 33.599998[0m
+[0;32mI (48384) main: Buffer[6] = 33.599998[0m
+[0;32mI (48384) main: Buffer[7] = 33.599998[0m
+[0;32mI (48394) main: Buffer[8] = 33.599998[0m
+[0;32mI (48394) main: Buffer[9] = 33.599998[0m
+[0;32mI (48404) main: Sent 2048 bytes to client[0m
+[0;32mI (49404) main: Shared buffer contents:[0m
+[0;32mI (49404) main: Buffer[0] = 33.599998[0m
+[0;32mI (49404) main: Buffer[1] = 33.599998[0m
+[0;32mI (49404) main: Buffer[2] = 33.599998[0m
+[0;32mI (49414) main: Buffer[3] = 33.599998[0m
+[0;32mI (49414) main: Buffer[4] = 33.599998[0m
+[0;32mI (49424) main: Buffer[5] = 33.599998[0m
+[0;32mI (49424) main: Buffer[6] = 33.599998[0m
+[0;32mI (49424) main: Buffer[7] = 33.599998[0m
+[0;32mI (49434) main: Buffer[8] = 33.599998[0m
+[0;32mI (49434) main: Buffer[9] = 33.599998[0m
+[0;32mI (49444) main: Sent 2048 bytes to client[0m
+[0;32mI (50444) main: Shared buffer contents:[0m
+[0;32mI (50444) main: Buffer[0] = 33.599998[0m
+[0;32mI (50444) main: Buffer[1] = 33.599998[0m
+[0;32mI (50444) main: Buffer[2] = 33.599998[0m
+[0;32mI (50454) main: Buffer[3] = 33.599998[0m
+[0;32mI (50454) main: Buffer[4] = 33.599998[0m
+[0;32mI (50464) main: Buffer[5] = 33.599998[0m
+[0;32mI (50464) main: Buffer[6] = 33.599998[0m
+[0;32mI (50464) main: Buffer[7] = 33.599998[0m
+[0;32mI (50474) main: Buffer[8] = 33.599998[0m
+[0;32mI (50474) main: Buffer[9] = 33.599998[0m
+[0;32mI (50484) main: Sent 2048 bytes to client[0m
+[0;32mI (51484) main: Shared buffer contents:[0m
+[0;32mI (51484) main: Buffer[0] = 33.599998[0m
+[0;32mI (51484) main: Buffer[1] = 33.599998[0m
+[0;32mI (51484) main: Buffer[2] = 33.599998[0m
+[0;32mI (51494) main: Buffer[3] = 33.599998[0m
+[0;32mI (51494) main: Buffer[4] = 33.599998[0m
+[0;32mI (51504) main: Buffer[5] = 33.599998[0m
+[0;32mI (51504) main: Buffer[6] = 33.599998[0m
+[0;32mI (51504) main: Buffer[7] = 33.599998[0m
+[0;32mI (51514) main: Buffer[8] = 33.599998[0m
+[0;32mI (51514) main: Buffer[9] = 33.599998[0m
+[0;32mI (51524) main: Sent 2048 bytes to client[0m
+[0;32mI (52524) main: Shared buffer contents:[0m
+[0;32mI (52524) main: Buffer[0] = 33.599998[0m
+[0;32mI (52524) main: Buffer[1] = 33.599998[0m
+[0;32mI (52524) main: Buffer[2] = 33.599998[0m
+[0;32mI (52534) main: Buffer[3] = 33.599998[0m
+[0;32mI (52534) main: Buffer[4] = 33.599998[0m
+[0;32mI (52544) main: Buffer[5] = 33.599998[0m
+[0;32mI (52544) main: Buffer[6] = 33.599998[0m
+[0;32mI (52544) main: Buffer[7] = 33.599998[0m
+[0;32mI (52554) main: Buffer[8] = 33.599998[0m
+[0;32mI (52554) main: Buffer[9] = 33.599998[0m
+[0;32mI (52564) main: Sent 2048 bytes to client[0m
+[0;32mI (53564) main: Shared buffer contents:[0m
+[0;32mI (53564) main: Buffer[0] = 33.599998[0m
+[0;32mI (53564) main: Buffer[1] = 33.599998[0m
+[0;32mI (53564) main: Buffer[2] = 33.599998[0m
+[0;32mI (53574) main: Buffer[3] = 33.599998[0m
+[0;32mI (53574) main: Buffer[4] = 33.599998[0m
+[0;32mI (53584) main: Buffer[5] = 33.599998[0m
+[0;32mI (53584) main: Buffer[6] = 33.599998[0m
+[0;32mI (53584) main: Buffer[7] = 33.599998[0m
+[0;32mI (53594) main: Buffer[8] = 33.599998[0m
+[0;32mI (53594) main: Buffer[9] = 33.599998[0m
+[0;32mI (53604) main: Sent 2048 bytes to client[0m
+[0;32mI (54604) main: Shared buffer contents:[0m
+[0;32mI (54604) main: Buffer[0] = 33.599998[0m
+[0;32mI (54604) main: Buffer[1] = 33.599998[0m
+[0;32mI (54604) main: Buffer[2] = 33.599998[0m
+[0;32mI (54614) main: Buffer[3] = 33.599998[0m
+[0;32mI (54614) main: Buffer[4] = 33.599998[0m
+[0;32mI (54624) main: Buffer[5] = 33.599998[0m
+[0;32mI (54624) main: Buffer[6] = 33.599998[0m
+[0;32mI (54624) main: Buffer[7] = 33.599998[0m
+[0;32mI (54634) main: Buffer[8] = 33.599998[0m
+[0;32mI (54634) main: Buffer[9] = 33.599998[0m
+[0;32mI (54644) main: Sent 2048 bytes to client[0m
+[0;32mI (55644) main: Shared buffer contents:[0m
+[0;32mI (55644) main: Buffer[0] = 33.599998[0m
+[0;32mI (55644) main: Buffer[1] = 33.599998[0m
+[0;32mI (55644) main: Buffer[2] = 33.599998[0m
+[0;32mI (55654) main: Buffer[3] = 33.599998[0m
+[0;32mI (55654) main: Buffer[4] = 33.599998[0m
+[0;32mI (55664) main: Buffer[5] = 33.599998[0m
+[0;32mI (55664) main: Buffer[6] = 33.599998[0m
+[0;32mI (55664) main: Buffer[7] = 33.599998[0m
+[0;32mI (55674) main: Buffer[8] = 33.599998[0m
+[0;32mI (55674) main: Buffer[9] = 33.599998[0m
+[0;32mI (55684) main: Sent 2048 bytes to client[0m
+[0;32mI (56684) main: Shared buffer contents:[0m
+[0;32mI (56684) main: Buffer[0] = 33.599998[0m
+[0;32mI (56684) main: Buffer[1] = 33.599998[0m
+[0;32mI (56684) main: Buffer[2] = 33.599998[0m
+[0;32mI (56694) main: Buffer[3] = 33.599998[0m
+[0;32mI (56694) main: Buffer[4] = 33.599998[0m
+[0;32mI (56704) main: Buffer[5] = 33.599998[0m
+[0;32mI (56704) main: Buffer[6] = 33.599998[0m
+[0;32mI (56704) main: Buffer[7] = 33.599998[0m
+[0;32mI (56714) main: Buffer[8] = 33.599998[0m
+[0;32mI (56714) main: Buffer[9] = 33.599998[0m
+[0;32mI (56724) main: Sent 2048 bytes to client[0m
+[0;32mI (57724) main: Shared buffer contents:[0m
+[0;32mI (57724) main: Buffer[0] = 33.599998[0m
+[0;32mI (57724) main: Buffer[1] = 33.599998[0m
+[0;32mI (57724) main: Buffer[2] = 33.599998[0m
+[0;32mI (57734) main: Buffer[3] = 33.599998[0m
+[0;32mI (57734) main: Buffer[4] = 33.599998[0m
+[0;32mI (57744) main: Buffer[5] = 34.599998[0m
+[0;32mI (57744) main: Buffer[6] = 33.599998[0m
+[0;32mI (57744) main: Buffer[7] = 33.599998[0m
+[0;32mI (57754) main: Buffer[8] = 33.599998[0m
+[0;32mI (57754) main: Buffer[9] = 33.599998[0m
+[0;32mI (57764) main: Sent 2048 bytes to client[0m
+[0;32mI (58764) main: Shared buffer contents:[0m
+[0;32mI (58764) main: Buffer[0] = 33.599998[0m
+[0;32mI (58764) main: Buffer[1] = 33.599998[0m
+[0;32mI (58764) main: Buffer[2] = 33.599998[0m
+[0;32mI (58774) main: Buffer[3] = 33.599998[0m
+[0;32mI (58774) main: Buffer[4] = 33.599998[0m
+[0;32mI (58784) main: Buffer[5] = 34.599998[0m
+[0;32mI (58784) main: Buffer[6] = 33.599998[0m
+[0;32mI (58784) main: Buffer[7] = 33.599998[0m
+[0;32mI (58794) main: Buffer[8] = 33.599998[0m
+[0;32mI (58794) main: Buffer[9] = 33.599998[0m
+[0;32mI (58804) main: Sent 2048 bytes to client[0m
+[0;32mI (59804) main: Shared buffer contents:[0m
+[0;32mI (59804) main: Buffer[0] = 33.599998[0m
+[0;32mI (59804) main: Buffer[1] = 33.599998[0m
+[0;32mI (59804) main: Buffer[2] = 33.599998[0m
+[0;32mI (59814) main: Buffer[3] = 33.599998[0m
+[0;32mI (59814) main: Buffer[4] = 33.599998[0m
+[0;32mI (59824) main: Buffer[5] = 34.599998[0m
+[0;32mI (59824) main: Buffer[6] = 33.599998[0m
+[0;32mI (59824) main: Buffer[7] = 33.599998[0m
+[0;32mI (59834) main: Buffer[8] = 33.599998[0m
+[0;32mI (59834) main: Buffer[9] = 33.599998[0m
+[0;32mI (59844) main: Sent 2048 bytes to client[0m
+[0;32mI (60844) main: Shared buffer contents:[0m
+[0;32mI (60844) main: Buffer[0] = 33.599998[0m
+[0;32mI (60844) main: Buffer[1] = 33.599998[0m
+[0;32mI (60844) main: Buffer[2] = 33.599998[0m
+[0;32mI (60854) main: Buffer[3] = 33.599998[0m
+[0;32mI (60854) main: Buffer[4] = 33.599998[0m
+[0;32mI (60864) main: Buffer[5] = 34.599998[0m
+[0;32mI (60864) main: Buffer[6] = 33.599998[0m
+[0;32mI (60864) main: Buffer[7] = 33.599998[0m
+[0;32mI (60874) main: Buffer[8] = 33.599998[0m
+[0;32mI (60874) main: Buffer[9] = 33.599998[0m
+[0;32mI (60884) main: Sent 2048 bytes to client[0m
+[0;32mI (61884) main: Shared buffer contents:[0m
+[0;32mI (61884) main: Buffer[0] = 33.599998[0m
+[0;32mI (61884) main: Buffer[1] = 33.599998[0m
+[0;32mI (61884) main: Buffer[2] = 33.599998[0m
+[0;32mI (61894) main: Buffer[3] = 33.599998[0m
+[0;32mI (61894) main: Buffer[4] = 33.599998[0m
+[0;32mI (61904) main: Buffer[5] = 34.599998[0m
+[0;32mI (61904) main: Buffer[6] = 33.599998[0m
+[0;32mI (61904) main: Buffer[7] = 33.599998[0m
+[0;32mI (61914) main: Buffer[8] = 33.599998[0m
+[0;32mI (61914) main: Buffer[9] = 33.599998[0m
+[0;32mI (61924) main: Sent 2048 bytes to client[0m
+[0;32mI (62924) main: Shared buffer contents:[0m
+[0;32mI (62924) main: Buffer[0] = 34.599998[0m
+[0;32mI (62924) main: Buffer[1] = 34.599998[0m
+[0;32mI (62924) main: Buffer[2] = 34.599998[0m
+[0;32mI (62924) main: Buffer[3] = 34.599998[0m
+[0;32mI (62934) main: Buffer[4] = 34.599998[0m
+[0;32mI (62934) main: Buffer[5] = 34.599998[0m
+[0;32mI (62944) main: Buffer[6] = 34.599998[0m
+[0;32mI (62944) main: Buffer[7] = 34.599998[0m
+[0;32mI (62954) main: Buffer[8] = 34.599998[0m
+[0;32mI (62954) main: Buffer[9] = 34.599998[0m
+[0;32mI (62964) main: Sent 2048 bytes to client[0m
+[0;32mI (63964) main: Shared buffer contents:[0m
+[0;32mI (63964) main: Buffer[0] = 34.599998[0m
+[0;32mI (63964) main: Buffer[1] = 34.599998[0m
+[0;32mI (63964) main: Buffer[2] = 34.599998[0m
+[0;32mI (63974) main: Buffer[3] = 34.599998[0m
+[0;32mI (63974) main: Buffer[4] = 34.599998[0m
+[0;32mI (63984) main: Buffer[5] = 34.599998[0m
+[0;32mI (63984) main: Buffer[6] = 34.599998[0m
+[0;32mI (63984) main: Buffer[7] = 34.599998[0m
+[0;32mI (63994) main: Buffer[8] = 34.599998[0m
+[0;32mI (63994) main: Buffer[9] = 34.599998[0m
+[0;32mI (64004) main: Sent 2048 bytes to client[0m
+[0;32mI (65004) main: Shared buffer contents:[0m
+[0;32mI (65004) main: Buffer[0] = 34.599998[0m
+[0;32mI (65004) main: Buffer[1] = 34.599998[0m
+[0;32mI (65004) main: Buffer[2] = 34.599998[0m
+[0;32mI (65014) main: Buffer[3] = 34.599998[0m
+[0;32mI (65014) main: Buffer[4] = 34.599998[0m
+[0;32mI (65024) main: Buffer[5] = 34.599998[0m
+[0;32mI (65024) main: Buffer[6] = 34.599998[0m
+[0;32mI (65024) main: Buffer[7] = 34.599998[0m
+[0;32mI (65034) main: Buffer[8] = 34.599998[0m
+[0;32mI (65034) main: Buffer[9] = 34.599998[0m
+[0;32mI (65044) main: Sent 2048 bytes to client[0m
+[0;32mI (66044) main: Shared buffer contents:[0m
+[0;32mI (66044) main: Buffer[0] = 34.599998[0m
+[0;32mI (66044) main: Buffer[1] = 34.599998[0m
+[0;32mI (66044) main: Buffer[2] = 34.599998[0m
+[0;32mI (66054) main: Buffer[3] = 34.599998[0m
+[0;32mI (66054) main: Buffer[4] = 34.599998[0m
+[0;32mI (66064) main: Buffer[5] = 34.599998[0m
+[0;32mI (66064) main: Buffer[6] = 34.599998[0m
+[0;32mI (66064) main: Buffer[7] = 34.599998[0m
+[0;32mI (66074) main: Buffer[8] = 34.599998[0m
+[0;32mI (66074) main: Buffer[9] = 34.599998[0m
+[0;32mI (66084) main: Sent 2048 bytes to client[0m
+[0;32mI (67084) main: Shared buffer contents:[0m
+[0;32mI (67084) main: Buffer[0] = 34.599998[0m
+[0;32mI (67084) main: Buffer[1] = 34.599998[0m
+[0;32mI (67084) main: Buffer[2] = 34.599998[0m
+[0;32mI (67094) main: Buffer[3] = 34.599998[0m
+[0;32mI (67094) main: Buffer[4] = 34.599998[0m
+[0;32mI (67104) main: Buffer[5] = 34.599998[0m
+[0;32mI (67104) main: Buffer[6] = 34.599998[0m
+[0;32mI (67104) main: Buffer[7] = 34.599998[0m
+[0;32mI (67114) main: Buffer[8] = 34.599998[0m
+[0;32mI (67114) main: Buffer[9] = 34.599998[0m
+[0;32mI (67124) main: Sent 2048 bytes to client[0m
+[0;32mI (68124) main: Shared buffer contents:[0m
+[0;32mI (68124) main: Buffer[0] = 34.599998[0m
+[0;32mI (68124) main: Buffer[1] = 34.599998[0m
+[0;32mI (68124) main: Buffer[2] = 34.599998[0m
+[0;32mI (68134) main: Buffer[3] = 34.599998[0m
+[0;32mI (68134) main: Buffer[4] = 34.599998[0m
+[0;32mI (68144) main: Buffer[5] = 34.599998[0m
+[0;32mI (68144) main: Buffer[6] = 34.599998[0m
+[0;32mI (68144) main: Buffer[7] = 34.599998[0m
+[0;32mI (68154) main: Buffer[8] = 34.599998[0m
+[0;32mI (68154) main: Buffer[9] = 34.599998[0m
+[0;32mI (68164) main: Sent 2048 bytes to client[0m
+[0;32mI (69164) main: Shared buffer contents:[0m
+[0;32mI (69164) main: Buffer[0] = 34.599998[0m
+[0;32mI (69164) main: Buffer[1] = 34.599998[0m
+[0;32mI (69164) main: Buffer[2] = 34.599998[0m
+[0;32mI (69174) main: Buffer[3] = 34.599998[0m
+[0;32mI (69174) main: Buffer[4] = 34.599998[0m
+[0;32mI (69184) main: Buffer[5] = 34.599998[0m
+[0;32mI (69184) main: Buffer[6] = 34.599998[0m
+[0;32mI (69184) main: Buffer[7] = 34.599998[0m
+[0;32mI (69194) main: Buffer[8] = 34.599998[0m
+[0;32mI (69194) main: Buffer[9] = 34.599998[0m
+[0;32mI (69204) main: Sent 2048 bytes to client[0m
+[0;32mI (70204) main: Shared buffer contents:[0m
+[0;32mI (70204) main: Buffer[0] = 34.599998[0m
+[0;32mI (70204) main: Buffer[1] = 34.599998[0m
+[0;32mI (70204) main: Buffer[2] = 34.599998[0m
+[0;32mI (70214) main: Buffer[3] = 34.599998[0m
+[0;32mI (70214) main: Buffer[4] = 34.599998[0m
+[0;32mI (70224) main: Buffer[5] = 34.599998[0m
+[0;32mI (70224) main: Buffer[6] = 34.599998[0m
+[0;32mI (70224) main: Buffer[7] = 34.599998[0m
+[0;32mI (70234) main: Buffer[8] = 34.599998[0m
+[0;32mI (70234) main: Buffer[9] = 34.599998[0m
+[0;32mI (70244) main: Sent 2048 bytes to client[0m
+[0;32mI (71244) main: Shared buffer contents:[0m
+[0;32mI (71244) main: Buffer[0] = 34.599998[0m
+[0;32mI (71244) main: Buffer[1] = 34.599998[0m
+[0;32mI (71244) main: Buffer[2] = 34.599998[0m
+[0;32mI (71254) main: Buffer[3] = 34.599998[0m
+[0;32mI (71254) main: Buffer[4] = 34.599998[0m
+[0;32mI (71264) main: Buffer[5] = 34.599998[0m
+[0;32mI (71264) main: Buffer[6] = 34.599998[0m
+[0;32mI (71264) main: Buffer[7] = 34.599998[0m
+[0;32mI (71274) main: Buffer[8] = 34.599998[0m
+[0;32mI (71274) main: Buffer[9] = 34.599998[0m
+[0;32mI (71284) main: Sent 2048 bytes to client[0m
+[0;32mI (72284) main: Shared buffer contents:[0m
+[0;32mI (72284) main: Buffer[0] = 34.599998[0m
+[0;32mI (72284) main: Buffer[1] = 34.599998[0m
+[0;32mI (72284) main: Buffer[2] = 34.599998[0m
+[0;32mI (72294) main: Buffer[3] = 34.599998[0m
+[0;32mI (72294) main: Buffer[4] = 34.599998[0m
+[0;32mI (72304) main: Buffer[5] = 34.599998[0m
+[0;32mI (72304) main: Buffer[6] = 34.599998[0m
+[0;32mI (72304) main: Buffer[7] = 34.599998[0m
+[0;32mI (72314) main: Buffer[8] = 34.599998[0m
+[0;32mI (72314) main: Buffer[9] = 34.599998[0m
+[0;32mI (72324) main: Sent 2048 bytes to client[0m
+[0;32mI (73324) main: Shared buffer contents:[0m
+[0;32mI (73324) main: Buffer[0] = 35.599998[0m
+[0;32mI (73324) main: Buffer[1] = 35.599998[0m
+[0;32mI (73324) main: Buffer[2] = 34.599998[0m
+[0;32mI (73334) main: Buffer[3] = 35.599998[0m
+[0;32mI (73334) main: Buffer[4] = 34.599998[0m
+[0;32mI (73344) main: Buffer[5] = 35.599998[0m
+[0;32mI (73344) main: Buffer[6] = 35.599998[0m
+[0;32mI (73344) main: Buffer[7] = 35.599998[0m
+[0;32mI (73354) main: Buffer[8] = 35.599998[0m
+[0;32mI (73354) main: Buffer[9] = 35.599998[0m
+[0;32mI (73364) main: Sent 2048 bytes to client[0m
+[0;32mI (74364) main: Shared buffer contents:[0m
+[0;32mI (74364) main: Buffer[0] = 35.599998[0m
+[0;32mI (74364) main: Buffer[1] = 35.599998[0m
+[0;32mI (74364) main: Buffer[2] = 34.599998[0m
+[0;32mI (74374) main: Buffer[3] = 35.599998[0m
+[0;32mI (74374) main: Buffer[4] = 34.599998[0m
+[0;32mI (74384) main: Buffer[5] = 35.599998[0m
+[0;32mI (74384) main: Buffer[6] = 35.599998[0m
+[0;32mI (74384) main: Buffer[7] = 35.599998[0m
+[0;32mI (74394) main: Buffer[8] = 35.599998[0m
+[0;32mI (74394) main: Buffer[9] = 35.599998[0m
+[0;32mI (74404) main: Sent 2048 bytes to client[0m
+[0;32mI (75404) main: Shared buffer contents:[0m
+[0;32mI (75404) main: Buffer[0] = 35.599998[0m
+[0;32mI (75404) main: Buffer[1] = 35.599998[0m
+[0;32mI (75404) main: Buffer[2] = 34.599998[0m
+[0;32mI (75414) main: Buffer[3] = 35.599998[0m
+[0;32mI (75414) main: Buffer[4] = 34.599998[0m
+[0;32mI (75424) main: Buffer[5] = 35.599998[0m
+[0;32mI (75424) main: Buffer[6] = 35.599998[0m
+[0;32mI (75424) main: Buffer[7] = 35.599998[0m
+[0;32mI (75434) main: Buffer[8] = 35.599998[0m
+[0;32mI (75434) main: Buffer[9] = 35.599998[0m
+[0;32mI (75444) main: Sent 2048 bytes to client[0m
+[0;32mI (76444) main: Shared buffer contents:[0m
+[0;32mI (76444) main: Buffer[0] = 35.599998[0m
+[0;32mI (76444) main: Buffer[1] = 35.599998[0m
+[0;32mI (76444) main: Buffer[2] = 34.599998[0m
+[0;32mI (76454) main: Buffer[3] = 35.599998[0m
+[0;32mI (76454) main: Buffer[4] = 34.599998[0m
+[0;32mI (76464) main: Buffer[5] = 35.599998[0m
+[0;32mI (76464) main: Buffer[6] = 35.599998[0m
+[0;32mI (76464) main: Buffer[7] = 35.599998[0m
+[0;32mI (76474) main: Buffer[8] = 35.599998[0m
+[0;32mI (76474) main: Buffer[9] = 35.599998[0m
+[0;32mI (76484) main: Sent 2048 bytes to client[0m
+[0;32mI (77484) main: Shared buffer contents:[0m
+[0;32mI (77484) main: Buffer[0] = 35.599998[0m
+[0;32mI (77484) main: Buffer[1] = 35.599998[0m
+[0;32mI (77484) main: Buffer[2] = 34.599998[0m
+[0;32mI (77494) main: Buffer[3] = 35.599998[0m
+[0;32mI (77494) main: Buffer[4] = 34.599998[0m
+[0;32mI (77504) main: Buffer[5] = 35.599998[0m
+[0;32mI (77504) main: Buffer[6] = 35.599998[0m
+[0;32mI (77504) main: Buffer[7] = 35.599998[0m
+[0;32mI (77514) main: Buffer[8] = 35.599998[0m
+[0;32mI (77514) main: Buffer[9] = 35.599998[0m
+[0;32mI (77524) main: Sent 2048 bytes to client[0m
+[0;32mI (78524) main: Shared buffer contents:[0m
+[0;32mI (78524) main: Buffer[0] = 35.599998[0m
+[0;32mI (78524) main: Buffer[1] = 35.599998[0m
+[0;32mI (78524) main: Buffer[2] = 35.599998[0m
+[0;32mI (78534) main: Buffer[3] = 35.599998[0m
+[0;32mI (78534) main: Buffer[4] = 35.599998[0m
+[0;32mI (78544) main: Buffer[5] = 35.599998[0m
+[0;32mI (78544) main: Buffer[6] = 35.599998[0m
+[0;32mI (78544) main: Buffer[7] = 35.599998[0m
+[0;32mI (78554) main: Buffer[8] = 35.599998[0m
+[0;32mI (78554) main: Buffer[9] = 35.599998[0m
+[0;32mI (78564) main: Sent 2048 bytes to client[0m
+[0;32mI (79564) main: Shared buffer contents:[0m
+[0;32mI (79564) main: Buffer[0] = 35.599998[0m
+[0;32mI (79564) main: Buffer[1] = 35.599998[0m
+[0;32mI (79564) main: Buffer[2] = 35.599998[0m
+[0;32mI (79574) main: Buffer[3] = 35.599998[0m
+[0;32mI (79574) main: Buffer[4] = 35.599998[0m
+[0;32mI (79584) main: Buffer[5] = 35.599998[0m
+[0;32mI (79584) main: Buffer[6] = 35.599998[0m
+[0;32mI (79584) main: Buffer[7] = 35.599998[0m
+[0;32mI (79594) main: Buffer[8] = 35.599998[0m
+[0;32mI (79594) main: Buffer[9] = 35.599998[0m
+[0;32mI (79604) main: Sent 2048 bytes to client[0m
+[0;32mI (80604) main: Shared buffer contents:[0m
+[0;32mI (80604) main: Buffer[0] = 35.599998[0m
+[0;32mI (80604) main: Buffer[1] = 35.599998[0m
+[0;32mI (80604) main: Buffer[2] = 35.599998[0m
+[0;32mI (80614) main: Buffer[3] = 35.599998[0m
+[0;32mI (80614) main: Buffer[4] = 35.599998[0m
+[0;32mI (80624) main: Buffer[5] = 35.599998[0m
+[0;32mI (80624) main: Buffer[6] = 35.599998[0m
+[0;32mI (80624) main: Buffer[7] = 35.599998[0m
+[0;32mI (80634) main: Buffer[8] = 35.599998[0m
+[0;32mI (80634) main: Buffer[9] = 35.599998[0m
+[0;32mI (80644) main: Sent 2048 bytes to client[0m
+[0;32mI (81644) main: Shared buffer contents:[0m
+[0;32mI (81644) main: Buffer[0] = 35.599998[0m
+[0;32mI (81644) main: Buffer[1] = 35.599998[0m
+[0;32mI (81644) main: Buffer[2] = 35.599998[0m
+[0;32mI (81654) main: Buffer[3] = 35.599998[0m
+[0;32mI (81654) main: Buffer[4] = 35.599998[0m
+[0;32mI (81664) main: Buffer[5] = 35.599998[0m
+[0;32mI (81664) main: Buffer[6] = 35.599998[0m
+[0;32mI (81664) main: Buffer[7] = 35.599998[0m
+[0;32mI (81674) main: Buffer[8] = 35.599998[0m
+[0;32mI (81674) main: Buffer[9] = 35.599998[0m
+[0;32mI (81684) main: Sent 2048 bytes to client[0m
+[0;32mI (82684) main: Shared buffer contents:[0m
+[0;32mI (82684) main: Buffer[0] = 35.599998[0m
+[0;32mI (82684) main: Buffer[1] = 35.599998[0m
+[0;32mI (82684) main: Buffer[2] = 35.599998[0m
+[0;32mI (82694) main: Buffer[3] = 35.599998[0m
+[0;32mI (82694) main: Buffer[4] = 35.599998[0m
+[0;32mI (82704) main: Buffer[5] = 35.599998[0m
+[0;32mI (82704) main: Buffer[6] = 35.599998[0m
+[0;32mI (82704) main: Buffer[7] = 35.599998[0m
+[0;32mI (82714) main: Buffer[8] = 35.599998[0m
+[0;32mI (82714) main: Buffer[9] = 35.599998[0m
+[0;32mI (82724) main: Sent 2048 bytes to client[0m
+[0;32mI (83724) main: Shared buffer contents:[0m
+[0;32mI (83724) main: Buffer[0] = 35.599998[0m
+[0;32mI (83724) main: Buffer[1] = 35.599998[0m
+[0;32mI (83724) main: Buffer[2] = 35.599998[0m
+[0;32mI (83734) main: Buffer[3] = 35.599998[0m
+[0;32mI (83734) main: Buffer[4] = 35.599998[0m
+[0;32mI (83744) main: Buffer[5] = 35.599998[0m
+[0;32mI (83744) main: Buffer[6] = 35.599998[0m
+[0;32mI (83744) main: Buffer[7] = 35.599998[0m
+[0;32mI (83754) main: Buffer[8] = 35.599998[0m
+[0;32mI (83754) main: Buffer[9] = 35.599998[0m
+[0;32mI (83764) main: Sent 2048 bytes to client[0m
+[0;32mI (84764) main: Shared buffer contents:[0m
+[0;32mI (84764) main: Buffer[0] = 35.599998[0m
+[0;32mI (84764) main: Buffer[1] = 35.599998[0m
+[0;32mI (84764) main: Buffer[2] = 35.599998[0m
+[0;32mI (84774) main: Buffer[3] = 35.599998[0m
+[0;32mI (84774) main: Buffer[4] = 35.599998[0m
+[0;32mI (84784) main: Buffer[5] = 35.599998[0m
+[0;32mI (84784) main: Buffer[6] = 35.599998[0m
+[0;32mI (84784) main: Buffer[7] = 35.599998[0m
+[0;32mI (84794) main: Buffer[8] = 35.599998[0m
+[0;32mI (84794) main: Buffer[9] = 35.599998[0m
+[0;32mI (84804) main: Sent 2048 bytes to client[0m
+[0;32mI (85804) main: Shared buffer contents:[0m
+[0;32mI (85804) main: Buffer[0] = 35.599998[0m
+[0;32mI (85804) main: Buffer[1] = 35.599998[0m
+[0;32mI (85804) main: Buffer[2] = 35.599998[0m
+[0;32mI (85814) main: Buffer[3] = 35.599998[0m
+[0;32mI (85814) main: Buffer[4] = 35.599998[0m
+[0;32mI (85824) main: Buffer[5] = 35.599998[0m
+[0;32mI (85824) main: Buffer[6] = 35.599998[0m
+[0;32mI (85824) main: Buffer[7] = 35.599998[0m
+[0;32mI (85834) main: Buffer[8] = 35.599998[0m
+[0;32mI (85834) main: Buffer[9] = 35.599998[0m
+[0;32mI (85844) main: Sent 2048 bytes to client[0m
+[0;32mI (86844) main: Shared buffer contents:[0m
+[0;32mI (86844) main: Buffer[0] = 35.599998[0m
+[0;32mI (86844) main: Buffer[1] = 35.599998[0m
+[0;32mI (86844) main: Buffer[2] = 35.599998[0m
+[0;32mI (86854) main: Buffer[3] = 35.599998[0m
+[0;32mI (86854) main: Buffer[4] = 35.599998[0m
+[0;32mI (86864) main: Buffer[5] = 35.599998[0m
+[0;32mI (86864) main: Buffer[6] = 35.599998[0m
+[0;32mI (86864) main: Buffer[7] = 35.599998[0m
+[0;32mI (86874) main: Buffer[8] = 35.599998[0m
+[0;32mI (86874) main: Buffer[9] = 35.599998[0m
+[0;32mI (86884) main: Sent 2048 bytes to client[0m
+[0;32mI (87884) main: Shared buffer contents:[0m
+[0;32mI (87884) main: Buffer[0] = 35.599998[0m
+[0;32mI (87884) main: Buffer[1] = 35.599998[0m
+[0;32mI (87884) main: Buffer[2] = 35.599998[0m
+[0;32mI (87894) main: Buffer[3] = 35.599998[0m
+[0;32mI (87894) main: Buffer[4] = 35.599998[0m
+[0;32mI (87904) main: Buffer[5] = 35.599998[0m
+[0;32mI (87904) main: Buffer[6] = 35.599998[0m
+[0;32mI (87904) main: Buffer[7] = 35.599998[0m
+[0;32mI (87914) main: Buffer[8] = 35.599998[0m
+[0;32mI (87914) main: Buffer[9] = 35.599998[0m
+[0;32mI (87924) main: Sent 2048 bytes to client[0m
+[0;32mI (88924) main: Shared buffer contents:[0m
+[0;32mI (88924) main: Buffer[0] = 35.599998[0m
+[0;32mI (88924) main: Buffer[1] = 35.599998[0m
+[0;32mI (88924) main: Buffer[2] = 35.599998[0m
+[0;32mI (88934) main: Buffer[3] = 35.599998[0m
+[0;32mI (88934) main: Buffer[4] = 35.599998[0m
+[0;32mI (88944) main: Buffer[5] = 35.599998[0m
+[0;32mI (88944) main: Buffer[6] = 35.599998[0m
+[0;32mI (88944) main: Buffer[7] = 35.599998[0m
+[0;32mI (88954) main: Buffer[8] = 35.599998[0m
+[0;32mI (88954) main: Buffer[9] = 35.599998[0m
+[0;32mI (88964) main: Sent 2048 bytes to client[0m
+[0;32mI (89964) main: Shared buffer contents:[0m
+[0;32mI (89964) main: Buffer[0] = 35.599998[0m
+[0;32mI (89964) main: Buffer[1] = 35.599998[0m
+[0;32mI (89964) main: Buffer[2] = 35.599998[0m
+[0;32mI (89974) main: Buffer[3] = 35.599998[0m
+[0;32mI (89974) main: Buffer[4] = 35.599998[0m
+[0;32mI (89984) main: Buffer[5] = 35.599998[0m
+[0;32mI (89984) main: Buffer[6] = 35.599998[0m
+[0;32mI (89984) main: Buffer[7] = 35.599998[0m
+[0;32mI (89994) main: Buffer[8] = 35.599998[0m
+[0;32mI (89994) main: Buffer[9] = 35.599998[0m
+[0;32mI (90004) main: Sent 2048 bytes to client[0m
+[0;32mI (91004) main: Shared buffer contents:[0m
+[0;32mI (91004) main: Buffer[0] = 35.599998[0m
+[0;32mI (91004) main: Buffer[1] = 35.599998[0m
+[0;32mI (91004) main: Buffer[2] = 35.599998[0m
+[0;32mI (91014) main: Buffer[3] = 35.599998[0m
+[0;32mI (91014) main: Buffer[4] = 35.599998[0m
+[0;32mI (91024) main: Buffer[5] = 35.599998[0m
+[0;32mI (91024) main: Buffer[6] = 35.599998[0m
+[0;32mI (91024) main: Buffer[7] = 35.599998[0m
+[0;32mI (91034) main: Buffer[8] = 35.599998[0m
+[0;32mI (91034) main: Buffer[9] = 35.599998[0m
+[0;32mI (91044) main: Sent 2048 bytes to client[0m
+[0;32mI (92044) main: Shared buffer contents:[0m
+[0;32mI (92044) main: Buffer[0] = 35.599998[0m
+[0;32mI (92044) main: Buffer[1] = 35.599998[0m
+[0;32mI (92044) main: Buffer[2] = 35.599998[0m
+[0;32mI (92054) main: Buffer[3] = 35.599998[0m
+[0;32mI (92054) main: Buffer[4] = 35.599998[0m
+[0;32mI (92064) main: Buffer[5] = 35.599998[0m
+[0;32mI (92064) main: Buffer[6] = 35.599998[0m
+[0;32mI (92064) main: Buffer[7] = 35.599998[0m
+[0;32mI (92074) main: Buffer[8] = 35.599998[0m
+[0;32mI (92074) main: Buffer[9] = 35.599998[0m
+[0;32mI (92084) main: Sent 2048 bytes to client[0m
+[0;32mI (93084) main: Shared buffer contents:[0m
+[0;32mI (93084) main: Buffer[0] = 35.599998[0m
+[0;32mI (93084) main: Buffer[1] = 35.599998[0m
+[0;32mI (93084) main: Buffer[2] = 35.599998[0m
+[0;32mI (93094) main: Buffer[3] = 35.599998[0m
+[0;32mI (93094) main: Buffer[4] = 35.599998[0m
+[0;32mI (93104) main: Buffer[5] = 35.599998[0m
+[0;32mI (93104) main: Buffer[6] = 35.599998[0m
+[0;32mI (93104) main: Buffer[7] = 35.599998[0m
+[0;32mI (93114) main: Buffer[8] = 35.599998[0m
+[0;32mI (93114) main: Buffer[9] = 35.599998[0m
+[0;32mI (93124) main: Sent 2048 bytes to client[0m
+[0;32mI (94124) main: Shared buffer contents:[0m
+[0;32mI (94124) main: Buffer[0] = 35.599998[0m
+[0;32mI (94124) main: Buffer[1] = 35.599998[0m
+[0;32mI (94124) main: Buffer[2] = 35.599998[0m
+[0;32mI (94134) main: Buffer[3] = 35.599998[0m
+[0;32mI (94134) main: Buffer[4] = 35.599998[0m
+[0;32mI (94144) main: Buffer[5] = 35.599998[0m
+[0;32mI (94144) main: Buffer[6] = 35.599998[0m
+[0;32mI (94144) main: Buffer[7] = 35.599998[0m
+[0;32mI (94154) main: Buffer[8] = 35.599998[0m
+[0;32mI (94154) main: Buffer[9] = 35.599998[0m
+[0;32mI (94164) main: Sent 2048 bytes to client[0m
+[0;32mI (95164) main: Shared buffer contents:[0m
+[0;32mI (95164) main: Buffer[0] = 35.599998[0m
+[0;32mI (95164) main: Buffer[1] = 35.599998[0m
+[0;32mI (95164) main: Buffer[2] = 35.599998[0m
+[0;32mI (95174) main: Buffer[3] = 35.599998[0m
+[0;32mI (95174) main: Buffer[4] = 35.599998[0m
+[0;32mI (95184) main: Buffer[5] = 35.599998[0m
+[0;32mI (95184) main: Buffer[6] = 35.599998[0m
+[0;32mI (95184) main: Buffer[7] = 35.599998[0m
+[0;32mI (95194) main: Buffer[8] = 35.599998[0m
+[0;32mI (95194) main: Buffer[9] = 35.599998[0m
+[0;32mI (95204) main: Sent 2048 bytes to client[0m
+[0;32mI (96204) main: Shared buffer contents:[0m
+[0;32mI (96204) main: Buffer[0] = 35.599998[0m
+[0;32mI (96204) main: Buffer[1] = 35.599998[0m
+[0;32mI (96204) main: Buffer[2] = 35.599998[0m
+[0;32mI (96214) main: Buffer[3] = 35.599998[0m
+[0;32mI (96214) main: Buffer[4] = 35.599998[0m
+[0;32mI (96224) main: Buffer[5] = 35.599998[0m
+[0;32mI (96224) main: Buffer[6] = 35.599998[0m
+[0;32mI (96224) main: Buffer[7] = 35.599998[0m
+[0;32mI (96234) main: Buffer[8] = 35.599998[0m
+[0;32mI (96234) main: Buffer[9] = 35.599998[0m
+[0;32mI (96244) main: Sent 2048 bytes to client[0m
+[0;32mI (97244) main: Shared buffer contents:[0m
+[0;32mI (97244) main: Buffer[0] = 35.599998[0m
+[0;32mI (97244) main: Buffer[1] = 35.599998[0m
+[0;32mI (97244) main: Buffer[2] = 35.599998[0m
+[0;32mI (97254) main: Buffer[3] = 35.599998[0m
+[0;32mI (97254) main: Buffer[4] = 35.599998[0m
+[0;32mI (97264) main: Buffer[5] = 35.599998[0m
+[0;32mI (97264) main: Buffer[6] = 35.599998[0m
+[0;32mI (97264) main: Buffer[7] = 35.599998[0m
+[0;32mI (97274) main: Buffer[8] = 35.599998[0m
+[0;32mI (97274) main: Buffer[9] = 35.599998[0m
+[0;32mI (97284) main: Sent 2048 bytes to client[0m
+[0;32mI (98284) main: Shared buffer contents:[0m
+[0;32mI (98284) main: Buffer[0] = 35.599998[0m
+[0;32mI (98284) main: Buffer[1] = 35.599998[0m
+[0;32mI (98284) main: Buffer[2] = 35.599998[0m
+[0;32mI (98294) main: Buffer[3] = 35.599998[0m
+[0;32mI (98294) main: Buffer[4] = 35.599998[0m
+[0;32mI (98304) main: Buffer[5] = 35.599998[0m
+[0;32mI (98304) main: Buffer[6] = 35.599998[0m
+[0;32mI (98304) main: Buffer[7] = 35.599998[0m
+[0;32mI (98314) main: Buffer[8] = 35.599998[0m
+[0;32mI (98314) main: Buffer[9] = 35.599998[0m
+[0;32mI (98324) main: Sent 2048 bytes to client[0m
+[0;32mI (99324) main: Shared buffer contents:[0m
+[0;32mI (99324) main: Buffer[0] = 35.599998[0m
+[0;32mI (99324) main: Buffer[1] = 35.599998[0m
+[0;32mI (99324) main: Buffer[2] = 35.599998[0m
+[0;32mI (99334) main: Buffer[3] = 35.599998[0m
+[0;32mI (99334) main: Buffer[4] = 35.599998[0m
+[0;32mI (99344) main: Buffer[5] = 35.599998[0m
+[0;32mI (99344) main: Buffer[6] = 35.599998[0m
+[0;32mI (99344) main: Buffer[7] = 35.599998[0m
+[0;32mI (99354) main: Buffer[8] = 35.599998[0m
+[0;32mI (99354) main: Buffer[9] = 35.599998[0m
+[0;32mI (99364) main: Sent 2048 bytes to client[0m
+[0;32mI (100364) main: Shared buffer contents:[0m
+[0;32mI (100364) main: Buffer[0] = 35.599998[0m
+[0;32mI (100364) main: Buffer[1] = 35.599998[0m
+[0;32mI (100364) main: Buffer[2] = 35.599998[0m
+[0;32mI (100374) main: Buffer[3] = 35.599998[0m
+[0;32mI (100374) main: Buffer[4] = 35.599998[0m
+[0;32mI (100384) main: Buffer[5] = 35.599998[0m
+[0;32mI (100384) main: Buffer[6] = 35.599998[0m
+[0;32mI (100384) main: Buffer[7] = 35.599998[0m
+[0;32mI (100394) main: Buffer[8] = 35.599998[0m
+[0;32mI (100394) main: Buffer[9] = 35.599998[0m
+[0;32mI (100404) main: Sent 2048 bytes to client[0m
+[0;32mI (101404) main: Shared buffer contents:[0m
+[0;32mI (101404) main: Buffer[0] = 35.599998[0m
+[0;32mI (101404) main: Buffer[1] = 35.599998[0m
+[0;32mI (101404) main: Buffer[2] = 35.599998[0m
+[0;32mI (101414) main: Buffer[3] = 35.599998[0m
+[0;32mI (101414) main: Buffer[4] = 35.599998[0m
+[0;32mI (101424) main: Buffer[5] = 35.599998[0m
+[0;32mI (101424) main: Buffer[6] = 35.599998[0m
+[0;32mI (101424) main: Buffer[7] = 35.599998[0m
+[0;32mI (101434) main: Buffer[8] = 35.599998[0m
+[0;32mI (101434) main: Buffer[9] = 35.599998[0m
+[0;32mI (101444) main: Sent 2048 bytes to client[0m
+[0;32mI (102444) main: Shared buffer contents:[0m
+[0;32mI (102444) main: Buffer[0] = 35.599998[0m
+[0;32mI (102444) main: Buffer[1] = 35.599998[0m
+[0;32mI (102444) main: Buffer[2] = 35.599998[0m
+[0;32mI (102454) main: Buffer[3] = 35.599998[0m
+[0;32mI (102454) main: Buffer[4] = 35.599998[0m
+[0;32mI (102464) main: Buffer[5] = 35.599998[0m
+[0;32mI (102464) main: Buffer[6] = 35.599998[0m
+[0;32mI (102464) main: Buffer[7] = 35.599998[0m
+[0;32mI (102474) main: Buffer[8] = 35.599998[0m
+[0;32mI (102474) main: Buffer[9] = 35.599998[0m
+[0;32mI (102484) main: Sent 2048 bytes to client[0m
+[0;32mI (103484) main: Shared buffer contents:[0m
+[0;32mI (103484) main: Buffer[0] = 35.599998[0m
+[0;32mI (103484) main: Buffer[1] = 35.599998[0m
+[0;32mI (103484) main: Buffer[2] = 35.599998[0m
+[0;32mI (103494) main: Buffer[3] = 35.599998[0m
+[0;32mI (103494) main: Buffer[4] = 35.599998[0m
+[0;32mI (103504) main: Buffer[5] = 35.599998[0m
+[0;32mI (103504) main: Buffer[6] = 35.599998[0m
+[0;32mI (103504) main: Buffer[7] = 35.599998[0m
+[0;32mI (103514) main: Buffer[8] = 35.599998[0m
+[0;32mI (103514) main: Buffer[9] = 35.599998[0m
+[0;32mI (103524) main: Sent 2048 bytes to client[0m
+[0;32mI (104524) main: Shared buffer contents:[0m
+[0;32mI (104524) main: Buffer[0] = 35.599998[0m
+[0;32mI (104524) main: Buffer[1] = 35.599998[0m
+[0;32mI (104524) main: Buffer[2] = 35.599998[0m
+[0;32mI (104534) main: Buffer[3] = 35.599998[0m
+[0;32mI (104534) main: Buffer[4] = 35.599998[0m
+[0;32mI (104544) main: Buffer[5] = 35.599998[0m
+[0;32mI (104544) main: Buffer[6] = 35.599998[0m
+[0;32mI (104544) main: Buffer[7] = 35.599998[0m
+[0;32mI (104554) main: Buffer[8] = 35.599998[0m
+[0;32mI (104554) main: Buffer[9] = 35.599998[0m
+[0;32mI (104564) main: Sent 2048 bytes to client[0m
+[0;32mI (105564) main: Shared buffer contents:[0m
+[0;32mI (105564) main: Buffer[0] = 35.599998[0m
+[0;32mI (105564) main: Buffer[1] = 35.599998[0m
+[0;32mI (105564) main: Buffer[2] = 35.599998[0m
+[0;32mI (105574) main: Buffer[3] = 35.599998[0m
+[0;32mI (105574) main: Buffer[4] = 35.599998[0m
+[0;32mI (105584) main: Buffer[5] = 35.599998[0m
+[0;32mI (105584) main: Buffer[6] = 35.599998[0m
+[0;32mI (105584) main: Buffer[7] = 35.599998[0m
+[0;32mI (105594) main: Buffer[8] = 35.599998[0m
+[0;32mI (105594) main: Buffer[9] = 35.599998[0m
+[0;32mI (105604) main: Sent 2048 bytes to client[0m
+[0;32mI (106604) main: Shared buffer contents:[0m
+[0;32mI (106604) main: Buffer[0] = 35.599998[0m
+[0;32mI (106604) main: Buffer[1] = 35.599998[0m
+[0;32mI (106604) main: Buffer[2] = 35.599998[0m
+[0;32mI (106614) main: Buffer[3] = 35.599998[0m
+[0;32mI (106614) main: Buffer[4] = 35.599998[0m
+[0;32mI (106624) main: Buffer[5] = 35.599998[0m
+[0;32mI (106624) main: Buffer[6] = 35.599998[0m
+[0;32mI (106624) main: Buffer[7] = 35.599998[0m
+[0;32mI (106634) main: Buffer[8] = 35.599998[0m
+[0;32mI (106634) main: Buffer[9] = 35.599998[0m
+[0;32mI (106644) main: Sent 2048 bytes to client[0m
+[0;32mI (107644) main: Shared buffer contents:[0m
+[0;32mI (107644) main: Buffer[0] = 35.599998[0m
+[0;32mI (107644) main: Buffer[1] = 35.599998[0m
+[0;32mI (107644) main: Buffer[2] = 35.599998[0m
+[0;32mI (107654) main: Buffer[3] = 35.599998[0m
+[0;32mI (107654) main: Buffer[4] = 35.599998[0m
+[0;32mI (107664) main: Buffer[5] = 35.599998[0m
+[0;32mI (107664) main: Buffer[6] = 35.599998[0m
+[0;32mI (107664) main: Buffer[7] = 35.599998[0m
+[0;32mI (107674) main: Buffer[8] = 35.599998[0m
+[0;32mI (107674) main: Buffer[9] = 35.599998[0m
+[0;32mI (107684) main: Sent 2048 bytes to client[0m
+[0;32mI (108684) main: Shared buffer contents:[0m
+[0;32mI (108684) main: Buffer[0] = 35.599998[0m
+[0;32mI (108684) main: Buffer[1] = 35.599998[0m
+[0;32mI (108684) main: Buffer[2] = 35.599998[0m
+[0;32mI (108694) main: Buffer[3] = 35.599998[0m
+[0;32mI (108694) main: Buffer[4] = 35.599998[0m
+[0;32mI (108704) main: Buffer[5] = 35.599998[0m
+[0;32mI (108704) main: Buffer[6] = 35.599998[0m
+[0;32mI (108704) main: Buffer[7] = 35.599998[0m
+[0;32mI (108714) main: Buffer[8] = 35.599998[0m
+[0;32mI (108714) main: Buffer[9] = 35.599998[0m
+[0;32mI (108724) main: Sent 2048 bytes to client[0m
+[0;32mI (109724) main: Shared buffer contents:[0m
+[0;32mI (109724) main: Buffer[0] = 35.599998[0m
+[0;32mI (109724) main: Buffer[1] = 35.599998[0m
+[0;32mI (109724) main: Buffer[2] = 35.599998[0m
+[0;32mI (109734) main: Buffer[3] = 35.599998[0m
+[0;32mI (109734) main: Buffer[4] = 35.599998[0m
+[0;32mI (109744) main: Buffer[5] = 35.599998[0m
+[0;32mI (109744) main: Buffer[6] = 35.599998[0m
+[0;32mI (109744) main: Buffer[7] = 35.599998[0m
+[0;32mI (109754) main: Buffer[8] = 35.599998[0m
+[0;32mI (109754) main: Buffer[9] = 35.599998[0m
+[0;32mI (109764) main: Sent 2048 bytes to client[0m
+[0;32mI (110764) main: Shared buffer contents:[0m
+[0;32mI (110764) main: Buffer[0] = 35.599998[0m
+[0;32mI (110764) main: Buffer[1] = 35.599998[0m
+[0;32mI (110764) main: Buffer[2] = 35.599998[0m
+[0;32mI (110774) main: Buffer[3] = 35.599998[0m
+[0;32mI (110774) main: Buffer[4] = 35.599998[0m
+[0;32mI (110784) main: Buffer[5] = 35.599998[0m
+[0;32mI (110784) main: Buffer[6] = 35.599998[0m
+[0;32mI (110784) main: Buffer[7] = 35.599998[0m
+[0;32mI (110794) main: Buffer[8] = 35.599998[0m
+[0;32mI (110794) main: Buffer[9] = 35.599998[0m
+[0;32mI (110804) main: Sent 2048 bytes to client[0m
+[0;32mI (111804) main: Shared buffer contents:[0m
+[0;32mI (111804) main: Buffer[0] = 35.599998[0m
+[0;32mI (111804) main: Buffer[1] = 35.599998[0m
+[0;32mI (111804) main: Buffer[2] = 35.599998[0m
+[0;32mI (111814) main: Buffer[3] = 35.599998[0m
+[0;32mI (111814) main: Buffer[4] = 35.599998[0m
+[0;32mI (111824) main: Buffer[5] = 35.599998[0m
+[0;32mI (111824) main: Buffer[6] = 35.599998[0m
+[0;32mI (111824) main: Buffer[7] = 35.599998[0m
+[0;32mI (111834) main: Buffer[8] = 35.599998[0m
+[0;32mI (111834) main: Buffer[9] = 35.599998[0m
+[0;32mI (111844) main: Sent 2048 bytes to client[0m
+[0;32mI (112844) main: Shared buffer contents:[0m
+[0;32mI (112844) main: Buffer[0] = 35.599998[0m
+[0;32mI (112844) main: Buffer[1] = 35.599998[0m
+[0;32mI (112844) main: Buffer[2] = 35.599998[0m
+[0;32mI (112854) main: Buffer[3] = 35.599998[0m
+[0;32mI (112854) main: Buffer[4] = 35.599998[0m
+[0;32mI (112864) main: Buffer[5] = 35.599998[0m
+[0;32mI (112864) main: Buffer[6] = 35.599998[0m
+[0;32mI (112864) main: Buffer[7] = 35.599998[0m
+[0;32mI (112874) main: Buffer[8] = 35.599998[0m
+[0;32mI (112874) main: Buffer[9] = 35.599998[0m
+[0;32mI (112884) main: Sent 2048 bytes to client[0m
+[0;32mI (113884) main: Shared buffer contents:[0m
+[0;32mI (113884) main: Buffer[0] = 35.599998[0m
+[0;32mI (113884) main: Buffer[1] = 35.599998[0m
+[0;32mI (113884) main: Buffer[2] = 35.599998[0m
+[0;32mI (113894) main: Buffer[3] = 35.599998[0m
+[0;32mI (113894) main: Buffer[4] = 35.599998[0m
+[0;32mI (113904) main: Buffer[5] = 35.599998[0m
+[0;32mI (113904) main: Buffer[6] = 35.599998[0m
+[0;32mI (113904) main: Buffer[7] = 35.599998[0m
+[0;32mI (113914) main: Buffer[8] = 35.599998[0m
+[0;32mI (113914) main: Buffer[9] = 35.599998[0m
+[0;32mI (113924) main: Sent 2048 bytes to client[0m
+[0;32mI (114924) main: Shared buffer contents:[0m
+[0;32mI (114924) main: Buffer[0] = 35.599998[0m
+[0;32mI (114924) main: Buffer[1] = 35.599998[0m
+[0;32mI (114924) main: Buffer[2] = 35.599998[0m
+[0;32mI (114934) main: Buffer[3] = 35.599998[0m
+[0;32mI (114934) main: Buffer[4] = 35.599998[0m
+[0;32mI (114944) main: Buffer[5] = 35.599998[0m
+[0;32mI (114944) main: Buffer[6] = 35.599998[0m
+[0;32mI (114944) main: Buffer[7] = 35.599998[0m
+[0;32mI (114954) main: Buffer[8] = 35.599998[0m
+[0;32mI (114954) main: Buffer[9] = 35.599998[0m
+[0;32mI (114964) main: Sent 2048 bytes to client[0m
+[0;32mI (115964) main: Shared buffer contents:[0m
+[0;32mI (115964) main: Buffer[0] = 35.599998[0m
+[0;32mI (115964) main: Buffer[1] = 35.599998[0m
+[0;32mI (115964) main: Buffer[2] = 35.599998[0m
+[0;32mI (115974) main: Buffer[3] = 35.599998[0m
+[0;32mI (115974) main: Buffer[4] = 35.599998[0m
+[0;32mI (115984) main: Buffer[5] = 35.599998[0m
+[0;32mI (115984) main: Buffer[6] = 35.599998[0m
+[0;32mI (115984) main: Buffer[7] = 35.599998[0m
+[0;32mI (115994) main: Buffer[8] = 35.599998[0m
+[0;32mI (115994) main: Buffer[9] = 35.599998[0m
+[0;32mI (116004) main: Sent 2048 bytes to client[0m
+[0;32mI (117004) main: Shared buffer contents:[0m
+[0;32mI (117004) main: Buffer[0] = 35.599998[0m
+[0;32mI (117004) main: Buffer[1] = 35.599998[0m
+[0;32mI (117004) main: Buffer[2] = 35.599998[0m
+[0;32mI (117014) main: Buffer[3] = 35.599998[0m
+[0;32mI (117014) main: Buffer[4] = 35.599998[0m
+[0;32mI (117024) main: Buffer[5] = 35.599998[0m
+[0;32mI (117024) main: Buffer[6] = 35.599998[0m
+[0;32mI (117024) main: Buffer[7] = 35.599998[0m
+[0;32mI (117034) main: Buffer[8] = 35.599998[0m
+[0;32mI (117034) main: Buffer[9] = 35.599998[0m
+[0;32mI (117044) main: Sent 2048 bytes to client[0m
+[0;32mI (118044) main: Shared buffer contents:[0m
+[0;32mI (118044) main: Buffer[0] = 35.599998[0m
+[0;32mI (118044) main: Buffer[1] = 35.599998[0m
+[0;32mI (118044) main: Buffer[2] = 35.599998[0m
+[0;32mI (118054) main: Buffer[3] = 35.599998[0m
+[0;32mI (118054) main: Buffer[4] = 35.599998[0m
+[0;32mI (118064) main: Buffer[5] = 35.599998[0m
+[0;32mI (118064) main: Buffer[6] = 35.599998[0m
+[0;32mI (118064) main: Buffer[7] = 35.599998[0m
+[0;32mI (118074) main: Buffer[8] = 35.599998[0m
+[0;32mI (118074) main: Buffer[9] = 35.599998[0m
+[0;32mI (118084) main: Sent 2048 bytes to client[0m
+[0;32mI (119084) main: Shared buffer contents:[0m
+[0;32mI (119084) main: Buffer[0] = 34.599998[0m
+[0;32mI (119084) main: Buffer[1] = 34.599998[0m
+[0;32mI (119084) main: Buffer[2] = 34.599998[0m
+[0;32mI (119094) main: Buffer[3] = 34.599998[0m
+[0;32mI (119094) main: Buffer[4] = 34.599998[0m
+[0;32mI (119104) main: Buffer[5] = 34.599998[0m
+[0;32mI (119104) main: Buffer[6] = 34.599998[0m
+[0;32mI (119104) main: Buffer[7] = 34.599998[0m
+[0;32mI (119114) main: Buffer[8] = 34.599998[0m
+[0;32mI (119114) main: Buffer[9] = 34.599998[0m
+[0;32mI (119124) main: Sent 2048 bytes to client[0m
+[0;32mI (120124) main: Shared buffer contents:[0m
+[0;32mI (120124) main: Buffer[0] = 34.599998[0m
+[0;32mI (120124) main: Buffer[1] = 34.599998[0m
+[0;32mI (120124) main: Buffer[2] = 34.599998[0m
+[0;32mI (120134) main: Buffer[3] = 34.599998[0m
+[0;32mI (120134) main: Buffer[4] = 34.599998[0m
+[0;32mI (120144) main: Buffer[5] = 34.599998[0m
+[0;32mI (120144) main: Buffer[6] = 34.599998[0m
+[0;32mI (120144) main: Buffer[7] = 34.599998[0m
+[0;32mI (120154) main: Buffer[8] = 34.599998[0m
+[0;32mI (120154) main: Buffer[9] = 34.599998[0m
+[0;32mI (120164) main: Sent 2048 bytes to client[0m
+[0;32mI (121164) main: Shared buffer contents:[0m
+[0;32mI (121164) main: Buffer[0] = 34.599998[0m
+[0;32mI (121164) main: Buffer[1] = 34.599998[0m
+[0;32mI (121164) main: Buffer[2] = 34.599998[0m
+[0;32mI (121174) main: Buffer[3] = 34.599998[0m
+[0;32mI (121174) main: Buffer[4] = 34.599998[0m
+[0;32mI (121184) main: Buffer[5] = 34.599998[0m
+[0;32mI (121184) main: Buffer[6] = 34.599998[0m
+[0;32mI (121184) main: Buffer[7] = 34.599998[0m
+[0;32mI (121194) main: Buffer[8] = 34.599998[0m
+[0;32mI (121194) main: Buffer[9] = 34.599998[0m
+[0;32mI (121204) main: Sent 2048 bytes to client[0m
+[0;32mI (122204) main: Shared buffer contents:[0m
+[0;32mI (122204) main: Buffer[0] = 34.599998[0m
+[0;32mI (122204) main: Buffer[1] = 34.599998[0m
+[0;32mI (122204) main: Buffer[2] = 34.599998[0m
+[0;32mI (122214) main: Buffer[3] = 34.599998[0m
+[0;32mI (122214) main: Buffer[4] = 34.599998[0m
+[0;32mI (122224) main: Buffer[5] = 34.599998[0m
+[0;32mI (122224) main: Buffer[6] = 34.599998[0m
+[0;32mI (122224) main: Buffer[7] = 34.599998[0m
+[0;32mI (122234) main: Buffer[8] = 34.599998[0m
+[0;32mI (122234) main: Buffer[9] = 34.599998[0m
+[0;32mI (122244) main: Sent 2048 bytes to client[0m
+[0;32mI (123244) main: Shared buffer contents:[0m
+[0;32mI (123244) main: Buffer[0] = 34.599998[0m
+[0;32mI (123244) main: Buffer[1] = 34.599998[0m
+[0;32mI (123244) main: Buffer[2] = 34.599998[0m
+[0;32mI (123254) main: Buffer[3] = 34.599998[0m
+[0;32mI (123254) main: Buffer[4] = 34.599998[0m
+[0;32mI (123264) main: Buffer[5] = 34.599998[0m
+[0;32mI (123264) main: Buffer[6] = 34.599998[0m
+[0;32mI (123264) main: Buffer[7] = 34.599998[0m
+[0;32mI (123274) main: Buffer[8] = 34.599998[0m
+[0;32mI (123274) main: Buffer[9] = 34.599998[0m
+[0;32mI (123284) main: Sent 2048 bytes to client[0m
+[0;32mI (124284) main: Shared buffer contents:[0m
+[0;32mI (124284) main: Buffer[0] = 34.599998[0m
+[0;32mI (124284) main: Buffer[1] = 34.599998[0m
+[0;32mI (124284) main: Buffer[2] = 34.599998[0m
+[0;32mI (124294) main: Buffer[3] = 34.599998[0m
+[0;32mI (124294) main: Buffer[4] = 34.599998[0m
+[0;32mI (124304) main: Buffer[5] = 34.599998[0m
+[0;32mI (124304) main: Buffer[6] = 34.599998[0m
+[0;32mI (124304) main: Buffer[7] = 34.599998[0m
+[0;32mI (124314) main: Buffer[8] = 34.599998[0m
+[0;32mI (124314) main: Buffer[9] = 34.599998[0m
+[0;32mI (124324) main: Sent 2048 bytes to client[0m
+[0;32mI (125324) main: Shared buffer contents:[0m
+[0;32mI (125324) main: Buffer[0] = 34.599998[0m
+[0;32mI (125324) main: Buffer[1] = 34.599998[0m
+[0;32mI (125324) main: Buffer[2] = 34.599998[0m
+[0;32mI (125334) main: Buffer[3] = 34.599998[0m
+[0;32mI (125334) main: Buffer[4] = 34.599998[0m
+[0;32mI (125344) main: Buffer[5] = 34.599998[0m
+[0;32mI (125344) main: Buffer[6] = 34.599998[0m
+[0;32mI (125344) main: Buffer[7] = 34.599998[0m
+[0;32mI (125354) main: Buffer[8] = 34.599998[0m
+[0;32mI (125354) main: Buffer[9] = 34.599998[0m
+[0;32mI (125364) main: Sent 2048 bytes to client[0m
+[0;32mI (126364) main: Shared buffer contents:[0m
+[0;32mI (126364) main: Buffer[0] = 34.599998[0m
+[0;32mI (126364) main: Buffer[1] = 34.599998[0m
+[0;32mI (126364) main: Buffer[2] = 34.599998[0m
+[0;32mI (126374) main: Buffer[3] = 34.599998[0m
+[0;32mI (126374) main: Buffer[4] = 34.599998[0m
+[0;32mI (126384) main: Buffer[5] = 34.599998[0m
+[0;32mI (126384) main: Buffer[6] = 34.599998[0m
+[0;32mI (126384) main: Buffer[7] = 34.599998[0m
+[0;32mI (126394) main: Buffer[8] = 34.599998[0m
+[0;32mI (126394) main: Buffer[9] = 34.599998[0m
+[0;32mI (126404) main: Sent 2048 bytes to client[0m
+[0;32mI (127404) main: Shared buffer contents:[0m
+[0;32mI (127404) main: Buffer[0] = 34.599998[0m
+[0;32mI (127404) main: Buffer[1] = 34.599998[0m
+[0;32mI (127404) main: Buffer[2] = 34.599998[0m
+[0;32mI (127414) main: Buffer[3] = 34.599998[0m
+[0;32mI (127414) main: Buffer[4] = 34.599998[0m
+[0;32mI (127424) main: Buffer[5] = 34.599998[0m
+[0;32mI (127424) main: Buffer[6] = 34.599998[0m
+[0;32mI (127424) main: Buffer[7] = 34.599998[0m
+[0;32mI (127434) main: Buffer[8] = 34.599998[0m
+[0;32mI (127434) main: Buffer[9] = 34.599998[0m
+[0;32mI (127444) main: Sent 2048 bytes to client[0m
+[0;32mI (128444) main: Shared buffer contents:[0m
+[0;32mI (128444) main: Buffer[0] = 34.599998[0m
+[0;32mI (128444) main: Buffer[1] = 34.599998[0m
+[0;32mI (128444) main: Buffer[2] = 34.599998[0m
+[0;32mI (128454) main: Buffer[3] = 34.599998[0m
+[0;32mI (128454) main: Buffer[4] = 34.599998[0m
+[0;32mI (128464) main: Buffer[5] = 34.599998[0m
+[0;32mI (128464) main: Buffer[6] = 34.599998[0m
+[0;32mI (128464) main: Buffer[7] = 34.599998[0m
+[0;32mI (128474) main: Buffer[8] = 34.599998[0m
+[0;32mI (128474) main: Buffer[9] = 34.599998[0m
+[0;32mI (128484) main: Sent 2048 bytes to client[0m
+[0;32mI (129484) main: Shared buffer contents:[0m
+[0;32mI (129484) main: Buffer[0] = 34.599998[0m
+[0;32mI (129484) main: Buffer[1] = 34.599998[0m
+[0;32mI (129484) main: Buffer[2] = 33.599998[0m
+[0;32mI (129494) main: Buffer[3] = 34.599998[0m
+[0;32mI (129494) main: Buffer[4] = 34.599998[0m
+[0;32mI (129504) main: Buffer[5] = 34.599998[0m
+[0;32mI (129504) main: Buffer[6] = 34.599998[0m
+[0;32mI (129504) main: Buffer[7] = 34.599998[0m
+[0;32mI (129514) main: Buffer[8] = 34.599998[0m
+[0;32mI (129514) main: Buffer[9] = 34.599998[0m
+[0;32mI (129524) main: Sent 2048 bytes to client[0m
+[0;32mI (130524) main: Shared buffer contents:[0m
+[0;32mI (130524) main: Buffer[0] = 34.599998[0m
+[0;32mI (130524) main: Buffer[1] = 34.599998[0m
+[0;32mI (130524) main: Buffer[2] = 33.599998[0m
+[0;32mI (130534) main: Buffer[3] = 34.599998[0m
+[0;32mI (130534) main: Buffer[4] = 34.599998[0m
+[0;32mI (130544) main: Buffer[5] = 34.599998[0m
+[0;32mI (130544) main: Buffer[6] = 34.599998[0m
+[0;32mI (130544) main: Buffer[7] = 34.599998[0m
+[0;32mI (130554) main: Buffer[8] = 34.599998[0m
+[0;32mI (130554) main: Buffer[9] = 34.599998[0m
+[0;32mI (130564) main: Sent 2048 bytes to client[0m
+[0;32mI (131564) main: Shared buffer contents:[0m
+[0;32mI (131564) main: Buffer[0] = 34.599998[0m
+[0;32mI (131564) main: Buffer[1] = 34.599998[0m
+[0;32mI (131564) main: Buffer[2] = 33.599998[0m
+[0;32mI (131574) main: Buffer[3] = 34.599998[0m
+[0;32mI (131574) main: Buffer[4] = 34.599998[0m
+[0;32mI (131584) main: Buffer[5] = 34.599998[0m
+[0;32mI (131584) main: Buffer[6] = 34.599998[0m
+[0;32mI (131584) main: Buffer[7] = 34.599998[0m
+[0;32mI (131594) main: Buffer[8] = 34.599998[0m
+[0;32mI (131594) main: Buffer[9] = 34.599998[0m
+[0;32mI (131604) main: Sent 2048 bytes to client[0m
+[0;32mI (132604) main: Shared buffer contents:[0m
+[0;32mI (132604) main: Buffer[0] = 34.599998[0m
+[0;32mI (132604) main: Buffer[1] = 34.599998[0m
+[0;32mI (132604) main: Buffer[2] = 33.599998[0m
+[0;32mI (132614) main: Buffer[3] = 34.599998[0m
+[0;32mI (132614) main: Buffer[4] = 34.599998[0m
+[0;32mI (132624) main: Buffer[5] = 34.599998[0m
+[0;32mI (132624) main: Buffer[6] = 34.599998[0m
+[0;32mI (132624) main: Buffer[7] = 34.599998[0m
+[0;32mI (132634) main: Buffer[8] = 34.599998[0m
+[0;32mI (132634) main: Buffer[9] = 34.599998[0m
+[0;32mI (132644) main: Sent 2048 bytes to client[0m
+[0;32mI (133644) main: Shared buffer contents:[0m
+[0;32mI (133644) main: Buffer[0] = 34.599998[0m
+[0;32mI (133644) main: Buffer[1] = 34.599998[0m
+[0;32mI (133644) main: Buffer[2] = 33.599998[0m
+[0;32mI (133654) main: Buffer[3] = 34.599998[0m
+[0;32mI (133654) main: Buffer[4] = 34.599998[0m
+[0;32mI (133664) main: Buffer[5] = 34.599998[0m
+[0;32mI (133664) main: Buffer[6] = 34.599998[0m
+[0;32mI (133664) main: Buffer[7] = 34.599998[0m
+[0;32mI (133674) main: Buffer[8] = 34.599998[0m
+[0;32mI (133674) main: Buffer[9] = 34.599998[0m
+[0;32mI (133684) main: Sent 2048 bytes to client[0m
+[0;32mI (134684) main: Shared buffer contents:[0m
+[0;32mI (134684) main: Buffer[0] = 34.599998[0m
+[0;32mI (134684) main: Buffer[1] = 34.599998[0m
+[0;32mI (134684) main: Buffer[2] = 34.599998[0m
+[0;32mI (134694) main: Buffer[3] = 34.599998[0m
+[0;32mI (134694) main: Buffer[4] = 34.599998[0m
+[0;32mI (134704) main: Buffer[5] = 34.599998[0m
+[0;32mI (134704) main: Buffer[6] = 34.599998[0m
+[0;32mI (134704) main: Buffer[7] = 34.599998[0m
+[0;32mI (134714) main: Buffer[8] = 34.599998[0m
+[0;32mI (134714) main: Buffer[9] = 34.599998[0m
+[0;32mI (134724) main: Sent 2048 bytes to client[0m
+[0;32mI (135724) main: Shared buffer contents:[0m
+[0;32mI (135724) main: Buffer[0] = 34.599998[0m
+[0;32mI (135724) main: Buffer[1] = 34.599998[0m
+[0;32mI (135724) main: Buffer[2] = 34.599998[0m
+[0;32mI (135734) main: Buffer[3] = 34.599998[0m
+[0;32mI (135734) main: Buffer[4] = 34.599998[0m
+[0;32mI (135744) main: Buffer[5] = 34.599998[0m
+[0;32mI (135744) main: Buffer[6] = 34.599998[0m
+[0;32mI (135744) main: Buffer[7] = 34.599998[0m
+[0;32mI (135754) main: Buffer[8] = 34.599998[0m
+[0;32mI (135754) main: Buffer[9] = 34.599998[0m
+[0;32mI (135764) main: Sent 2048 bytes to client[0m
+[0;32mI (136764) main: Shared buffer contents:[0m
+[0;32mI (136764) main: Buffer[0] = 34.599998[0m
+[0;32mI (136764) main: Buffer[1] = 34.599998[0m
+[0;32mI (136764) main: Buffer[2] = 34.599998[0m
+[0;32mI (136774) main: Buffer[3] = 34.599998[0m
+[0;32mI (136774) main: Buffer[4] = 34.599998[0m
+[0;32mI (136784) main: Buffer[5] = 34.599998[0m
+[0;32mI (136784) main: Buffer[6] = 34.599998[0m
+[0;32mI (136784) main: Buffer[7] = 34.599998[0m
+[0;32mI (136794) main: Buffer[8] = 34.599998[0m
+[0;32mI (136794) main: Buffer[9] = 34.599998[0m
+[0;32mI (136804) main: Sent 2048 bytes to client[0m
+[0;32mI (137804) main: Shared buffer contents:[0m
+[0;32mI (137804) main: Buffer[0] = 34.599998[0m
+[0;32mI (137804) main: Buffer[1] = 34.599998[0m
+[0;32mI (137804) main: Buffer[2] = 34.599998[0m
+[0;32mI (137814) main: Buffer[3] = 34.599998[0m
+[0;32mI (137814) main: Buffer[4] = 34.599998[0m
+[0;32mI (137824) main: Buffer[5] = 34.599998[0m
+[0;32mI (137824) main: Buffer[6] = 34.599998[0m
+[0;32mI (137824) main: Buffer[7] = 34.599998[0m
+[0;32mI (137834) main: Buffer[8] = 34.599998[0m
+[0;32mI (137834) main: Buffer[9] = 34.599998[0m
+[0;32mI (137844) main: Sent 2048 bytes to client[0m
+[0;32mI (138844) main: Shared buffer contents:[0m
+[0;32mI (138844) main: Buffer[0] = 34.599998[0m
+[0;32mI (138844) main: Buffer[1] = 34.599998[0m
+[0;32mI (138844) main: Buffer[2] = 34.599998[0m
+[0;32mI (138854) main: Buffer[3] = 34.599998[0m
+[0;32mI (138854) main: Buffer[4] = 34.599998[0m
+[0;32mI (138864) main: Buffer[5] = 34.599998[0m
+[0;32mI (138864) main: Buffer[6] = 34.599998[0m
+[0;32mI (138864) main: Buffer[7] = 34.599998[0m
+[0;32mI (138874) main: Buffer[8] = 34.599998[0m
+[0;32mI (138874) main: Buffer[9] = 34.599998[0m
+[0;32mI (138884) main: Sent 2048 bytes to client[0m
+[0;32mI (139884) main: Shared buffer contents:[0m
+[0;32mI (139884) main: Buffer[0] = 35.599998[0m
+[0;32mI (139884) main: Buffer[1] = 35.599998[0m
+[0;32mI (139884) main: Buffer[2] = 35.599998[0m
+[0;32mI (139894) main: Buffer[3] = 35.599998[0m
+[0;32mI (139894) main: Buffer[4] = 35.599998[0m
+[0;32mI (139904) main: Buffer[5] = 35.599998[0m
+[0;32mI (139904) main: Buffer[6] = 35.599998[0m
+[0;32mI (139904) main: Buffer[7] = 35.599998[0m
+[0;32mI (139914) main: Buffer[8] = 35.599998[0m
+[0;32mI (139914) main: Buffer[9] = 35.599998[0m
+[0;32mI (139924) main: Sent 2048 bytes to client[0m
+[0;32mI (140924) main: Shared buffer contents:[0m
+[0;32mI (140924) main: Buffer[0] = 35.599998[0m
+[0;32mI (140924) main: Buffer[1] = 35.599998[0m
+[0;32mI (140924) main: Buffer[2] = 35.599998[0m
+[0;32mI (140934) main: Buffer[3] = 35.599998[0m
+[0;32mI (140934) main: Buffer[4] = 35.599998[0m
+[0;32mI (140944) main: Buffer[5] = 35.599998[0m
+[0;32mI (140944) main: Buffer[6] = 35.599998[0m
+[0;32mI (140944) main: Buffer[7] = 35.599998[0m
+[0;32mI (140954) main: Buffer[8] = 35.599998[0m
+[0;32mI (140954) main: Buffer[9] = 35.599998[0m
+[0;32mI (140964) main: Sent 2048 bytes to client[0m
+[0;32mI (141964) main: Shared buffer contents:[0m
+[0;32mI (141964) main: Buffer[0] = 35.599998[0m
+[0;32mI (141964) main: Buffer[1] = 35.599998[0m
+[0;32mI (141964) main: Buffer[2] = 35.599998[0m
+[0;32mI (141974) main: Buffer[3] = 35.599998[0m
+[0;32mI (141974) main: Buffer[4] = 35.599998[0m
+[0;32mI (141984) main: Buffer[5] = 35.599998[0m
+[0;32mI (141984) main: Buffer[6] = 35.599998[0m
+[0;32mI (141984) main: Buffer[7] = 35.599998[0m
+[0;32mI (141994) main: Buffer[8] = 35.599998[0m
+[0;32mI (141994) main: Buffer[9] = 35.599998[0m
+[0;32mI (142004) main: Sent 2048 bytes to client[0m
+[0;32mI (143004) main: Shared buffer contents:[0m
+[0;32mI (143004) main: Buffer[0] = 35.599998[0m
+[0;32mI (143004) main: Buffer[1] = 35.599998[0m
+[0;32mI (143004) main: Buffer[2] = 35.599998[0m
+[0;32mI (143014) main: Buffer[3] = 35.599998[0m
+[0;32mI (143014) main: Buffer[4] = 35.599998[0m
+[0;32mI (143024) main: Buffer[5] = 35.599998[0m
+[0;32mI (143024) main: Buffer[6] = 35.599998[0m
+[0;32mI (143024) main: Buffer[7] = 35.599998[0m
+[0;32mI (143034) main: Buffer[8] = 35.599998[0m
+[0;32mI (143034) main: Buffer[9] = 35.599998[0m
+[0;32mI (143044) main: Sent 2048 bytes to client[0m
+[0;32mI (144044) main: Shared buffer contents:[0m
+[0;32mI (144044) main: Buffer[0] = 35.599998[0m
+[0;32mI (144044) main: Buffer[1] = 35.599998[0m
+[0;32mI (144044) main: Buffer[2] = 35.599998[0m
+[0;32mI (144054) main: Buffer[3] = 35.599998[0m
+[0;32mI (144054) main: Buffer[4] = 35.599998[0m
+[0;32mI (144064) main: Buffer[5] = 35.599998[0m
+[0;32mI (144064) main: Buffer[6] = 35.599998[0m
+[0;32mI (144064) main: Buffer[7] = 35.599998[0m
+[0;32mI (144074) main: Buffer[8] = 35.599998[0m
+[0;32mI (144074) main: Buffer[9] = 35.599998[0m
+[0;32mI (144084) main: Sent 2048 bytes to client[0m
+[0;32mI (145084) main: Shared buffer contents:[0m
+[0;32mI (145084) main: Buffer[0] = 35.599998[0m
+[0;32mI (145084) main: Buffer[1] = 35.599998[0m
+[0;32mI (145084) main: Buffer[2] = 35.599998[0m
+[0;32mI (145094) main: Buffer[3] = 35.599998[0m
+[0;32mI (145094) main: Buffer[4] = 35.599998[0m
+[0;32mI (145104) main: Buffer[5] = 35.599998[0m
+[0;32mI (145104) main: Buffer[6] = 35.599998[0m
+[0;32mI (145104) main: Buffer[7] = 35.599998[0m
+[0;32mI (145114) main: Buffer[8] = 35.599998[0m
+[0;32mI (145114) main: Buffer[9] = 35.599998[0m
+[0;32mI (145124) main: Sent 2048 bytes to client[0m
+[0;32mI (146124) main: Shared buffer contents:[0m
+[0;32mI (146124) main: Buffer[0] = 35.599998[0m
+[0;32mI (146124) main: Buffer[1] = 35.599998[0m
+[0;32mI (146124) main: Buffer[2] = 35.599998[0m
+[0;32mI (146134) main: Buffer[3] = 35.599998[0m
+[0;32mI (146134) main: Buffer[4] = 35.599998[0m
+[0;32mI (146144) main: Buffer[5] = 35.599998[0m
+[0;32mI (146144) main: Buffer[6] = 35.599998[0m
+[0;32mI (146144) main: Buffer[7] = 35.599998[0m
+[0;32mI (146154) main: Buffer[8] = 35.599998[0m
+[0;32mI (146154) main: Buffer[9] = 35.599998[0m
+[0;32mI (146164) main: Sent 2048 bytes to client[0m
+[0;32mI (147164) main: Shared buffer contents:[0m
+[0;32mI (147164) main: Buffer[0] = 35.599998[0m
+[0;32mI (147164) main: Buffer[1] = 35.599998[0m
+[0;32mI (147164) main: Buffer[2] = 35.599998[0m
+[0;32mI (147174) main: Buffer[3] = 35.599998[0m
+[0;32mI (147174) main: Buffer[4] = 35.599998[0m
+[0;32mI (147184) main: Buffer[5] = 35.599998[0m
+[0;32mI (147184) main: Buffer[6] = 35.599998[0m
+[0;32mI (147184) main: Buffer[7] = 35.599998[0m
+[0;32mI (147194) main: Buffer[8] = 35.599998[0m
+[0;32mI (147194) main: Buffer[9] = 35.599998[0m
+[0;32mI (147204) main: Sent 2048 bytes to client[0m
+[0;32mI (148204) main: Shared buffer contents:[0m
+[0;32mI (148204) main: Buffer[0] = 35.599998[0m
+[0;32mI (148204) main: Buffer[1] = 35.599998[0m
+[0;32mI (148204) main: Buffer[2] = 35.599998[0m
+[0;32mI (148214) main: Buffer[3] = 35.599998[0m
+[0;32mI (148214) main: Buffer[4] = 35.599998[0m
+[0;32mI (148224) main: Buffer[5] = 35.599998[0m
+[0;32mI (148224) main: Buffer[6] = 35.599998[0m
+[0;32mI (148224) main: Buffer[7] = 35.599998[0m
+[0;32mI (148234) main: Buffer[8] = 35.599998[0m
+[0;32mI (148234) main: Buffer[9] = 35.599998[0m
+[0;32mI (148244) main: Sent 2048 bytes to client[0m
+[0;32mI (149244) main: Shared buffer contents:[0m
+[0;32mI (149244) main: Buffer[0] = 35.599998[0m
+[0;32mI (149244) main: Buffer[1] = 35.599998[0m
+[0;32mI (149244) main: Buffer[2] = 35.599998[0m
+[0;32mI (149254) main: Buffer[3] = 35.599998[0m
+[0;32mI (149254) main: Buffer[4] = 35.599998[0m
+[0;32mI (149264) main: Buffer[5] = 35.599998[0m
+[0;32mI (149264) main: Buffer[6] = 35.599998[0m
+[0;32mI (149264) main: Buffer[7] = 35.599998[0m
+[0;32mI (149274) main: Buffer[8] = 35.599998[0m
+[0;32mI (149274) main: Buffer[9] = 35.599998[0m
+[0;32mI (149284) main: Sent 2048 bytes to client[0m
+[0;32mI (150284) main: Shared buffer contents:[0m
+[0;32mI (150284) main: Buffer[0] = 35.599998[0m
+[0;32mI (150284) main: Buffer[1] = 35.599998[0m
+[0;32mI (150284) main: Buffer[2] = 35.599998[0m
+[0;32mI (150294) main: Buffer[3] = 35.599998[0m
+[0;32mI (150294) main: Buffer[4] = 35.599998[0m
+[0;32mI (150304) main: Buffer[5] = 35.599998[0m
+[0;32mI (150304) main: Buffer[6] = 35.599998[0m
+[0;32mI (150304) main: Buffer[7] = 35.599998[0m
+[0;32mI (150314) main: Buffer[8] = 35.599998[0m
+[0;32mI (150314) main: Buffer[9] = 35.599998[0m
+[0;32mI (150324) main: Sent 2048 bytes to client[0m
+[0;32mI (151324) main: Shared buffer contents:[0m
+[0;32mI (151324) main: Buffer[0] = 35.599998[0m
+[0;32mI (151324) main: Buffer[1] = 35.599998[0m
+[0;32mI (151324) main: Buffer[2] = 35.599998[0m
+[0;32mI (151334) main: Buffer[3] = 35.599998[0m
+[0;32mI (151334) main: Buffer[4] = 35.599998[0m
+[0;32mI (151344) main: Buffer[5] = 35.599998[0m
+[0;32mI (151344) main: Buffer[6] = 35.599998[0m
+[0;32mI (151344) main: Buffer[7] = 35.599998[0m
+[0;32mI (151354) main: Buffer[8] = 35.599998[0m
+[0;32mI (151354) main: Buffer[9] = 35.599998[0m
+[0;32mI (151364) main: Sent 2048 bytes to client[0m
+[0;32mI (152364) main: Shared buffer contents:[0m
+[0;32mI (152364) main: Buffer[0] = 35.599998[0m
+[0;32mI (152364) main: Buffer[1] = 35.599998[0m
+[0;32mI (152364) main: Buffer[2] = 35.599998[0m
+[0;32mI (152374) main: Buffer[3] = 35.599998[0m
+[0;32mI (152374) main: Buffer[4] = 35.599998[0m
+[0;32mI (152384) main: Buffer[5] = 35.599998[0m
+[0;32mI (152384) main: Buffer[6] = 35.599998[0m
+[0;32mI (152384) main: Buffer[7] = 35.599998[0m
+[0;32mI (152394) main: Buffer[8] = 35.599998[0m
+[0;32mI (152394) main: Buffer[9] = 35.599998[0m
+[0;32mI (152404) main: Sent 2048 bytes to client[0m
+[0;32mI (153404) main: Shared buffer contents:[0m
+[0;32mI (153404) main: Buffer[0] = 35.599998[0m
+[0;32mI (153404) main: Buffer[1] = 35.599998[0m
+[0;32mI (153404) main: Buffer[2] = 35.599998[0m
+[0;32mI (153414) main: Buffer[3] = 35.599998[0m
+[0;32mI (153414) main: Buffer[4] = 35.599998[0m
+[0;32mI (153424) main: Buffer[5] = 35.599998[0m
+[0;32mI (153424) main: Buffer[6] = 35.599998[0m
+[0;32mI (153424) main: Buffer[7] = 35.599998[0m
+[0;32mI (153434) main: Buffer[8] = 35.599998[0m
+[0;32mI (153434) main: Buffer[9] = 35.599998[0m
+[0;32mI (153444) main: Sent 2048 bytes to client[0m
+[0;32mI (154444) main: Shared buffer contents:[0m
+[0;32mI (154444) main: Buffer[0] = 35.599998[0m
+[0;32mI (154444) main: Buffer[1] = 35.599998[0m
+[0;32mI (154444) main: Buffer[2] = 35.599998[0m
+[0;32mI (154454) main: Buffer[3] = 35.599998[0m
+[0;32mI (154454) main: Buffer[4] = 35.599998[0m
+[0;32mI (154464) main: Buffer[5] = 35.599998[0m
+[0;32mI (154464) main: Buffer[6] = 35.599998[0m
+[0;32mI (154464) main: Buffer[7] = 35.599998[0m
+[0;32mI (154474) main: Buffer[8] = 35.599998[0m
+[0;32mI (154474) main: Buffer[9] = 35.599998[0m
+[0;32mI (154484) main: Sent 2048 bytes to client[0m
+[0;32mI (155484) main: Shared buffer contents:[0m
+[0;32mI (155484) main: Buffer[0] = 35.599998[0m
+[0;32mI (155484) main: Buffer[1] = 35.599998[0m
+[0;32mI (155484) main: Buffer[2] = 35.599998[0m
+[0;32mI (155494) main: Buffer[3] = 35.599998[0m
+[0;32mI (155494) main: Buffer[4] = 35.599998[0m
+[0;32mI (155504) main: Buffer[5] = 35.599998[0m
+[0;32mI (155504) main: Buffer[6] = 35.599998[0m
+[0;32mI (155504) main: Buffer[7] = 35.599998[0m
+[0;32mI (155514) main: Buffer[8] = 35.599998[0m
+[0;32mI (155514) main: Buffer[9] = 35.599998[0m
+[0;32mI (155524) main: Sent 2048 bytes to client[0m
+[0;32mI (156524) main: Shared buffer contents:[0m
+[0;32mI (156524) main: Buffer[0] = 35.599998[0m
+[0;32mI (156524) main: Buffer[1] = 35.599998[0m
+[0;32mI (156524) main: Buffer[2] = 35.599998[0m
+[0;32mI (156534) main: Buffer[3] = 35.599998[0m
+[0;32mI (156534) main: Buffer[4] = 35.599998[0m
+[0;32mI (156544) main: Buffer[5] = 35.599998[0m
+[0;32mI (156544) main: Buffer[6] = 35.599998[0m
+[0;32mI (156544) main: Buffer[7] = 35.599998[0m
+[0;32mI (156554) main: Buffer[8] = 35.599998[0m
+[0;32mI (156554) main: Buffer[9] = 35.599998[0m
+[0;32mI (156564) main: Sent 2048 bytes to client[0m
+[0;32mI (157564) main: Shared buffer contents:[0m
+[0;32mI (157564) main: Buffer[0] = 35.599998[0m
+[0;32mI (157564) main: Buffer[1] = 35.599998[0m
+[0;32mI (157564) main: Buffer[2] = 35.599998[0m
+[0;32mI (157574) main: Buffer[3] = 35.599998[0m
+[0;32mI (157574) main: Buffer[4] = 35.599998[0m
+[0;32mI (157584) main: Buffer[5] = 35.599998[0m
+[0;32mI (157584) main: Buffer[6] = 35.599998[0m
+[0;32mI (157584) main: Buffer[7] = 35.599998[0m
+[0;32mI (157594) main: Buffer[8] = 35.599998[0m
+[0;32mI (157594) main: Buffer[9] = 35.599998[0m
+[0;32mI (157604) main: Sent 2048 bytes to client[0m
+[0;32mI (158604) main: Shared buffer contents:[0m
+[0;32mI (158604) main: Buffer[0] = 35.599998[0m
+[0;32mI (158604) main: Buffer[1] = 35.599998[0m
+[0;32mI (158604) main: Buffer[2] = 35.599998[0m
+[0;32mI (158614) main: Buffer[3] = 35.599998[0m
+[0;32mI (158614) main: Buffer[4] = 35.599998[0m
+[0;32mI (158624) main: Buffer[5] = 35.599998[0m
+[0;32mI (158624) main: Buffer[6] = 35.599998[0m
+[0;32mI (158624) main: Buffer[7] = 35.599998[0m
+[0;32mI (158634) main: Buffer[8] = 35.599998[0m
+[0;32mI (158634) main: Buffer[9] = 35.599998[0m
+[0;32mI (158644) main: Sent 2048 bytes to client[0m
+[0;32mI (159644) main: Shared buffer contents:[0m
+[0;32mI (159644) main: Buffer[0] = 35.599998[0m
+[0;32mI (159644) main: Buffer[1] = 35.599998[0m
+[0;32mI (159644) main: Buffer[2] = 35.599998[0m
+[0;32mI (159654) main: Buffer[3] = 35.599998[0m
+[0;32mI (159654) main: Buffer[4] = 35.599998[0m
+[0;32mI (159664) main: Buffer[5] = 35.599998[0m
+[0;32mI (159664) main: Buffer[6] = 35.599998[0m
+[0;32mI (159664) main: Buffer[7] = 35.599998[0m
+[0;32mI (159674) main: Buffer[8] = 35.599998[0m
+[0;32mI (159674) main: Buffer[9] = 35.599998[0m
+[0;32mI (159684) main: Sent 2048 bytes to client[0m
+[0;32mI (160684) main: Shared buffer contents:[0m
+[0;32mI (160684) main: Buffer[0] = 36.599998[0m
+[0;32mI (160684) main: Buffer[1] = 36.599998[0m
+[0;32mI (160684) main: Buffer[2] = 36.599998[0m
+[0;32mI (160694) main: Buffer[3] = 36.599998[0m
+[0;32mI (160694) main: Buffer[4] = 36.599998[0m
+[0;32mI (160704) main: Buffer[5] = 36.599998[0m
+[0;32mI (160704) main: Buffer[6] = 36.599998[0m
+[0;32mI (160704) main: Buffer[7] = 36.599998[0m
+[0;32mI (160714) main: Buffer[8] = 36.599998[0m
+[0;32mI (160714) main: Buffer[9] = 36.599998[0m
+[0;32mI (160724) main: Sent 2048 bytes to client[0m
+[0;32mI (161724) main: Shared buffer contents:[0m
+[0;32mI (161724) main: Buffer[0] = 36.599998[0m
+[0;32mI (161724) main: Buffer[1] = 36.599998[0m
+[0;32mI (161724) main: Buffer[2] = 36.599998[0m
+[0;32mI (161734) main: Buffer[3] = 36.599998[0m
+[0;32mI (161734) main: Buffer[4] = 36.599998[0m
+[0;32mI (161744) main: Buffer[5] = 36.599998[0m
+[0;32mI (161744) main: Buffer[6] = 36.599998[0m
+[0;32mI (161744) main: Buffer[7] = 36.599998[0m
+[0;32mI (161754) main: Buffer[8] = 36.599998[0m
+[0;32mI (161754) main: Buffer[9] = 36.599998[0m
+[0;32mI (161764) main: Sent 2048 bytes to client[0m
+[0;32mI (162764) main: Shared buffer contents:[0m
+[0;32mI (162764) main: Buffer[0] = 36.599998[0m
+[0;32mI (162764) main: Buffer[1] = 36.599998[0m
+[0;32mI (162764) main: Buffer[2] = 36.599998[0m
+[0;32mI (162774) main: Buffer[3] = 36.599998[0m
+[0;32mI (162774) main: Buffer[4] = 36.599998[0m
+[0;32mI (162784) main: Buffer[5] = 36.599998[0m
+[0;32mI (162784) main: Buffer[6] = 36.599998[0m
+[0;32mI (162784) main: Buffer[7] = 36.599998[0m
+[0;32mI (162794) main: Buffer[8] = 36.599998[0m
+[0;32mI (162794) main: Buffer[9] = 36.599998[0m
+[0;32mI (162804) main: Sent 2048 bytes to client[0m
+[0;32mI (163804) main: Shared buffer contents:[0m
+[0;32mI (163804) main: Buffer[0] = 36.599998[0m
+[0;32mI (163804) main: Buffer[1] = 36.599998[0m
+[0;32mI (163804) main: Buffer[2] = 36.599998[0m
+[0;32mI (163814) main: Buffer[3] = 36.599998[0m
+[0;32mI (163814) main: Buffer[4] = 36.599998[0m
+[0;32mI (163824) main: Buffer[5] = 36.599998[0m
+[0;32mI (163824) main: Buffer[6] = 36.599998[0m
+[0;32mI (163824) main: Buffer[7] = 36.599998[0m
+[0;32mI (163834) main: Buffer[8] = 36.599998[0m
+[0;32mI (163834) main: Buffer[9] = 36.599998[0m
+[0;32mI (163844) main: Sent 2048 bytes to client[0m
+[0;32mI (164844) main: Shared buffer contents:[0m
+[0;32mI (164844) main: Buffer[0] = 36.599998[0m
+[0;32mI (164844) main: Buffer[1] = 36.599998[0m
+[0;32mI (164844) main: Buffer[2] = 36.599998[0m
+[0;32mI (164854) main: Buffer[3] = 36.599998[0m
+[0;32mI (164854) main: Buffer[4] = 36.599998[0m
+[0;32mI (164864) main: Buffer[5] = 36.599998[0m
+[0;32mI (164864) main: Buffer[6] = 36.599998[0m
+[0;32mI (164864) main: Buffer[7] = 36.599998[0m
+[0;32mI (164874) main: Buffer[8] = 36.599998[0m
+[0;32mI (164874) main: Buffer[9] = 36.599998[0m
+[0;32mI (164884) main: Sent 2048 bytes to client[0m
+[0;32mI (165884) main: Shared buffer contents:[0m
+[0;32mI (165884) main: Buffer[0] = 36.599998[0m
+[0;32mI (165884) main: Buffer[1] = 36.599998[0m
+[0;32mI (165884) main: Buffer[2] = 36.599998[0m
+[0;32mI (165894) main: Buffer[3] = 36.599998[0m
+[0;32mI (165894) main: Buffer[4] = 36.599998[0m
+[0;32mI (165904) main: Buffer[5] = 36.599998[0m
+[0;32mI (165904) main: Buffer[6] = 36.599998[0m
+[0;32mI (165904) main: Buffer[7] = 36.599998[0m
+[0;32mI (165914) main: Buffer[8] = 36.599998[0m
+[0;32mI (165914) main: Buffer[9] = 36.599998[0m
+[0;32mI (165924) main: Sent 2048 bytes to client[0m
+[0;32mI (166924) main: Shared buffer contents:[0m
+[0;32mI (166924) main: Buffer[0] = 36.599998[0m
+[0;32mI (166924) main: Buffer[1] = 36.599998[0m
+[0;32mI (166924) main: Buffer[2] = 36.599998[0m
+[0;32mI (166934) main: Buffer[3] = 36.599998[0m
+[0;32mI (166934) main: Buffer[4] = 36.599998[0m
+[0;32mI (166944) main: Buffer[5] = 36.599998[0m
+[0;32mI (166944) main: Buffer[6] = 36.599998[0m
+[0;32mI (166944) main: Buffer[7] = 36.599998[0m
+[0;32mI (166954) main: Buffer[8] = 36.599998[0m
+[0;32mI (166954) main: Buffer[9] = 36.599998[0m
+[0;32mI (166964) main: Sent 2048 bytes to client[0m
+[0;32mI (167964) main: Shared buffer contents:[0m
+[0;32mI (167964) main: Buffer[0] = 36.599998[0m
+[0;32mI (167964) main: Buffer[1] = 36.599998[0m
+[0;32mI (167964) main: Buffer[2] = 36.599998[0m
+[0;32mI (167974) main: Buffer[3] = 36.599998[0m
+[0;32mI (167974) main: Buffer[4] = 36.599998[0m
+[0;32mI (167984) main: Buffer[5] = 36.599998[0m
+[0;32mI (167984) main: Buffer[6] = 36.599998[0m
+[0;32mI (167984) main: Buffer[7] = 36.599998[0m
+[0;32mI (167994) main: Buffer[8] = 36.599998[0m
+[0;32mI (167994) main: Buffer[9] = 36.599998[0m
+[0;32mI (168004) main: Sent 2048 bytes to client[0m
+[0;32mI (169004) main: Shared buffer contents:[0m
+[0;32mI (169004) main: Buffer[0] = 36.599998[0m
+[0;32mI (169004) main: Buffer[1] = 36.599998[0m
+[0;32mI (169004) main: Buffer[2] = 36.599998[0m
+[0;32mI (169014) main: Buffer[3] = 36.599998[0m
+[0;32mI (169014) main: Buffer[4] = 36.599998[0m
+[0;32mI (169024) main: Buffer[5] = 36.599998[0m
+[0;32mI (169024) main: Buffer[6] = 36.599998[0m
+[0;32mI (169024) main: Buffer[7] = 36.599998[0m
+[0;32mI (169034) main: Buffer[8] = 36.599998[0m
+[0;32mI (169034) main: Buffer[9] = 36.599998[0m
+[0;32mI (169044) main: Sent 2048 bytes to client[0m
+[0;32mI (170044) main: Shared buffer contents:[0m
+[0;32mI (170044) main: Buffer[0] = 36.599998[0m
+[0;32mI (170044) main: Buffer[1] = 36.599998[0m
+[0;32mI (170044) main: Buffer[2] = 36.599998[0m
+[0;32mI (170054) main: Buffer[3] = 36.599998[0m
+[0;32mI (170054) main: Buffer[4] = 36.599998[0m
+[0;32mI (170064) main: Buffer[5] = 36.599998[0m
+[0;32mI (170064) main: Buffer[6] = 36.599998[0m
+[0;32mI (170064) main: Buffer[7] = 36.599998[0m
+[0;32mI (170074) main: Buffer[8] = 36.599998[0m
+[0;32mI (170074) main: Buffer[9] = 36.599998[0m
+[0;32mI (170084) main: Sent 2048 bytes to client[0m
+[0;32mI (171084) main: Shared buffer contents:[0m
+[0;32mI (171084) main: Buffer[0] = 37.599998[0m
+[0;32mI (171084) main: Buffer[1] = 37.599998[0m
+[0;32mI (171084) main: Buffer[2] = 37.599998[0m
+[0;32mI (171094) main: Buffer[3] = 37.599998[0m
+[0;32mI (171094) main: Buffer[4] = 37.599998[0m
+[0;32mI (171104) main: Buffer[5] = 37.599998[0m
+[0;32mI (171104) main: Buffer[6] = 37.599998[0m
+[0;32mI (171104) main: Buffer[7] = 37.599998[0m
+[0;32mI (171114) main: Buffer[8] = 37.599998[0m
+[0;32mI (171114) main: Buffer[9] = 37.599998[0m
+[0;32mI (171124) main: Sent 2048 bytes to client[0m
+[0;32mI (172124) main: Shared buffer contents:[0m
+[0;32mI (172124) main: Buffer[0] = 37.599998[0m
+[0;32mI (172124) main: Buffer[1] = 37.599998[0m
+[0;32mI (172124) main: Buffer[2] = 37.599998[0m
+[0;32mI (172134) main: Buffer[3] = 37.599998[0m
+[0;32mI (172134) main: Buffer[4] = 37.599998[0m
+[0;32mI (172144) main: Buffer[5] = 37.599998[0m
+[0;32mI (172144) main: Buffer[6] = 37.599998[0m
+[0;32mI (172144) main: Buffer[7] = 37.599998[0m
+[0;32mI (172154) main: Buffer[8] = 37.599998[0m
+[0;32mI (172154) main: Buffer[9] = 37.599998[0m
+[0;32mI (172164) main: Sent 2048 bytes to client[0m
+[0;32mI (173164) main: Shared buffer contents:[0m
+[0;32mI (173164) main: Buffer[0] = 37.599998[0m
+[0;32mI (173164) main: Buffer[1] = 37.599998[0m
+[0;32mI (173164) main: Buffer[2] = 37.599998[0m
+[0;32mI (173174) main: Buffer[3] = 37.599998[0m
+[0;32mI (173174) main: Buffer[4] = 37.599998[0m
+[0;32mI (173184) main: Buffer[5] = 37.599998[0m
+[0;32mI (173184) main: Buffer[6] = 37.599998[0m
+[0;32mI (173184) main: Buffer[7] = 37.599998[0m
+[0;32mI (173194) main: Buffer[8] = 37.599998[0m
+[0;32mI (173194) main: Buffer[9] = 37.599998[0m
+[0;32mI (173204) main: Sent 2048 bytes to client[0m
+[0;32mI (174204) main: Shared buffer contents:[0m
+[0;32mI (174204) main: Buffer[0] = 37.599998[0m
+[0;32mI (174204) main: Buffer[1] = 37.599998[0m
+[0;32mI (174204) main: Buffer[2] = 37.599998[0m
+[0;32mI (174214) main: Buffer[3] = 37.599998[0m
+[0;32mI (174214) main: Buffer[4] = 37.599998[0m
+[0;32mI (174224) main: Buffer[5] = 37.599998[0m
+[0;32mI (174224) main: Buffer[6] = 37.599998[0m
+[0;32mI (174224) main: Buffer[7] = 37.599998[0m
+[0;32mI (174234) main: Buffer[8] = 37.599998[0m
+[0;32mI (174234) main: Buffer[9] = 37.599998[0m
+[0;32mI (174244) main: Sent 2048 bytes to client[0m
+[0;32mI (175244) main: Shared buffer contents:[0m
+[0;32mI (175244) main: Buffer[0] = 37.599998[0m
+[0;32mI (175244) main: Buffer[1] = 37.599998[0m
+[0;32mI (175244) main: Buffer[2] = 37.599998[0m
+[0;32mI (175254) main: Buffer[3] = 37.599998[0m
+[0;32mI (175254) main: Buffer[4] = 37.599998[0m
+[0;32mI (175264) main: Buffer[5] = 37.599998[0m
+[0;32mI (175264) main: Buffer[6] = 37.599998[0m
+[0;32mI (175264) main: Buffer[7] = 37.599998[0m
+[0;32mI (175274) main: Buffer[8] = 37.599998[0m
+[0;32mI (175274) main: Buffer[9] = 37.599998[0m
+[0;32mI (175284) main: Sent 2048 bytes to client[0m
+[0;32mI (176284) main: Shared buffer contents:[0m
+[0;32mI (176284) main: Buffer[0] = 37.599998[0m
+[0;32mI (176284) main: Buffer[1] = 37.599998[0m
+[0;32mI (176284) main: Buffer[2] = 37.599998[0m
+[0;32mI (176294) main: Buffer[3] = 37.599998[0m
+[0;32mI (176294) main: Buffer[4] = 37.599998[0m
+[0;32mI (176304) main: Buffer[5] = 37.599998[0m
+[0;32mI (176304) main: Buffer[6] = 37.599998[0m
+[0;32mI (176304) main: Buffer[7] = 37.599998[0m
+[0;32mI (176314) main: Buffer[8] = 37.599998[0m
+[0;32mI (176314) main: Buffer[9] = 37.599998[0m
+[0;32mI (176324) main: Sent 2048 bytes to client[0m
+[0;32mI (177324) main: Shared buffer contents:[0m
+[0;32mI (177324) main: Buffer[0] = 37.599998[0m
+[0;32mI (177324) main: Buffer[1] = 37.599998[0m
+[0;32mI (177324) main: Buffer[2] = 37.599998[0m
+[0;32mI (177334) main: Buffer[3] = 37.599998[0m
+[0;32mI (177334) main: Buffer[4] = 37.599998[0m
+[0;32mI (177344) main: Buffer[5] = 37.599998[0m
+[0;32mI (177344) main: Buffer[6] = 37.599998[0m
+[0;32mI (177344) main: Buffer[7] = 37.599998[0m
+[0;32mI (177354) main: Buffer[8] = 37.599998[0m
+[0;32mI (177354) main: Buffer[9] = 37.599998[0m
+[0;32mI (177364) main: Sent 2048 bytes to client[0m
+[0;32mI (178364) main: Shared buffer contents:[0m
+[0;32mI (178364) main: Buffer[0] = 37.599998[0m
+[0;32mI (178364) main: Buffer[1] = 37.599998[0m
+[0;32mI (178364) main: Buffer[2] = 37.599998[0m
+[0;32mI (178374) main: Buffer[3] = 37.599998[0m
+[0;32mI (178374) main: Buffer[4] = 37.599998[0m
+[0;32mI (178384) main: Buffer[5] = 37.599998[0m
+[0;32mI (178384) main: Buffer[6] = 37.599998[0m
+[0;32mI (178384) main: Buffer[7] = 37.599998[0m
+[0;32mI (178394) main: Buffer[8] = 37.599998[0m
+[0;32mI (178394) main: Buffer[9] = 37.599998[0m
+[0;32mI (178404) main: Sent 2048 bytes to client[0m
+[0;32mI (179404) main: Shared buffer contents:[0m
+[0;32mI (179404) main: Buffer[0] = 37.599998[0m
+[0;32mI (179404) main: Buffer[1] = 37.599998[0m
+[0;32mI (179404) main: Buffer[2] = 37.599998[0m
+[0;32mI (179414) main: Buffer[3] = 37.599998[0m
+[0;32mI (179414) main: Buffer[4] = 37.599998[0m
+[0;32mI (179424) main: Buffer[5] = 37.599998[0m
+[0;32mI (179424) main: Buffer[6] = 37.599998[0m
+[0;32mI (179424) main: Buffer[7] = 37.599998[0m
+[0;32mI (179434) main: Buffer[8] = 37.599998[0m
+[0;32mI (179434) main: Buffer[9] = 37.599998[0m
+[0;32mI (179444) main: Sent 2048 bytes to client[0m
+[0;32mI (180444) main: Shared buffer contents:[0m
+[0;32mI (180444) main: Buffer[0] = 37.599998[0m
+[0;32mI (180444) main: Buffer[1] = 37.599998[0m
+[0;32mI (180444) main: Buffer[2] = 37.599998[0m
+[0;32mI (180454) main: Buffer[3] = 37.599998[0m
+[0;32mI (180454) main: Buffer[4] = 37.599998[0m
+[0;32mI (180464) main: Buffer[5] = 37.599998[0m
+[0;32mI (180464) main: Buffer[6] = 37.599998[0m
+[0;32mI (180464) main: Buffer[7] = 37.599998[0m
+[0;32mI (180474) main: Buffer[8] = 37.599998[0m
+[0;32mI (180474) main: Buffer[9] = 37.599998[0m
+[0;32mI (180484) main: Sent 2048 bytes to client[0m
+[0;32mI (181484) main: Shared buffer contents:[0m
+[0;32mI (181484) main: Buffer[0] = 37.599998[0m
+[0;32mI (181484) main: Buffer[1] = 37.599998[0m
+[0;32mI (181484) main: Buffer[2] = 37.599998[0m
+[0;32mI (181494) main: Buffer[3] = 37.599998[0m
+[0;32mI (181494) main: Buffer[4] = 37.599998[0m
+[0;32mI (181504) main: Buffer[5] = 37.599998[0m
+[0;32mI (181504) main: Buffer[6] = 37.599998[0m
+[0;32mI (181504) main: Buffer[7] = 37.599998[0m
+[0;32mI (181514) main: Buffer[8] = 37.599998[0m
+[0;32mI (181514) main: Buffer[9] = 37.599998[0m
+[0;32mI (181524) main: Sent 2048 bytes to client[0m
+[0;32mI (182524) main: Shared buffer contents:[0m
+[0;32mI (182524) main: Buffer[0] = 37.599998[0m
+[0;32mI (182524) main: Buffer[1] = 37.599998[0m
+[0;32mI (182524) main: Buffer[2] = 37.599998[0m
+[0;32mI (182534) main: Buffer[3] = 37.599998[0m
+[0;32mI (182534) main: Buffer[4] = 37.599998[0m
+[0;32mI (182544) main: Buffer[5] = 37.599998[0m
+[0;32mI (182544) main: Buffer[6] = 37.599998[0m
+[0;32mI (182544) main: Buffer[7] = 37.599998[0m
+[0;32mI (182554) main: Buffer[8] = 37.599998[0m
+[0;32mI (182554) main: Buffer[9] = 37.599998[0m
+[0;32mI (182564) main: Sent 2048 bytes to client[0m
+[0;32mI (183564) main: Shared buffer contents:[0m
+[0;32mI (183564) main: Buffer[0] = 37.599998[0m
+[0;32mI (183564) main: Buffer[1] = 37.599998[0m
+[0;32mI (183564) main: Buffer[2] = 37.599998[0m
+[0;32mI (183574) main: Buffer[3] = 37.599998[0m
+[0;32mI (183574) main: Buffer[4] = 37.599998[0m
+[0;32mI (183584) main: Buffer[5] = 37.599998[0m
+[0;32mI (183584) main: Buffer[6] = 37.599998[0m
+[0;32mI (183584) main: Buffer[7] = 37.599998[0m
+[0;32mI (183594) main: Buffer[8] = 37.599998[0m
+[0;32mI (183594) main: Buffer[9] = 37.599998[0m
+[0;32mI (183604) main: Sent 2048 bytes to client[0m
+[0;32mI (184604) main: Shared buffer contents:[0m
+[0;32mI (184604) main: Buffer[0] = 37.599998[0m
+[0;32mI (184604) main: Buffer[1] = 37.599998[0m
+[0;32mI (184604) main: Buffer[2] = 37.599998[0m
+[0;32mI (184614) main: Buffer[3] = 37.599998[0m
+[0;32mI (184614) main: Buffer[4] = 37.599998[0m
+[0;32mI (184624) main: Buffer[5] = 37.599998[0m
+[0;32mI (184624) main: Buffer[6] = 37.599998[0m
+[0;32mI (184624) main: Buffer[7] = 37.599998[0m
+[0;32mI (184634) main: Buffer[8] = 37.599998[0m
+[0;32mI (184634) main: Buffer[9] = 37.599998[0m
+[0;32mI (184644) main: Sent 2048 bytes to client[0m
+[0;32mI (185644) main: Shared buffer contents:[0m
+[0;32mI (185644) main: Buffer[0] = 37.599998[0m
+[0;32mI (185644) main: Buffer[1] = 37.599998[0m
+[0;32mI (185644) main: Buffer[2] = 37.599998[0m
+[0;32mI (185654) main: Buffer[3] = 37.599998[0m
+[0;32mI (185654) main: Buffer[4] = 37.599998[0m
+[0;32mI (185664) main: Buffer[5] = 37.599998[0m
+[0;32mI (185664) main: Buffer[6] = 37.599998[0m
+[0;32mI (185664) main: Buffer[7] = 37.599998[0m
+[0;32mI (185674) main: Buffer[8] = 37.599998[0m
+[0;32mI (185674) main: Buffer[9] = 37.599998[0m
+[0;32mI (185684) main: Sent 2048 bytes to client[0m
+[0;32mI (186684) main: Shared buffer contents:[0m
+[0;32mI (186684) main: Buffer[0] = 37.599998[0m
+[0;32mI (186684) main: Buffer[1] = 37.599998[0m
+[0;32mI (186684) main: Buffer[2] = 37.599998[0m
+[0;32mI (186694) main: Buffer[3] = 37.599998[0m
+[0;32mI (186694) main: Buffer[4] = 37.599998[0m
+[0;32mI (186704) main: Buffer[5] = 37.599998[0m
+[0;32mI (186704) main: Buffer[6] = 37.599998[0m
+[0;32mI (186704) main: Buffer[7] = 37.599998[0m
+[0;32mI (186714) main: Buffer[8] = 37.599998[0m
+[0;32mI (186714) main: Buffer[9] = 37.599998[0m
+[0;32mI (186724) main: Sent 2048 bytes to client[0m
+[0;32mI (187724) main: Shared buffer contents:[0m
+[0;32mI (187724) main: Buffer[0] = 37.599998[0m
+[0;32mI (187724) main: Buffer[1] = 37.599998[0m
+[0;32mI (187724) main: Buffer[2] = 37.599998[0m
+[0;32mI (187734) main: Buffer[3] = 37.599998[0m
+[0;32mI (187734) main: Buffer[4] = 37.599998[0m
+[0;32mI (187744) main: Buffer[5] = 37.599998[0m
+[0;32mI (187744) main: Buffer[6] = 37.599998[0m
+[0;32mI (187744) main: Buffer[7] = 37.599998[0m
+[0;32mI (187754) main: Buffer[8] = 37.599998[0m
+[0;32mI (187754) main: Buffer[9] = 37.599998[0m
+[0;32mI (187764) main: Sent 2048 bytes to client[0m
+[0;32mI (188764) main: Shared buffer contents:[0m
+[0;32mI (188764) main: Buffer[0] = 37.599998[0m
+[0;32mI (188764) main: Buffer[1] = 37.599998[0m
+[0;32mI (188764) main: Buffer[2] = 37.599998[0m
+[0;32mI (188774) main: Buffer[3] = 37.599998[0m
+[0;32mI (188774) main: Buffer[4] = 37.599998[0m
+[0;32mI (188784) main: Buffer[5] = 37.599998[0m
+[0;32mI (188784) main: Buffer[6] = 37.599998[0m
+[0;32mI (188784) main: Buffer[7] = 37.599998[0m
+[0;32mI (188794) main: Buffer[8] = 37.599998[0m
+[0;32mI (188794) main: Buffer[9] = 37.599998[0m
+[0;32mI (188804) main: Sent 2048 bytes to client[0m
+[0;32mI (189804) main: Shared buffer contents:[0m
+[0;32mI (189804) main: Buffer[0] = 37.599998[0m
+[0;32mI (189804) main: Buffer[1] = 37.599998[0m
+[0;32mI (189804) main: Buffer[2] = 37.599998[0m
+[0;32mI (189814) main: Buffer[3] = 37.599998[0m
+[0;32mI (189814) main: Buffer[4] = 37.599998[0m
+[0;32mI (189824) main: Buffer[5] = 37.599998[0m
+[0;32mI (189824) main: Buffer[6] = 37.599998[0m
+[0;32mI (189824) main: Buffer[7] = 37.599998[0m
+[0;32mI (189834) main: Buffer[8] = 37.599998[0m
+[0;32mI (189834) main: Buffer[9] = 37.599998[0m
+[0;32mI (189844) main: Sent 2048 bytes to client[0m
+[0;32mI (190844) main: Shared buffer contents:[0m
+[0;32mI (190844) main: Buffer[0] = 37.599998[0m
+[0;32mI (190844) main: Buffer[1] = 37.599998[0m
+[0;32mI (190844) main: Buffer[2] = 37.599998[0m
+[0;32mI (190854) main: Buffer[3] = 37.599998[0m
+[0;32mI (190854) main: Buffer[4] = 37.599998[0m
+[0;32mI (190864) main: Buffer[5] = 38.599998[0m
+[0;32mI (190864) main: Buffer[6] = 38.599998[0m
+[0;32mI (190864) main: Buffer[7] = 38.599998[0m
+[0;32mI (190874) main: Buffer[8] = 37.599998[0m
+[0;32mI (190874) main: Buffer[9] = 37.599998[0m
+[0;32mI (190884) main: Sent 2048 bytes to client[0m
+[0;32mI (191884) main: Shared buffer contents:[0m
+[0;32mI (191884) main: Buffer[0] = 37.599998[0m
+[0;32mI (191884) main: Buffer[1] = 37.599998[0m
+[0;32mI (191884) main: Buffer[2] = 37.599998[0m
+[0;32mI (191894) main: Buffer[3] = 37.599998[0m
+[0;32mI (191894) main: Buffer[4] = 37.599998[0m
+[0;32mI (191904) main: Buffer[5] = 38.599998[0m
+[0;32mI (191904) main: Buffer[6] = 38.599998[0m
+[0;32mI (191904) main: Buffer[7] = 38.599998[0m
+[0;32mI (191914) main: Buffer[8] = 37.599998[0m
+[0;32mI (191914) main: Buffer[9] = 37.599998[0m
+[0;32mI (191924) main: Sent 2048 bytes to client[0m
+[0;32mI (192924) main: Shared buffer contents:[0m
+[0;32mI (192924) main: Buffer[0] = 37.599998[0m
+[0;32mI (192924) main: Buffer[1] = 37.599998[0m
+[0;32mI (192924) main: Buffer[2] = 37.599998[0m
+[0;32mI (192934) main: Buffer[3] = 37.599998[0m
+[0;32mI (192934) main: Buffer[4] = 37.599998[0m
+[0;32mI (192944) main: Buffer[5] = 38.599998[0m
+[0;32mI (192944) main: Buffer[6] = 38.599998[0m
+[0;32mI (192944) main: Buffer[7] = 38.599998[0m
+[0;32mI (192954) main: Buffer[8] = 37.599998[0m
+[0;32mI (192954) main: Buffer[9] = 37.599998[0m
+[0;32mI (192964) main: Sent 2048 bytes to client[0m
+[0;32mI (193964) main: Shared buffer contents:[0m
+[0;32mI (193964) main: Buffer[0] = 37.599998[0m
+[0;32mI (193964) main: Buffer[1] = 37.599998[0m
+[0;32mI (193964) main: Buffer[2] = 37.599998[0m
+[0;32mI (193974) main: Buffer[3] = 37.599998[0m
+[0;32mI (193974) main: Buffer[4] = 37.599998[0m
+[0;32mI (193984) main: Buffer[5] = 38.599998[0m
+[0;32mI (193984) main: Buffer[6] = 38.599998[0m
+[0;32mI (193984) main: Buffer[7] = 38.599998[0m
+[0;32mI (193994) main: Buffer[8] = 37.599998[0m
+[0;32mI (193994) main: Buffer[9] = 37.599998[0m
+[0;32mI (194004) main: Sent 2048 bytes to client[0m
+[0;32mI (195004) main: Shared buffer contents:[0m
+[0;32mI (195004) main: Buffer[0] = 37.599998[0m
+[0;32mI (195004) main: Buffer[1] = 37.599998[0m
+[0;32mI (195004) main: Buffer[2] = 37.599998[0m
+[0;32mI (195014) main: Buffer[3] = 37.599998[0m
+[0;32mI (195014) main: Buffer[4] = 37.599998[0m
+[0;32mI (195024) main: Buffer[5] = 38.599998[0m
+[0;32mI (195024) main: Buffer[6] = 38.599998[0m
+[0;32mI (195024) main: Buffer[7] = 38.599998[0m
+[0;32mI (195034) main: Buffer[8] = 37.599998[0m
+[0;32mI (195034) main: Buffer[9] = 37.599998[0m
+[0;32mI (195044) main: Sent 2048 bytes to client[0m
+[0;32mI (196044) main: Shared buffer contents:[0m
+[0;32mI (196044) main: Buffer[0] = 38.599998[0m
+[0;32mI (196044) main: Buffer[1] = 38.599998[0m
+[0;32mI (196044) main: Buffer[2] = 38.599998[0m
+[0;32mI (196054) main: Buffer[3] = 38.599998[0m
+[0;32mI (196054) main: Buffer[4] = 38.599998[0m
+[0;32mI (196064) main: Buffer[5] = 38.599998[0m
+[0;32mI (196064) main: Buffer[6] = 38.599998[0m
+[0;32mI (196064) main: Buffer[7] = 38.599998[0m
+[0;32mI (196074) main: Buffer[8] = 38.599998[0m
+[0;32mI (196074) main: Buffer[9] = 38.599998[0m
+[0;32mI (196084) main: Sent 2048 bytes to client[0m
+[0;32mI (197084) main: Shared buffer contents:[0m
+[0;32mI (197084) main: Buffer[0] = 38.599998[0m
+[0;32mI (197084) main: Buffer[1] = 38.599998[0m
+[0;32mI (197084) main: Buffer[2] = 38.599998[0m
+[0;32mI (197094) main: Buffer[3] = 38.599998[0m
+[0;32mI (197094) main: Buffer[4] = 38.599998[0m
+[0;32mI (197104) main: Buffer[5] = 38.599998[0m
+[0;32mI (197104) main: Buffer[6] = 38.599998[0m
+[0;32mI (197104) main: Buffer[7] = 38.599998[0m
+[0;32mI (197114) main: Buffer[8] = 38.599998[0m
+[0;32mI (197114) main: Buffer[9] = 38.599998[0m
+[0;32mI (197124) main: Sent 2048 bytes to client[0m
+[0;32mI (198124) main: Shared buffer contents:[0m
+[0;32mI (198124) main: Buffer[0] = 38.599998[0m
+[0;32mI (198124) main: Buffer[1] = 38.599998[0m
+[0;32mI (198124) main: Buffer[2] = 38.599998[0m
+[0;32mI (198134) main: Buffer[3] = 38.599998[0m
+[0;32mI (198134) main: Buffer[4] = 38.599998[0m
+[0;32mI (198144) main: Buffer[5] = 38.599998[0m
+[0;32mI (198144) main: Buffer[6] = 38.599998[0m
+[0;32mI (198144) main: Buffer[7] = 38.599998[0m
+[0;32mI (198154) main: Buffer[8] = 38.599998[0m
+[0;32mI (198154) main: Buffer[9] = 38.599998[0m
+[0;32mI (198164) main: Sent 2048 bytes to client[0m
+[0;32mI (199164) main: Shared buffer contents:[0m
+[0;32mI (199164) main: Buffer[0] = 38.599998[0m
+[0;32mI (199164) main: Buffer[1] = 38.599998[0m
+[0;32mI (199164) main: Buffer[2] = 38.599998[0m
+[0;32mI (199174) main: Buffer[3] = 38.599998[0m
+[0;32mI (199174) main: Buffer[4] = 38.599998[0m
+[0;32mI (199184) main: Buffer[5] = 38.599998[0m
+[0;32mI (199184) main: Buffer[6] = 38.599998[0m
+[0;32mI (199184) main: Buffer[7] = 38.599998[0m
+[0;32mI (199194) main: Buffer[8] = 38.599998[0m
+[0;32mI (199194) main: Buffer[9] = 38.599998[0m
+[0;32mI (199204) main: Sent 2048 bytes to client[0m
+[0;32mI (200204) main: Shared buffer contents:[0m
+[0;32mI (200204) main: Buffer[0] = 38.599998[0m
+[0;32mI (200204) main: Buffer[1] = 38.599998[0m
+[0;32mI (200204) main: Buffer[2] = 38.599998[0m
+[0;32mI (200214) main: Buffer[3] = 38.599998[0m
+[0;32mI (200214) main: Buffer[4] = 38.599998[0m
+[0;32mI (200224) main: Buffer[5] = 38.599998[0m
+[0;32mI (200224) main: Buffer[6] = 38.599998[0m
+[0;32mI (200224) main: Buffer[7] = 38.599998[0m
+[0;32mI (200234) main: Buffer[8] = 38.599998[0m
+[0;32mI (200234) main: Buffer[9] = 38.599998[0m
+[0;32mI (200244) main: Sent 2048 bytes to client[0m
+[0;32mI (201244) main: Shared buffer contents:[0m
+[0;32mI (201244) main: Buffer[0] = 38.599998[0m
+[0;32mI (201244) main: Buffer[1] = 38.599998[0m
+[0;32mI (201244) main: Buffer[2] = 38.599998[0m
+[0;32mI (201254) main: Buffer[3] = 38.599998[0m
+[0;32mI (201254) main: Buffer[4] = 38.599998[0m
+[0;32mI (201264) main: Buffer[5] = 38.599998[0m
+[0;32mI (201264) main: Buffer[6] = 38.599998[0m
+[0;32mI (201264) main: Buffer[7] = 38.599998[0m
+[0;32mI (201274) main: Buffer[8] = 38.599998[0m
+[0;32mI (201274) main: Buffer[9] = 38.599998[0m
+[0;32mI (201284) main: Sent 2048 bytes to client[0m
+[0;32mI (202284) main: Shared buffer contents:[0m
+[0;32mI (202284) main: Buffer[0] = 38.599998[0m
+[0;32mI (202284) main: Buffer[1] = 38.599998[0m
+[0;32mI (202284) main: Buffer[2] = 38.599998[0m
+[0;32mI (202294) main: Buffer[3] = 38.599998[0m
+[0;32mI (202294) main: Buffer[4] = 38.599998[0m
+[0;32mI (202304) main: Buffer[5] = 38.599998[0m
+[0;32mI (202304) main: Buffer[6] = 38.599998[0m
+[0;32mI (202304) main: Buffer[7] = 38.599998[0m
+[0;32mI (202314) main: Buffer[8] = 38.599998[0m
+[0;32mI (202314) main: Buffer[9] = 38.599998[0m
+[0;32mI (202324) main: Sent 2048 bytes to client[0m
+[0;32mI (203324) main: Shared buffer contents:[0m
+[0;32mI (203324) main: Buffer[0] = 38.599998[0m
+[0;32mI (203324) main: Buffer[1] = 38.599998[0m
+[0;32mI (203324) main: Buffer[2] = 38.599998[0m
+[0;32mI (203334) main: Buffer[3] = 38.599998[0m
+[0;32mI (203334) main: Buffer[4] = 38.599998[0m
+[0;32mI (203344) main: Buffer[5] = 38.599998[0m
+[0;32mI (203344) main: Buffer[6] = 38.599998[0m
+[0;32mI (203344) main: Buffer[7] = 38.599998[0m
+[0;32mI (203354) main: Buffer[8] = 38.599998[0m
+[0;32mI (203354) main: Buffer[9] = 38.599998[0m
+[0;32mI (203364) main: Sent 2048 bytes to client[0m
+[0;32mI (204364) main: Shared buffer contents:[0m
+[0;32mI (204364) main: Buffer[0] = 38.599998[0m
+[0;32mI (204364) main: Buffer[1] = 38.599998[0m
+[0;32mI (204364) main: Buffer[2] = 38.599998[0m
+[0;32mI (204374) main: Buffer[3] = 38.599998[0m
+[0;32mI (204374) main: Buffer[4] = 38.599998[0m
+[0;32mI (204384) main: Buffer[5] = 38.599998[0m
+[0;32mI (204384) main: Buffer[6] = 38.599998[0m
+[0;32mI (204384) main: Buffer[7] = 38.599998[0m
+[0;32mI (204394) main: Buffer[8] = 38.599998[0m
+[0;32mI (204394) main: Buffer[9] = 38.599998[0m
+[0;32mI (204404) main: Sent 2048 bytes to client[0m
+[0;32mI (205404) main: Shared buffer contents:[0m
+[0;32mI (205404) main: Buffer[0] = 38.599998[0m
+[0;32mI (205404) main: Buffer[1] = 38.599998[0m
+[0;32mI (205404) main: Buffer[2] = 38.599998[0m
+[0;32mI (205414) main: Buffer[3] = 38.599998[0m
+[0;32mI (205414) main: Buffer[4] = 38.599998[0m
+[0;32mI (205424) main: Buffer[5] = 38.599998[0m
+[0;32mI (205424) main: Buffer[6] = 38.599998[0m
+[0;32mI (205424) main: Buffer[7] = 38.599998[0m
+[0;32mI (205434) main: Buffer[8] = 38.599998[0m
+[0;32mI (205434) main: Buffer[9] = 38.599998[0m
+[0;32mI (205444) main: Sent 2048 bytes to client[0m
+[0;32mI (206444) main: Shared buffer contents:[0m
+[0;32mI (206444) main: Buffer[0] = 38.599998[0m
+[0;32mI (206444) main: Buffer[1] = 38.599998[0m
+[0;32mI (206444) main: Buffer[2] = 38.599998[0m
+[0;32mI (206454) main: Buffer[3] = 38.599998[0m
+[0;32mI (206454) main: Buffer[4] = 38.599998[0m
+[0;32mI (206464) main: Buffer[5] = 38.599998[0m
+[0;32mI (206464) main: Buffer[6] = 38.599998[0m
+[0;32mI (206464) main: Buffer[7] = 38.599998[0m
+[0;32mI (206474) main: Buffer[8] = 38.599998[0m
+[0;32mI (206474) main: Buffer[9] = 38.599998[0m
+[0;32mI (206484) main: Sent 2048 bytes to client[0m
+[0;32mI (207484) main: Shared buffer contents:[0m
+[0;32mI (207484) main: Buffer[0] = 38.599998[0m
+[0;32mI (207484) main: Buffer[1] = 38.599998[0m
+[0;32mI (207484) main: Buffer[2] = 38.599998[0m
+[0;32mI (207494) main: Buffer[3] = 38.599998[0m
+[0;32mI (207494) main: Buffer[4] = 38.599998[0m
+[0;32mI (207504) main: Buffer[5] = 38.599998[0m
+[0;32mI (207504) main: Buffer[6] = 38.599998[0m
+[0;32mI (207504) main: Buffer[7] = 38.599998[0m
+[0;32mI (207514) main: Buffer[8] = 38.599998[0m
+[0;32mI (207514) main: Buffer[9] = 38.599998[0m
+[0;32mI (207524) main: Sent 2048 bytes to client[0m
+[0;32mI (208524) main: Shared buffer contents:[0m
+[0;32mI (208524) main: Buffer[0] = 38.599998[0m
+[0;32mI (208524) main: Buffer[1] = 38.599998[0m
+[0;32mI (208524) main: Buffer[2] = 38.599998[0m
+[0;32mI (208534) main: Buffer[3] = 38.599998[0m
+[0;32mI (208534) main: Buffer[4] = 38.599998[0m
+[0;32mI (208544) main: Buffer[5] = 38.599998[0m
+[0;32mI (208544) main: Buffer[6] = 38.599998[0m
+[0;32mI (208544) main: Buffer[7] = 38.599998[0m
+[0;32mI (208554) main: Buffer[8] = 38.599998[0m
+[0;32mI (208554) main: Buffer[9] = 38.599998[0m
+[0;32mI (208564) main: Sent 2048 bytes to client[0m
+[0;32mI (209564) main: Shared buffer contents:[0m
+[0;32mI (209564) main: Buffer[0] = 38.599998[0m
+[0;32mI (209564) main: Buffer[1] = 38.599998[0m
+[0;32mI (209564) main: Buffer[2] = 38.599998[0m
+[0;32mI (209574) main: Buffer[3] = 38.599998[0m
+[0;32mI (209574) main: Buffer[4] = 38.599998[0m
+[0;32mI (209584) main: Buffer[5] = 38.599998[0m
+[0;32mI (209584) main: Buffer[6] = 38.599998[0m
+[0;32mI (209584) main: Buffer[7] = 38.599998[0m
+[0;32mI (209594) main: Buffer[8] = 38.599998[0m
+[0;32mI (209594) main: Buffer[9] = 38.599998[0m
+[0;32mI (209604) main: Sent 2048 bytes to client[0m
+[0;32mI (210604) main: Shared buffer contents:[0m
+[0;32mI (210604) main: Buffer[0] = 38.599998[0m
+[0;32mI (210604) main: Buffer[1] = 38.599998[0m
+[0;32mI (210604) main: Buffer[2] = 38.599998[0m
+[0;32mI (210614) main: Buffer[3] = 38.599998[0m
+[0;32mI (210614) main: Buffer[4] = 38.599998[0m
+[0;32mI (210624) main: Buffer[5] = 38.599998[0m
+[0;32mI (210624) main: Buffer[6] = 38.599998[0m
+[0;32mI (210624) main: Buffer[7] = 38.599998[0m
+[0;32mI (210634) main: Buffer[8] = 38.599998[0m
+[0;32mI (210634) main: Buffer[9] = 38.599998[0m
+[0;32mI (210644) main: Sent 2048 bytes to client[0m
+[0;32mI (211644) main: Shared buffer contents:[0m
+[0;32mI (211644) main: Buffer[0] = 38.599998[0m
+[0;32mI (211644) main: Buffer[1] = 38.599998[0m
+[0;32mI (211644) main: Buffer[2] = 38.599998[0m
+[0;32mI (211654) main: Buffer[3] = 38.599998[0m
+[0;32mI (211654) main: Buffer[4] = 38.599998[0m
+[0;32mI (211664) main: Buffer[5] = 38.599998[0m
+[0;32mI (211664) main: Buffer[6] = 38.599998[0m
+[0;32mI (211664) main: Buffer[7] = 38.599998[0m
+[0;32mI (211674) main: Buffer[8] = 38.599998[0m
+[0;32mI (211674) main: Buffer[9] = 38.599998[0m
+[0;32mI (211684) main: Sent 2048 bytes to client[0m
+[0;32mI (212684) main: Shared buffer contents:[0m
+[0;32mI (212684) main: Buffer[0] = 38.599998[0m
+[0;32mI (212684) main: Buffer[1] = 38.599998[0m
+[0;32mI (212684) main: Buffer[2] = 38.599998[0m
+[0;32mI (212694) main: Buffer[3] = 38.599998[0m
+[0;32mI (212694) main: Buffer[4] = 38.599998[0m
+[0;32mI (212704) main: Buffer[5] = 38.599998[0m
+[0;32mI (212704) main: Buffer[6] = 38.599998[0m
+[0;32mI (212704) main: Buffer[7] = 38.599998[0m
+[0;32mI (212714) main: Buffer[8] = 38.599998[0m
+[0;32mI (212714) main: Buffer[9] = 38.599998[0m
+[0;32mI (212724) main: Sent 2048 bytes to client[0m
+[0;32mI (213724) main: Shared buffer contents:[0m
+[0;32mI (213724) main: Buffer[0] = 38.599998[0m
+[0;32mI (213724) main: Buffer[1] = 38.599998[0m
+[0;32mI (213724) main: Buffer[2] = 38.599998[0m
+[0;32mI (213734) main: Buffer[3] = 38.599998[0m
+[0;32mI (213734) main: Buffer[4] = 38.599998[0m
+[0;32mI (213734) main: Buffer[5] = 38.599998[0m
+[0;32mI (213744) main: Buffer[6] = 38.599998[0m
+[0;32mI (213744) main: Buffer[7] = 38.599998[0m
+[0;32mI (213754) main: Buffer[8] = 38.599998[0m
+[0;32mI (213754) main: Buffer[9] = 38.599998[0m
+[0;32mI (213764) main: Sent 2048 bytes to client[0m
+[0;32mI (214764) main: Shared buffer contents:[0m
+[0;32mI (214764) main: Buffer[0] = 38.599998[0m
+[0;32mI (214764) main: Buffer[1] = 38.599998[0m
+[0;32mI (214764) main: Buffer[2] = 38.599998[0m
+[0;32mI (214774) main: Buffer[3] = 38.599998[0m
+[0;32mI (214774) main: Buffer[4] = 38.599998[0m
+[0;32mI (214784) main: Buffer[5] = 38.599998[0m
+[0;32mI (214784) main: Buffer[6] = 38.599998[0m
+[0;32mI (214784) main: Buffer[7] = 38.599998[0m
+[0;32mI (214794) main: Buffer[8] = 38.599998[0m
+[0;32mI (214794) main: Buffer[9] = 38.599998[0m
+[0;32mI (214804) main: Sent 2048 bytes to client[0m
+[0;32mI (215804) main: Shared buffer contents:[0m
+[0;32mI (215804) main: Buffer[0] = 38.599998[0m
+[0;32mI (215804) main: Buffer[1] = 38.599998[0m
+[0;32mI (215804) main: Buffer[2] = 38.599998[0m
+[0;32mI (215814) main: Buffer[3] = 38.599998[0m
+[0;32mI (215814) main: Buffer[4] = 38.599998[0m
+[0;32mI (215824) main: Buffer[5] = 38.599998[0m
+[0;32mI (215824) main: Buffer[6] = 38.599998[0m
+[0;32mI (215824) main: Buffer[7] = 38.599998[0m
+[0;32mI (215834) main: Buffer[8] = 38.599998[0m
+[0;32mI (215834) main: Buffer[9] = 38.599998[0m
+[0;32mI (215844) main: Sent 2048 bytes to client[0m
+[0;32mI (216844) main: Shared buffer contents:[0m
+[0;32mI (216844) main: Buffer[0] = 38.599998[0m
+[0;32mI (216844) main: Buffer[1] = 38.599998[0m
+[0;32mI (216844) main: Buffer[2] = 38.599998[0m
+[0;32mI (216854) main: Buffer[3] = 38.599998[0m
+[0;32mI (216854) main: Buffer[4] = 38.599998[0m
+[0;32mI (216864) main: Buffer[5] = 38.599998[0m
+[0;32mI (216864) main: Buffer[6] = 38.599998[0m
+[0;32mI (216864) main: Buffer[7] = 38.599998[0m
+[0;32mI (216874) main: Buffer[8] = 38.599998[0m
+[0;32mI (216874) main: Buffer[9] = 38.599998[0m
+[0;32mI (216884) main: Sent 2048 bytes to client[0m
+[0;32mI (217884) main: Shared buffer contents:[0m
+[0;32mI (217884) main: Buffer[0] = 38.599998[0m
+[0;32mI (217884) main: Buffer[1] = 38.599998[0m
+[0;32mI (217884) main: Buffer[2] = 38.599998[0m
+[0;32mI (217894) main: Buffer[3] = 38.599998[0m
+[0;32mI (217894) main: Buffer[4] = 38.599998[0m
+[0;32mI (217904) main: Buffer[5] = 38.599998[0m
+[0;32mI (217904) main: Buffer[6] = 38.599998[0m
+[0;32mI (217904) main: Buffer[7] = 38.599998[0m
+[0;32mI (217914) main: Buffer[8] = 38.599998[0m
+[0;32mI (217914) main: Buffer[9] = 38.599998[0m
+[0;31mE (217924) main: Failed to send data to client: errno 104[0m
+[0;32mI (218924) main: Waiting for client connection...[0m
+[0;32mI (218924) main: Client connected[0m
+[0;32mI (218924) main: Shared buffer contents:[0m
+[0;32mI (218924) main: Buffer[0] = 38.599998[0m
+[0;32mI (218934) main: Buffer[1] = 38.599998[0m
+[0;32mI (218934) main: Buffer[2] = 38.599998[0m
+[0;32mI (218944) main: Buffer[3] = 38.599998[0m
+[0;32mI (218944) main: Buffer[4] = 38.599998[0m
+[0;32mI (218954) main: Buffer[5] = 38.599998[0m
+[0;32mI (218954) main: Buffer[6] = 38.599998[0m
+[0;32mI (218954) main: Buffer[7] = 38.599998[0m
+[0;32mI (218964) main: Buffer[8] = 38.599998[0m
+[0;32mI (218964) main: Buffer[9] = 38.599998[0m
+[0;32mI (218974) main: Sent 2048 bytes to client[0m
+[0;32mI (219974) main: Shared buffer contents:[0m
+[0;32mI (219974) main: Buffer[0] = 38.599998[0m
+[0;32mI (219974) main: Buffer[1] = 38.599998[0m
+[0;32mI (219974) main: Buffer[2] = 38.599998[0m
+[0;32mI (219984) main: Buffer[3] = 38.599998[0m
+[0;32mI (219984) main: Buffer[4] = 38.599998[0m
+[0;32mI (219994) main: Buffer[5] = 38.599998[0m
+[0;32mI (219994) main: Buffer[6] = 38.599998[0m
+[0;32mI (219994) main: Buffer[7] = 38.599998[0m
+[0;32mI (220004) main: Buffer[8] = 38.599998[0m
+[0;32mI (220004) main: Buffer[9] = 38.599998[0m
+[0;32mI (220014) main: Sent 2048 bytes to client[0m
+[0;32mI (221014) main: Shared buffer contents:[0m
+[0;32mI (221014) main: Buffer[0] = 38.599998[0m
+[0;32mI (221014) main: Buffer[1] = 38.599998[0m
+[0;32mI (221014) main: Buffer[2] = 38.599998[0m
+[0;32mI (221024) main: Buffer[3] = 38.599998[0m
+[0;32mI (221024) main: Buffer[4] = 38.599998[0m
+[0;32mI (221034) main: Buffer[5] = 38.599998[0m
+[0;32mI (221034) main: Buffer[6] = 38.599998[0m
+[0;32mI (221034) main: Buffer[7] = 38.599998[0m
+[0;32mI (221044) main: Buffer[8] = 38.599998[0m
+[0;32mI (221044) main: Buffer[9] = 38.599998[0m
+[0;32mI (221054) main: Sent 2048 bytes to client[0m
+[0;32mI (222054) main: Shared buffer contents:[0m
+[0;32mI (222054) main: Buffer[0] = 38.599998[0m
+[0;32mI (222054) main: Buffer[1] = 38.599998[0m
+[0;32mI (222054) main: Buffer[2] = 38.599998[0m
+[0;32mI (222064) main: Buffer[3] = 38.599998[0m
+[0;32mI (222064) main: Buffer[4] = 38.599998[0m
+[0;32mI (222074) main: Buffer[5] = 39.599998[0m
+[0;32mI (222074) main: Buffer[6] = 38.599998[0m
+[0;32mI (222074) main: Buffer[7] = 38.599998[0m
+[0;32mI (222084) main: Buffer[8] = 38.599998[0m
+[0;32mI (222084) main: Buffer[9] = 38.599998[0m
+[0;32mI (222094) main: Sent 2048 bytes to client[0m
+[0;32mI (223094) main: Shared buffer contents:[0m
+[0;32mI (223094) main: Buffer[0] = 38.599998[0m
+[0;32mI (223094) main: Buffer[1] = 38.599998[0m
+[0;32mI (223094) main: Buffer[2] = 38.599998[0m
+[0;32mI (223104) main: Buffer[3] = 38.599998[0m
+[0;32mI (223104) main: Buffer[4] = 38.599998[0m
+[0;32mI (223114) main: Buffer[5] = 39.599998[0m
+[0;32mI (223114) main: Buffer[6] = 38.599998[0m
+[0;32mI (223114) main: Buffer[7] = 38.599998[0m
+[0;32mI (223124) main: Buffer[8] = 38.599998[0m
+[0;32mI (223124) main: Buffer[9] = 38.599998[0m
+[0;32mI (223134) main: Sent 2048 bytes to client[0m
+[0;32mI (224134) main: Shared buffer contents:[0m
+[0;32mI (224134) main: Buffer[0] = 38.599998[0m
+[0;32mI (224134) main: Buffer[1] = 38.599998[0m
+[0;32mI (224134) main: Buffer[2] = 38.599998[0m
+[0;32mI (224144) main: Buffer[3] = 38.599998[0m
+[0;32mI (224144) main: Buffer[4] = 38.599998[0m
+[0;32mI (224154) main: Buffer[5] = 39.599998[0m
+[0;32mI (224154) main: Buffer[6] = 38.599998[0m
+[0;32mI (224154) main: Buffer[7] = 38.599998[0m
+[0;32mI (224164) main: Buffer[8] = 38.599998[0m
+[0;32mI (224164) main: Buffer[9] = 38.599998[0m
+[0;32mI (224174) main: Sent 2048 bytes to client[0m
+[0;32mI (225174) main: Shared buffer contents:[0m
+[0;32mI (225174) main: Buffer[0] = 38.599998[0m
+[0;32mI (225174) main: Buffer[1] = 38.599998[0m
+[0;32mI (225174) main: Buffer[2] = 38.599998[0m
+[0;32mI (225184) main: Buffer[3] = 38.599998[0m
+[0;32mI (225184) main: Buffer[4] = 38.599998[0m
+[0;32mI (225194) main: Buffer[5] = 39.599998[0m
+[0;32mI (225194) main: Buffer[6] = 38.599998[0m
+[0;32mI (225194) main: Buffer[7] = 38.599998[0m
+[0;32mI (225204) main: Buffer[8] = 38.599998[0m
+[0;32mI (225204) main: Buffer[9] = 38.599998[0m
+[0;32mI (225214) main: Sent 2048 bytes to client[0m
+[0;32mI (226214) main: Shared buffer contents:[0m
+[0;32mI (226214) main: Buffer[0] = 38.599998[0m
+[0;32mI (226214) main: Buffer[1] = 38.599998[0m
+[0;32mI (226214) main: Buffer[2] = 38.599998[0m
+[0;32mI (226224) main: Buffer[3] = 38.599998[0m
+[0;32mI (226224) main: Buffer[4] = 38.599998[0m
+[0;32mI (226234) main: Buffer[5] = 39.599998[0m
+[0;32mI (226234) main: Buffer[6] = 38.599998[0m
+[0;32mI (226234) main: Buffer[7] = 38.599998[0m
+[0;32mI (226244) main: Buffer[8] = 38.599998[0m
+[0;32mI (226244) main: Buffer[9] = 38.599998[0m
+[0;32mI (226254) main: Sent 2048 bytes to client[0m
+[0;32mI (227254) main: Shared buffer contents:[0m
+[0;32mI (227254) main: Buffer[0] = 38.599998[0m
+[0;32mI (227254) main: Buffer[1] = 39.599998[0m
+[0;32mI (227254) main: Buffer[2] = 39.599998[0m
+[0;32mI (227264) main: Buffer[3] = 39.599998[0m
+[0;32mI (227264) main: Buffer[4] = 38.599998[0m
+[0;32mI (227274) main: Buffer[5] = 39.599998[0m
+[0;32mI (227274) main: Buffer[6] = 39.599998[0m
+[0;32mI (227274) main: Buffer[7] = 39.599998[0m
+[0;32mI (227284) main: Buffer[8] = 39.599998[0m
+[0;32mI (227284) main: Buffer[9] = 39.599998[0m
+[0;32mI (227294) main: Sent 2048 bytes to client[0m
+[0;32mI (228294) main: Shared buffer contents:[0m
+[0;32mI (228294) main: Buffer[0] = 38.599998[0m
+[0;32mI (228294) main: Buffer[1] = 39.599998[0m
+[0;32mI (228294) main: Buffer[2] = 39.599998[0m
+[0;32mI (228304) main: Buffer[3] = 39.599998[0m
+[0;32mI (228304) main: Buffer[4] = 38.599998[0m
+[0;32mI (228314) main: Buffer[5] = 39.599998[0m
+[0;32mI (228314) main: Buffer[6] = 39.599998[0m
+[0;32mI (228314) main: Buffer[7] = 39.599998[0m
+[0;32mI (228324) main: Buffer[8] = 39.599998[0m
+[0;32mI (228324) main: Buffer[9] = 39.599998[0m
+[0;32mI (228334) main: Sent 2048 bytes to client[0m
+[0;32mI (229334) main: Shared buffer contents:[0m
+[0;32mI (229334) main: Buffer[0] = 38.599998[0m
+[0;32mI (229334) main: Buffer[1] = 39.599998[0m
+[0;32mI (229334) main: Buffer[2] = 39.599998[0m
+[0;32mI (229344) main: Buffer[3] = 39.599998[0m
+[0;32mI (229344) main: Buffer[4] = 38.599998[0m
+[0;32mI (229354) main: Buffer[5] = 39.599998[0m
+[0;32mI (229354) main: Buffer[6] = 39.599998[0m
+[0;32mI (229354) main: Buffer[7] = 39.599998[0m
+[0;32mI (229364) main: Buffer[8] = 39.599998[0m
+[0;32mI (229364) main: Buffer[9] = 39.599998[0m
+[0;32mI (229374) main: Sent 2048 bytes to client[0m
+[0;32mI (230374) main: Shared buffer contents:[0m
+[0;32mI (230374) main: Buffer[0] = 38.599998[0m
+[0;32mI (230374) main: Buffer[1] = 39.599998[0m
+[0;32mI (230374) main: Buffer[2] = 39.599998[0m
+[0;32mI (230384) main: Buffer[3] = 39.599998[0m
+[0;32mI (230384) main: Buffer[4] = 38.599998[0m
+[0;32mI (230394) main: Buffer[5] = 39.599998[0m
+[0;32mI (230394) main: Buffer[6] = 39.599998[0m
+[0;32mI (230394) main: Buffer[7] = 39.599998[0m
+[0;32mI (230404) main: Buffer[8] = 39.599998[0m
+[0;32mI (230404) main: Buffer[9] = 39.599998[0m
+[0;32mI (230414) main: Sent 2048 bytes to client[0m
+[0;32mI (231414) main: Shared buffer contents:[0m
+[0;32mI (231414) main: Buffer[0] = 38.599998[0m
+[0;32mI (231414) main: Buffer[1] = 39.599998[0m
+[0;32mI (231414) main: Buffer[2] = 39.599998[0m
+[0;32mI (231424) main: Buffer[3] = 39.599998[0m
+[0;32mI (231424) main: Buffer[4] = 38.599998[0m
+[0;32mI (231434) main: Buffer[5] = 39.599998[0m
+[0;32mI (231434) main: Buffer[6] = 39.599998[0m
+[0;32mI (231434) main: Buffer[7] = 39.599998[0m
+[0;32mI (231444) main: Buffer[8] = 39.599998[0m
+[0;32mI (231444) main: Buffer[9] = 39.599998[0m
+[0;32mI (231454) main: Sent 2048 bytes to client[0m
+[0;32mI (232454) main: Shared buffer contents:[0m
+[0;32mI (232454) main: Buffer[0] = 39.599998[0m
+[0;32mI (232454) main: Buffer[1] = 39.599998[0m
+[0;32mI (232454) main: Buffer[2] = 39.599998[0m
+[0;32mI (232464) main: Buffer[3] = 39.599998[0m
+[0;32mI (232464) main: Buffer[4] = 39.599998[0m
+[0;32mI (232474) main: Buffer[5] = 39.599998[0m
+[0;32mI (232474) main: Buffer[6] = 39.599998[0m
+[0;32mI (232474) main: Buffer[7] = 39.599998[0m
+[0;32mI (232484) main: Buffer[8] = 39.599998[0m
+[0;32mI (232484) main: Buffer[9] = 39.599998[0m
+[0;32mI (232494) main: Sent 2048 bytes to client[0m
+[0;32mI (233494) main: Shared buffer contents:[0m
+[0;32mI (233494) main: Buffer[0] = 39.599998[0m
+[0;32mI (233494) main: Buffer[1] = 39.599998[0m
+[0;32mI (233494) main: Buffer[2] = 39.599998[0m
+[0;32mI (233504) main: Buffer[3] = 39.599998[0m
+[0;32mI (233504) main: Buffer[4] = 39.599998[0m
+[0;32mI (233514) main: Buffer[5] = 39.599998[0m
+[0;32mI (233514) main: Buffer[6] = 39.599998[0m
+[0;32mI (233514) main: Buffer[7] = 39.599998[0m
+[0;32mI (233524) main: Buffer[8] = 39.599998[0m
+[0;32mI (233524) main: Buffer[9] = 39.599998[0m
+[0;32mI (233534) main: Sent 2048 bytes to client[0m
+[0;32mI (234534) main: Shared buffer contents:[0m
+[0;32mI (234534) main: Buffer[0] = 39.599998[0m
+[0;32mI (234534) main: Buffer[1] = 39.599998[0m
+[0;32mI (234534) main: Buffer[2] = 39.599998[0m
+[0;32mI (234544) main: Buffer[3] = 39.599998[0m
+[0;32mI (234544) main: Buffer[4] = 39.599998[0m
+[0;32mI (234554) main: Buffer[5] = 39.599998[0m
+[0;32mI (234554) main: Buffer[6] = 39.599998[0m
+[0;32mI (234554) main: Buffer[7] = 39.599998[0m
+[0;32mI (234564) main: Buffer[8] = 39.599998[0m
+[0;32mI (234564) main: Buffer[9] = 39.599998[0m
+[0;32mI (234574) main: Sent 2048 bytes to client[0m
+[0;32mI (235574) main: Shared buffer contents:[0m
+[0;32mI (235574) main: Buffer[0] = 39.599998[0m
+[0;32mI (235574) main: Buffer[1] = 39.599998[0m
+[0;32mI (235574) main: Buffer[2] = 39.599998[0m
+[0;32mI (235584) main: Buffer[3] = 39.599998[0m
+[0;32mI (235584) main: Buffer[4] = 39.599998[0m
+[0;32mI (235594) main: Buffer[5] = 39.599998[0m
+[0;32mI (235594) main: Buffer[6] = 39.599998[0m
+[0;32mI (235594) main: Buffer[7] = 39.599998[0m
+[0;32mI (235604) main: Buffer[8] = 39.599998[0m
+[0;32mI (235604) main: Buffer[9] = 39.599998[0m
+[0;32mI (235614) main: Sent 2048 bytes to client[0m
+[0;32mI (236614) main: Shared buffer contents:[0m
+[0;32mI (236614) main: Buffer[0] = 39.599998[0m
+[0;32mI (236614) main: Buffer[1] = 39.599998[0m
+[0;32mI (236614) main: Buffer[2] = 39.599998[0m
+[0;32mI (236624) main: Buffer[3] = 39.599998[0m
+[0;32mI (236624) main: Buffer[4] = 39.599998[0m
+[0;32mI (236634) main: Buffer[5] = 39.599998[0m
+[0;32mI (236634) main: Buffer[6] = 39.599998[0m
+[0;32mI (236634) main: Buffer[7] = 39.599998[0m
+[0;32mI (236644) main: Buffer[8] = 39.599998[0m
+[0;32mI (236644) main: Buffer[9] = 39.599998[0m
+[0;32mI (236654) main: Sent 2048 bytes to client[0m
+[0;32mI (237654) main: Shared buffer contents:[0m
+[0;32mI (237654) main: Buffer[0] = 39.599998[0m
+[0;32mI (237654) main: Buffer[1] = 38.599998[0m
+[0;32mI (237654) main: Buffer[2] = 38.599998[0m
+[0;32mI (237664) main: Buffer[3] = 38.599998[0m
+[0;32mI (237664) main: Buffer[4] = 38.599998[0m
+[0;32mI (237674) main: Buffer[5] = 39.599998[0m
+[0;32mI (237674) main: Buffer[6] = 39.599998[0m
+[0;32mI (237674) main: Buffer[7] = 39.599998[0m
+[0;32mI (237684) main: Buffer[8] = 38.599998[0m
+[0;32mI (237684) main: Buffer[9] = 39.599998[0m
+[0;32mI (237694) main: Sent 2048 bytes to client[0m
+[0;32mI (238694) main: Shared buffer contents:[0m
+[0;32mI (238694) main: Buffer[0] = 39.599998[0m
+[0;32mI (238694) main: Buffer[1] = 38.599998[0m
+[0;32mI (238694) main: Buffer[2] = 38.599998[0m
+[0;32mI (238704) main: Buffer[3] = 38.599998[0m
+[0;32mI (238704) main: Buffer[4] = 38.599998[0m
+[0;32mI (238714) main: Buffer[5] = 39.599998[0m
+[0;32mI (238714) main: Buffer[6] = 39.599998[0m
+[0;32mI (238714) main: Buffer[7] = 39.599998[0m
+[0;32mI (238724) main: Buffer[8] = 38.599998[0m
+[0;32mI (238724) main: Buffer[9] = 39.599998[0m
+[0;32mI (238734) main: Sent 2048 bytes to client[0m
+[0;32mI (239734) main: Shared buffer contents:[0m
+[0;32mI (239734) main: Buffer[0] = 39.599998[0m
+[0;32mI (239734) main: Buffer[1] = 38.599998[0m
+[0;32mI (239734) main: Buffer[2] = 38.599998[0m
+[0;32mI (239744) main: Buffer[3] = 38.599998[0m
+[0;32mI (239744) main: Buffer[4] = 38.599998[0m
+[0;32mI (239754) main: Buffer[5] = 39.599998[0m
+[0;32mI (239754) main: Buffer[6] = 39.599998[0m
+[0;32mI (239754) main: Buffer[7] = 39.599998[0m
+[0;32mI (239764) main: Buffer[8] = 38.599998[0m
+[0;32mI (239764) main: Buffer[9] = 39.599998[0m
+[0;32mI (239774) main: Sent 2048 bytes to client[0m
+[0;32mI (240774) main: Shared buffer contents:[0m
+[0;32mI (240774) main: Buffer[0] = 39.599998[0m
+[0;32mI (240774) main: Buffer[1] = 38.599998[0m
+[0;32mI (240774) main: Buffer[2] = 38.599998[0m
+[0;32mI (240784) main: Buffer[3] = 38.599998[0m
+[0;32mI (240784) main: Buffer[4] = 38.599998[0m
+[0;32mI (240794) main: Buffer[5] = 39.599998[0m
+[0;32mI (240794) main: Buffer[6] = 39.599998[0m
+[0;32mI (240794) main: Buffer[7] = 39.599998[0m
+[0;32mI (240804) main: Buffer[8] = 38.599998[0m
+[0;32mI (240804) main: Buffer[9] = 39.599998[0m
+[0;32mI (240814) main: Sent 2048 bytes to client[0m
+[0;32mI (241814) main: Shared buffer contents:[0m
+[0;32mI (241814) main: Buffer[0] = 39.599998[0m
+[0;32mI (241814) main: Buffer[1] = 38.599998[0m
+[0;32mI (241814) main: Buffer[2] = 38.599998[0m
+[0;32mI (241824) main: Buffer[3] = 38.599998[0m
+[0;32mI (241824) main: Buffer[4] = 38.599998[0m
+[0;32mI (241834) main: Buffer[5] = 39.599998[0m
+[0;32mI (241834) main: Buffer[6] = 39.599998[0m
+[0;32mI (241834) main: Buffer[7] = 39.599998[0m
+[0;32mI (241844) main: Buffer[8] = 38.599998[0m
+[0;32mI (241844) main: Buffer[9] = 39.599998[0m
+[0;32mI (241854) main: Sent 2048 bytes to client[0m
+[0;32mI (242854) main: Shared buffer contents:[0m
+[0;32mI (242854) main: Buffer[0] = 38.599998[0m
+[0;32mI (242854) main: Buffer[1] = 37.599998[0m
+[0;32mI (242854) main: Buffer[2] = 38.599998[0m
+[0;32mI (242864) main: Buffer[3] = 38.599998[0m
+[0;32mI (242864) main: Buffer[4] = 37.599998[0m
+[0;32mI (242874) main: Buffer[5] = 38.599998[0m
+[0;32mI (242874) main: Buffer[6] = 37.599998[0m
+[0;32mI (242874) main: Buffer[7] = 38.599998[0m
+[0;32mI (242884) main: Buffer[8] = 37.599998[0m
+[0;32mI (242884) main: Buffer[9] = 37.599998[0m
+[0;32mI (242894) main: Sent 2048 bytes to client[0m
+[0;32mI (243894) main: Shared buffer contents:[0m
+[0;32mI (243894) main: Buffer[0] = 38.599998[0m
+[0;32mI (243894) main: Buffer[1] = 37.599998[0m
+[0;32mI (243894) main: Buffer[2] = 38.599998[0m
+[0;32mI (243904) main: Buffer[3] = 38.599998[0m
+[0;32mI (243904) main: Buffer[4] = 37.599998[0m
+[0;32mI (243914) main: Buffer[5] = 38.599998[0m
+[0;32mI (243914) main: Buffer[6] = 37.599998[0m
+[0;32mI (243914) main: Buffer[7] = 38.599998[0m
+[0;32mI (243924) main: Buffer[8] = 37.599998[0m
+[0;32mI (243924) main: Buffer[9] = 37.599998[0m
+[0;32mI (243934) main: Sent 2048 bytes to client[0m
+[0;32mI (244934) main: Shared buffer contents:[0m
+[0;32mI (244934) main: Buffer[0] = 38.599998[0m
+[0;32mI (244934) main: Buffer[1] = 37.599998[0m
+[0;32mI (244934) main: Buffer[2] = 38.599998[0m
+[0;32mI (244944) main: Buffer[3] = 38.599998[0m
+[0;32mI (244944) main: Buffer[4] = 37.599998[0m
+[0;32mI (244954) main: Buffer[5] = 38.599998[0m
+[0;32mI (244954) main: Buffer[6] = 37.599998[0m
+[0;32mI (244954) main: Buffer[7] = 38.599998[0m
+[0;32mI (244964) main: Buffer[8] = 37.599998[0m
+[0;32mI (244964) main: Buffer[9] = 37.599998[0m
+[0;32mI (244974) main: Sent 2048 bytes to client[0m
+[0;32mI (245974) main: Shared buffer contents:[0m
+[0;32mI (245974) main: Buffer[0] = 38.599998[0m
+[0;32mI (245974) main: Buffer[1] = 37.599998[0m
+[0;32mI (245974) main: Buffer[2] = 38.599998[0m
+[0;32mI (245984) main: Buffer[3] = 38.599998[0m
+[0;32mI (245984) main: Buffer[4] = 37.599998[0m
+[0;32mI (245994) main: Buffer[5] = 38.599998[0m
+[0;32mI (245994) main: Buffer[6] = 37.599998[0m
+[0;32mI (245994) main: Buffer[7] = 38.599998[0m
+[0;32mI (246004) main: Buffer[8] = 37.599998[0m
+[0;32mI (246004) main: Buffer[9] = 37.599998[0m
+[0;32mI (246014) main: Sent 2048 bytes to client[0m
+[0;32mI (247014) main: Shared buffer contents:[0m
+[0;32mI (247014) main: Buffer[0] = 37.599998[0m
+[0;32mI (247014) main: Buffer[1] = 37.599998[0m
+[0;32mI (247014) main: Buffer[2] = 37.599998[0m
+[0;32mI (247024) main: Buffer[3] = 37.599998[0m
+[0;32mI (247024) main: Buffer[4] = 37.599998[0m
+[0;32mI (247034) main: Buffer[5] = 37.599998[0m
+[0;32mI (247034) main: Buffer[6] = 37.599998[0m
+[0;32mI (247034) main: Buffer[7] = 37.599998[0m
+[0;32mI (247044) main: Buffer[8] = 37.599998[0m
+[0;32mI (247044) main: Buffer[9] = 37.599998[0m
+[0;32mI (247054) main: Sent 2048 bytes to client[0m
+[0;32mI (248054) main: Shared buffer contents:[0m
+[0;32mI (248054) main: Buffer[0] = 37.599998[0m
+[0;32mI (248054) main: Buffer[1] = 37.599998[0m
+[0;32mI (248054) main: Buffer[2] = 37.599998[0m
+[0;32mI (248064) main: Buffer[3] = 37.599998[0m
+[0;32mI (248064) main: Buffer[4] = 37.599998[0m
+[0;32mI (248074) main: Buffer[5] = 37.599998[0m
+[0;32mI (248074) main: Buffer[6] = 37.599998[0m
+[0;32mI (248074) main: Buffer[7] = 37.599998[0m
+[0;32mI (248084) main: Buffer[8] = 37.599998[0m
+[0;32mI (248084) main: Buffer[9] = 37.599998[0m
+[0;32mI (248094) main: Sent 2048 bytes to client[0m
+[0;32mI (249094) main: Shared buffer contents:[0m
+[0;32mI (249094) main: Buffer[0] = 37.599998[0m
+[0;32mI (249094) main: Buffer[1] = 37.599998[0m
+[0;32mI (249094) main: Buffer[2] = 37.599998[0m
+[0;32mI (249104) main: Buffer[3] = 37.599998[0m
+[0;32mI (249104) main: Buffer[4] = 37.599998[0m
+[0;32mI (249114) main: Buffer[5] = 37.599998[0m
+[0;32mI (249114) main: Buffer[6] = 37.599998[0m
+[0;32mI (249114) main: Buffer[7] = 37.599998[0m
+[0;32mI (249124) main: Buffer[8] = 37.599998[0m
+[0;32mI (249124) main: Buffer[9] = 37.599998[0m
+[0;32mI (249134) main: Sent 2048 bytes to client[0m
+[0;32mI (250134) main: Shared buffer contents:[0m
+[0;32mI (250134) main: Buffer[0] = 37.599998[0m
+[0;32mI (250134) main: Buffer[1] = 37.599998[0m
+[0;32mI (250134) main: Buffer[2] = 37.599998[0m
+[0;32mI (250144) main: Buffer[3] = 37.599998[0m
+[0;32mI (250144) main: Buffer[4] = 37.599998[0m
+[0;32mI (250154) main: Buffer[5] = 37.599998[0m
+[0;32mI (250154) main: Buffer[6] = 37.599998[0m
+[0;32mI (250154) main: Buffer[7] = 37.599998[0m
+[0;32mI (250164) main: Buffer[8] = 37.599998[0m
+[0;32mI (250164) main: Buffer[9] = 37.599998[0m
+[0;32mI (250174) main: Sent 2048 bytes to client[0m
+[0;32mI (251174) main: Shared buffer contents:[0m
+[0;32mI (251174) main: Buffer[0] = 37.599998[0m
+[0;32mI (251174) main: Buffer[1] = 37.599998[0m
+[0;32mI (251174) main: Buffer[2] = 37.599998[0m
+[0;32mI (251184) main: Buffer[3] = 37.599998[0m
+[0;32mI (251184) main: Buffer[4] = 37.599998[0m
+[0;32mI (251194) main: Buffer[5] = 37.599998[0m
+[0;32mI (251194) main: Buffer[6] = 37.599998[0m
+[0;32mI (251194) main: Buffer[7] = 37.599998[0m
+[0;32mI (251204) main: Buffer[8] = 37.599998[0m
+[0;32mI (251204) main: Buffer[9] = 37.599998[0m
+[0;32mI (251214) main: Sent 2048 bytes to client[0m
+[0;32mI (252214) main: Shared buffer contents:[0m
+[0;32mI (252214) main: Buffer[0] = 37.599998[0m
+[0;32mI (252214) main: Buffer[1] = 37.599998[0m
+[0;32mI (252214) main: Buffer[2] = 37.599998[0m
+[0;32mI (252224) main: Buffer[3] = 37.599998[0m
+[0;32mI (252224) main: Buffer[4] = 37.599998[0m
+[0;32mI (252234) main: Buffer[5] = 37.599998[0m
+[0;32mI (252234) main: Buffer[6] = 37.599998[0m
+[0;32mI (252234) main: Buffer[7] = 37.599998[0m
+[0;32mI (252244) main: Buffer[8] = 37.599998[0m
+[0;32mI (252244) main: Buffer[9] = 37.599998[0m
+[0;32mI (252254) main: Sent 2048 bytes to client[0m
+[0;32mI (253254) main: Shared buffer contents:[0m
+[0;32mI (253254) main: Buffer[0] = 37.599998[0m
+[0;32mI (253254) main: Buffer[1] = 37.599998[0m
+[0;32mI (253254) main: Buffer[2] = 37.599998[0m
+[0;32mI (253264) main: Buffer[3] = 37.599998[0m
+[0;32mI (253264) main: Buffer[4] = 37.599998[0m
+[0;32mI (253274) main: Buffer[5] = 37.599998[0m
+[0;32mI (253274) main: Buffer[6] = 37.599998[0m
+[0;32mI (253274) main: Buffer[7] = 37.599998[0m
+[0;32mI (253284) main: Buffer[8] = 37.599998[0m
+[0;32mI (253284) main: Buffer[9] = 37.599998[0m
+[0;32mI (253294) main: Sent 2048 bytes to client[0m
+[0;32mI (254294) main: Shared buffer contents:[0m
+[0;32mI (254294) main: Buffer[0] = 37.599998[0m
+[0;32mI (254294) main: Buffer[1] = 37.599998[0m
+[0;32mI (254294) main: Buffer[2] = 37.599998[0m
+[0;32mI (254304) main: Buffer[3] = 37.599998[0m
+[0;32mI (254304) main: Buffer[4] = 37.599998[0m
+[0;32mI (254314) main: Buffer[5] = 37.599998[0m
+[0;32mI (254314) main: Buffer[6] = 37.599998[0m
+[0;32mI (254314) main: Buffer[7] = 37.599998[0m
+[0;32mI (254324) main: Buffer[8] = 37.599998[0m
+[0;32mI (254324) main: Buffer[9] = 37.599998[0m
+[0;32mI (254334) main: Sent 2048 bytes to client[0m
+[0;32mI (255334) main: Shared buffer contents:[0m
+[0;32mI (255334) main: Buffer[0] = 37.599998[0m
+[0;32mI (255334) main: Buffer[1] = 37.599998[0m
+[0;32mI (255334) main: Buffer[2] = 37.599998[0m
+[0;32mI (255344) main: Buffer[3] = 37.599998[0m
+[0;32mI (255344) main: Buffer[4] = 37.599998[0m
+[0;32mI (255354) main: Buffer[5] = 37.599998[0m
+[0;32mI (255354) main: Buffer[6] = 37.599998[0m
+[0;32mI (255354) main: Buffer[7] = 37.599998[0m
+[0;32mI (255364) main: Buffer[8] = 37.599998[0m
+[0;32mI (255364) main: Buffer[9] = 37.599998[0m
+[0;32mI (255374) main: Sent 2048 bytes to client[0m
+[0;32mI (256374) main: Shared buffer contents:[0m
+[0;32mI (256374) main: Buffer[0] = 37.599998[0m
+[0;32mI (256374) main: Buffer[1] = 37.599998[0m
+[0;32mI (256374) main: Buffer[2] = 37.599998[0m
+[0;32mI (256384) main: Buffer[3] = 37.599998[0m
+[0;32mI (256384) main: Buffer[4] = 37.599998[0m
+[0;32mI (256394) main: Buffer[5] = 37.599998[0m
+[0;32mI (256394) main: Buffer[6] = 37.599998[0m
+[0;32mI (256394) main: Buffer[7] = 37.599998[0m
+[0;32mI (256404) main: Buffer[8] = 37.599998[0m
+[0;32mI (256404) main: Buffer[9] = 37.599998[0m
+[0;32mI (256414) main: Sent 2048 bytes to client[0m
+[0;32mI (257414) main: Shared buffer contents:[0m
+[0;32mI (257414) main: Buffer[0] = 37.599998[0m
+[0;32mI (257414) main: Buffer[1] = 38.599998[0m
+[0;32mI (257414) main: Buffer[2] = 38.599998[0m
+[0;32mI (257424) main: Buffer[3] = 38.599998[0m
+[0;32mI (257424) main: Buffer[4] = 38.599998[0m
+[0;32mI (257434) main: Buffer[5] = 38.599998[0m
+[0;32mI (257434) main: Buffer[6] = 38.599998[0m
+[0;32mI (257434) main: Buffer[7] = 38.599998[0m
+[0;32mI (257444) main: Buffer[8] = 37.599998[0m
+[0;32mI (257444) main: Buffer[9] = 38.599998[0m
+[0;32mI (257454) main: Sent 2048 bytes to client[0m
+[0;32mI (258454) main: Shared buffer contents:[0m
+[0;32mI (258454) main: Buffer[0] = 37.599998[0m
+[0;32mI (258454) main: Buffer[1] = 38.599998[0m
+[0;32mI (258454) main: Buffer[2] = 38.599998[0m
+[0;32mI (258464) main: Buffer[3] = 38.599998[0m
+[0;32mI (258464) main: Buffer[4] = 38.599998[0m
+[0;32mI (258474) main: Buffer[5] = 38.599998[0m
+[0;32mI (258474) main: Buffer[6] = 38.599998[0m
+[0;32mI (258474) main: Buffer[7] = 38.599998[0m
+[0;32mI (258484) main: Buffer[8] = 37.599998[0m
+[0;32mI (258484) main: Buffer[9] = 38.599998[0m
+[0;32mI (258494) main: Sent 2048 bytes to client[0m
+[0;32mI (259494) main: Shared buffer contents:[0m
+[0;32mI (259494) main: Buffer[0] = 37.599998[0m
+[0;32mI (259494) main: Buffer[1] = 38.599998[0m
+[0;32mI (259494) main: Buffer[2] = 38.599998[0m
+[0;32mI (259504) main: Buffer[3] = 38.599998[0m
+[0;32mI (259504) main: Buffer[4] = 38.599998[0m
+[0;32mI (259514) main: Buffer[5] = 38.599998[0m
+[0;32mI (259514) main: Buffer[6] = 38.599998[0m
+[0;32mI (259514) main: Buffer[7] = 38.599998[0m
+[0;32mI (259524) main: Buffer[8] = 37.599998[0m
+[0;32mI (259524) main: Buffer[9] = 38.599998[0m
+[0;32mI (259534) main: Sent 2048 bytes to client[0m
+[0;32mI (260534) main: Shared buffer contents:[0m
+[0;32mI (260534) main: Buffer[0] = 37.599998[0m
+[0;32mI (260534) main: Buffer[1] = 38.599998[0m
+[0;32mI (260534) main: Buffer[2] = 38.599998[0m
+[0;32mI (260544) main: Buffer[3] = 38.599998[0m
+[0;32mI (260544) main: Buffer[4] = 38.599998[0m
+[0;32mI (260554) main: Buffer[5] = 38.599998[0m
+[0;32mI (260554) main: Buffer[6] = 38.599998[0m
+[0;32mI (260554) main: Buffer[7] = 38.599998[0m
+[0;32mI (260564) main: Buffer[8] = 37.599998[0m
+[0;32mI (260564) main: Buffer[9] = 38.599998[0m
+[0;32mI (260574) main: Sent 2048 bytes to client[0m
+[0;32mI (261574) main: Shared buffer contents:[0m
+[0;32mI (261574) main: Buffer[0] = 37.599998[0m
+[0;32mI (261574) main: Buffer[1] = 38.599998[0m
+[0;32mI (261574) main: Buffer[2] = 38.599998[0m
+[0;32mI (261584) main: Buffer[3] = 38.599998[0m
+[0;32mI (261584) main: Buffer[4] = 38.599998[0m
+[0;32mI (261594) main: Buffer[5] = 38.599998[0m
+[0;32mI (261594) main: Buffer[6] = 38.599998[0m
+[0;32mI (261594) main: Buffer[7] = 38.599998[0m
+[0;32mI (261604) main: Buffer[8] = 37.599998[0m
+[0;32mI (261604) main: Buffer[9] = 38.599998[0m
+[0;32mI (261614) main: Sent 2048 bytes to client[0m
+[0;32mI (262614) main: Shared buffer contents:[0m
+[0;32mI (262614) main: Buffer[0] = 37.599998[0m
+[0;32mI (262614) main: Buffer[1] = 37.599998[0m
+[0;32mI (262614) main: Buffer[2] = 37.599998[0m
+[0;32mI (262624) main: Buffer[3] = 37.599998[0m
+[0;32mI (262624) main: Buffer[4] = 38.599998[0m
+[0;32mI (262634) main: Buffer[5] = 37.599998[0m
+[0;32mI (262634) main: Buffer[6] = 37.599998[0m
+[0;32mI (262634) main: Buffer[7] = 37.599998[0m
+[0;32mI (262644) main: Buffer[8] = 37.599998[0m
+[0;32mI (262644) main: Buffer[9] = 37.599998[0m
+[0;32mI (262654) main: Sent 2048 bytes to client[0m
+[0;32mI (263654) main: Shared buffer contents:[0m
+[0;32mI (263654) main: Buffer[0] = 37.599998[0m
+[0;32mI (263654) main: Buffer[1] = 37.599998[0m
+[0;32mI (263654) main: Buffer[2] = 37.599998[0m
+[0;32mI (263664) main: Buffer[3] = 37.599998[0m
+[0;32mI (263664) main: Buffer[4] = 38.599998[0m
+[0;32mI (263674) main: Buffer[5] = 37.599998[0m
+[0;32mI (263674) main: Buffer[6] = 37.599998[0m
+[0;32mI (263674) main: Buffer[7] = 37.599998[0m
+[0;32mI (263684) main: Buffer[8] = 37.599998[0m
+[0;32mI (263684) main: Buffer[9] = 37.599998[0m
+[0;32mI (263694) main: Sent 2048 bytes to client[0m
+[0;32mI (264694) main: Shared buffer contents:[0m
+[0;32mI (264694) main: Buffer[0] = 37.599998[0m
+[0;32mI (264694) main: Buffer[1] = 37.599998[0m
+[0;32mI (264694) main: Buffer[2] = 37.599998[0m
+[0;32mI (264704) main: Buffer[3] = 37.599998[0m
+[0;32mI (264704) main: Buffer[4] = 38.599998[0m
+[0;32mI (264714) main: Buffer[5] = 37.599998[0m
+[0;32mI (264714) main: Buffer[6] = 37.599998[0m
+[0;32mI (264714) main: Buffer[7] = 37.599998[0m
+[0;32mI (264724) main: Buffer[8] = 37.599998[0m
+[0;32mI (264724) main: Buffer[9] = 37.599998[0m
+[0;32mI (264734) main: Sent 2048 bytes to client[0m
+[0;32mI (265734) main: Shared buffer contents:[0m
+[0;32mI (265734) main: Buffer[0] = 37.599998[0m
+[0;32mI (265734) main: Buffer[1] = 37.599998[0m
+[0;32mI (265734) main: Buffer[2] = 37.599998[0m
+[0;32mI (265744) main: Buffer[3] = 37.599998[0m
+[0;32mI (265744) main: Buffer[4] = 38.599998[0m
+[0;32mI (265754) main: Buffer[5] = 37.599998[0m
+[0;32mI (265754) main: Buffer[6] = 37.599998[0m
+[0;32mI (265754) main: Buffer[7] = 37.599998[0m
+[0;32mI (265764) main: Buffer[8] = 37.599998[0m
+[0;32mI (265764) main: Buffer[9] = 37.599998[0m
+[0;32mI (265774) main: Sent 2048 bytes to client[0m
+[0;32mI (266774) main: Shared buffer contents:[0m
+[0;32mI (266774) main: Buffer[0] = 37.599998[0m
+[0;32mI (266774) main: Buffer[1] = 37.599998[0m
+[0;32mI (266774) main: Buffer[2] = 37.599998[0m
+[0;32mI (266784) main: Buffer[3] = 37.599998[0m
+[0;32mI (266784) main: Buffer[4] = 38.599998[0m
+[0;32mI (266794) main: Buffer[5] = 37.599998[0m
+[0;32mI (266794) main: Buffer[6] = 37.599998[0m
+[0;32mI (266794) main: Buffer[7] = 37.599998[0m
+[0;32mI (266804) main: Buffer[8] = 37.599998[0m
+[0;32mI (266804) main: Buffer[9] = 37.599998[0m
+[0;32mI (266814) main: Sent 2048 bytes to client[0m
+[0;32mI (267814) main: Shared buffer contents:[0m
+[0;32mI (267814) main: Buffer[0] = 37.599998[0m
+[0;32mI (267814) main: Buffer[1] = 37.599998[0m
+[0;32mI (267814) main: Buffer[2] = 37.599998[0m
+[0;32mI (267824) main: Buffer[3] = 37.599998[0m
+[0;32mI (267824) main: Buffer[4] = 37.599998[0m
+[0;32mI (267834) main: Buffer[5] = 37.599998[0m
+[0;32mI (267834) main: Buffer[6] = 37.599998[0m
+[0;32mI (267834) main: Buffer[7] = 37.599998[0m
+[0;32mI (267844) main: Buffer[8] = 37.599998[0m
+[0;32mI (267844) main: Buffer[9] = 37.599998[0m
+[0;32mI (267854) main: Sent 2048 bytes to client[0m
+[0;32mI (268854) main: Shared buffer contents:[0m
+[0;32mI (268854) main: Buffer[0] = 37.599998[0m
+[0;32mI (268854) main: Buffer[1] = 37.599998[0m
+[0;32mI (268854) main: Buffer[2] = 37.599998[0m
+[0;32mI (268864) main: Buffer[3] = 37.599998[0m
+[0;32mI (268864) main: Buffer[4] = 37.599998[0m
+[0;32mI (268874) main: Buffer[5] = 37.599998[0m
+[0;32mI (268874) main: Buffer[6] = 37.599998[0m
+[0;32mI (268874) main: Buffer[7] = 37.599998[0m
+[0;32mI (268884) main: Buffer[8] = 37.599998[0m
+[0;32mI (268884) main: Buffer[9] = 37.599998[0m
+[0;32mI (268894) main: Sent 2048 bytes to client[0m
+[0;32mI (269894) main: Shared buffer contents:[0m
+[0;32mI (269894) main: Buffer[0] = 37.599998[0m
+[0;32mI (269894) main: Buffer[1] = 37.599998[0m
+[0;32mI (269894) main: Buffer[2] = 37.599998[0m
+[0;32mI (269904) main: Buffer[3] = 37.599998[0m
+[0;32mI (269904) main: Buffer[4] = 37.599998[0m
+[0;32mI (269914) main: Buffer[5] = 37.599998[0m
+[0;32mI (269914) main: Buffer[6] = 37.599998[0m
+[0;32mI (269914) main: Buffer[7] = 37.599998[0m
+[0;32mI (269924) main: Buffer[8] = 37.599998[0m
+[0;32mI (269924) main: Buffer[9] = 37.599998[0m
+[0;32mI (269934) main: Sent 2048 bytes to client[0m
+[0;32mI (270934) main: Shared buffer contents:[0m
+[0;32mI (270934) main: Buffer[0] = 37.599998[0m
+[0;32mI (270934) main: Buffer[1] = 37.599998[0m
+[0;32mI (270934) main: Buffer[2] = 37.599998[0m
+[0;32mI (270944) main: Buffer[3] = 37.599998[0m
+[0;32mI (270944) main: Buffer[4] = 37.599998[0m
+[0;32mI (270954) main: Buffer[5] = 37.599998[0m
+[0;32mI (270954) main: Buffer[6] = 37.599998[0m
+[0;32mI (270954) main: Buffer[7] = 37.599998[0m
+[0;32mI (270964) main: Buffer[8] = 37.599998[0m
+[0;32mI (270964) main: Buffer[9] = 37.599998[0m
+[0;32mI (270974) main: Sent 2048 bytes to client[0m
+[0;32mI (271974) main: Shared buffer contents:[0m
+[0;32mI (271974) main: Buffer[0] = 37.599998[0m
+[0;32mI (271974) main: Buffer[1] = 37.599998[0m
+[0;32mI (271974) main: Buffer[2] = 37.599998[0m
+[0;32mI (271984) main: Buffer[3] = 37.599998[0m
+[0;32mI (271984) main: Buffer[4] = 37.599998[0m
+[0;32mI (271994) main: Buffer[5] = 37.599998[0m
+[0;32mI (271994) main: Buffer[6] = 37.599998[0m
+[0;32mI (271994) main: Buffer[7] = 37.599998[0m
+[0;32mI (272004) main: Buffer[8] = 37.599998[0m
+[0;32mI (272004) main: Buffer[9] = 37.599998[0m
+[0;32mI (272014) main: Sent 2048 bytes to client[0m
+[0;32mI (273014) main: Shared buffer contents:[0m
+[0;32mI (273014) main: Buffer[0] = 36.599998[0m
+[0;32mI (273014) main: Buffer[1] = 36.599998[0m
+[0;32mI (273014) main: Buffer[2] = 36.599998[0m
+[0;32mI (273024) main: Buffer[3] = 36.599998[0m
+[0;32mI (273024) main: Buffer[4] = 36.599998[0m
+[0;32mI (273034) main: Buffer[5] = 36.599998[0m
+[0;32mI (273034) main: Buffer[6] = 36.599998[0m
+[0;32mI (273034) main: Buffer[7] = 36.599998[0m
+[0;32mI (273044) main: Buffer[8] = 37.599998[0m
+[0;32mI (273044) main: Buffer[9] = 36.599998[0m
+[0;32mI (273054) main: Sent 2048 bytes to client[0m
+[0;32mI (274054) main: Shared buffer contents:[0m
+[0;32mI (274054) main: Buffer[0] = 36.599998[0m
+[0;32mI (274054) main: Buffer[1] = 36.599998[0m
+[0;32mI (274054) main: Buffer[2] = 36.599998[0m
+[0;32mI (274064) main: Buffer[3] = 36.599998[0m
+[0;32mI (274064) main: Buffer[4] = 36.599998[0m
+[0;32mI (274074) main: Buffer[5] = 36.599998[0m
+[0;32mI (274074) main: Buffer[6] = 36.599998[0m
+[0;32mI (274074) main: Buffer[7] = 36.599998[0m
+[0;32mI (274084) main: Buffer[8] = 37.599998[0m
+[0;32mI (274084) main: Buffer[9] = 36.599998[0m
+[0;32mI (274094) main: Sent 2048 bytes to client[0m
+[0;32mI (275094) main: Shared buffer contents:[0m
+[0;32mI (275094) main: Buffer[0] = 36.599998[0m
+[0;32mI (275094) main: Buffer[1] = 36.599998[0m
+[0;32mI (275094) main: Buffer[2] = 36.599998[0m
+[0;32mI (275104) main: Buffer[3] = 36.599998[0m
+[0;32mI (275104) main: Buffer[4] = 36.599998[0m
+[0;32mI (275114) main: Buffer[5] = 36.599998[0m
+[0;32mI (275114) main: Buffer[6] = 36.599998[0m
+[0;32mI (275114) main: Buffer[7] = 36.599998[0m
+[0;32mI (275124) main: Buffer[8] = 37.599998[0m
+[0;32mI (275124) main: Buffer[9] = 36.599998[0m
+[0;32mI (275134) main: Sent 2048 bytes to client[0m
+[0;32mI (276134) main: Shared buffer contents:[0m
+[0;32mI (276134) main: Buffer[0] = 36.599998[0m
+[0;32mI (276134) main: Buffer[1] = 36.599998[0m
+[0;32mI (276134) main: Buffer[2] = 36.599998[0m
+[0;32mI (276144) main: Buffer[3] = 36.599998[0m
+[0;32mI (276144) main: Buffer[4] = 36.599998[0m
+[0;32mI (276154) main: Buffer[5] = 36.599998[0m
+[0;32mI (276154) main: Buffer[6] = 36.599998[0m
+[0;32mI (276154) main: Buffer[7] = 36.599998[0m
+[0;32mI (276164) main: Buffer[8] = 37.599998[0m
+[0;32mI (276164) main: Buffer[9] = 36.599998[0m
+[0;32mI (276174) main: Sent 2048 bytes to client[0m
+[0;32mI (277174) main: Shared buffer contents:[0m
+[0;32mI (277174) main: Buffer[0] = 36.599998[0m
+[0;32mI (277174) main: Buffer[1] = 36.599998[0m
+[0;32mI (277174) main: Buffer[2] = 36.599998[0m
+[0;32mI (277184) main: Buffer[3] = 36.599998[0m
+[0;32mI (277184) main: Buffer[4] = 36.599998[0m
+[0;32mI (277194) main: Buffer[5] = 36.599998[0m
+[0;32mI (277194) main: Buffer[6] = 36.599998[0m
+[0;32mI (277194) main: Buffer[7] = 36.599998[0m
+[0;32mI (277204) main: Buffer[8] = 37.599998[0m
+[0;32mI (277204) main: Buffer[9] = 36.599998[0m
+[0;32mI (277214) main: Sent 2048 bytes to client[0m
+[0;32mI (278214) main: Shared buffer contents:[0m
+[0;32mI (278214) main: Buffer[0] = 37.599998[0m
+[0;32mI (278214) main: Buffer[1] = 37.599998[0m
+[0;32mI (278214) main: Buffer[2] = 37.599998[0m
+[0;32mI (278224) main: Buffer[3] = 37.599998[0m
+[0;32mI (278224) main: Buffer[4] = 37.599998[0m
+[0;32mI (278234) main: Buffer[5] = 37.599998[0m
+[0;32mI (278234) main: Buffer[6] = 37.599998[0m
+[0;32mI (278234) main: Buffer[7] = 36.599998[0m
+[0;32mI (278244) main: Buffer[8] = 37.599998[0m
+[0;32mI (278244) main: Buffer[9] = 36.599998[0m
+[0;32mI (278254) main: Sent 2048 bytes to client[0m
+[0;32mI (279254) main: Shared buffer contents:[0m
+[0;32mI (279254) main: Buffer[0] = 37.599998[0m
+[0;32mI (279254) main: Buffer[1] = 37.599998[0m
+[0;32mI (279254) main: Buffer[2] = 37.599998[0m
+[0;32mI (279264) main: Buffer[3] = 37.599998[0m
+[0;32mI (279264) main: Buffer[4] = 37.599998[0m
+[0;32mI (279274) main: Buffer[5] = 37.599998[0m
+[0;32mI (279274) main: Buffer[6] = 37.599998[0m
+[0;32mI (279274) main: Buffer[7] = 36.599998[0m
+[0;32mI (279284) main: Buffer[8] = 37.599998[0m
+[0;32mI (279284) main: Buffer[9] = 36.599998[0m
+[0;32mI (279294) main: Sent 2048 bytes to client[0m
+[0;32mI (280294) main: Shared buffer contents:[0m
+[0;32mI (280294) main: Buffer[0] = 37.599998[0m
+[0;32mI (280294) main: Buffer[1] = 37.599998[0m
+[0;32mI (280294) main: Buffer[2] = 37.599998[0m
+[0;32mI (280304) main: Buffer[3] = 37.599998[0m
+[0;32mI (280304) main: Buffer[4] = 37.599998[0m
+[0;32mI (280314) main: Buffer[5] = 37.599998[0m
+[0;32mI (280314) main: Buffer[6] = 37.599998[0m
+[0;32mI (280314) main: Buffer[7] = 36.599998[0m
+[0;32mI (280324) main: Buffer[8] = 37.599998[0m
+[0;32mI (280324) main: Buffer[9] = 36.599998[0m
+[0;32mI (280334) main: Sent 2048 bytes to client[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (33) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan 24 2025 05:11:28[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot: efuse block revision: v1.2[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (49) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (59) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (68) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (102) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a7b8h (108472) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=0002a7e0 vaddr=3fc99c00 size=0498ch ( 18828) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=0002f174 vaddr=40374000 size=00ea4h (  3748) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=83a90h (539280) map[0m
+[0;32mI (277) esp_image: segment 4: paddr=000b3ab8 vaddr=40374ea4 size=14c98h ( 85144) load[0m
+[0;32mI (309) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (310) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (331) app_init: Application information:[0m
+[0;32mI (334) app_init: Project name:     nodma_temp_wifi[0m
+[0;32mI (340) app_init: App version:      1[0m
+[0;32mI (344) app_init: Compile time:     Jan 24 2025 06:01:32[0m
+[0;32mI (350) app_init: ELF file SHA256:  61ac42dc6...[0m
+[0;32mI (355) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (360) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (365) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (370) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (375) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (382) heap_init: At 3FCA21D0 len 00047540 (285 KiB): RAM[0m
+[0;32mI (388) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (394) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (400) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;33mW (407) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (417) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (422) spi_flash: flash io: opi_str[0m
+[0;33mW (426) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (440) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (447) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (454) main_task: Started on CPU0[0m
+[0;32mI (464) main_task: Calling app_main()[0m
+[0;32mI (464) main: Starting application...[0m
+[0;32mI (464) main: Shared buffer allocated at 0x3fca71b4[0m
+[0;32mI (484) pp: pp rom version: e7ae62f[0m
+[0;32mI (484) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (494) wifi:wifi driver task: 3fcaccf4, prio:23, stack:6656, core=0[0m
+[0;32mI (494) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (494) wifi:wifi certification version: v7.0[0m
+[0;32mI (494) wifi:config NVS flash: enabled[0m
+[0;32mI (504) wifi:config nano formating: disabled[0m
+[0;32mI (504) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (514) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (514) wifi:Init management short buffer num: 32[0m
+[0;32mI (524) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (524) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (524) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (534) wifi:Init static rx buffer num: 10[0m
+[0;32mI (534) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (544) wifi_init: rx ba win: 6[0m
+[0;32mI (544) wifi_init: accept mbox: 6[0m
+[0;32mI (544) wifi_init: tcpip mbox: 32[0m
+[0;32mI (554) wifi_init: udp mbox: 6[0m
+[0;32mI (554) wifi_init: tcp mbox: 6[0m
+[0;32mI (554) wifi_init: tcp tx win: 5760[0m
+[0;32mI (564) wifi_init: tcp rx win: 5760[0m
+[0;32mI (564) wifi_init: tcp mss: 1440[0m
+[0;32mI (574) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (574) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (584) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (624) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (634) wifi:mode : softAP (34:85:18:a1:70:c9)[0m
+[0;32mI (644) wifi:Total power save buffer number: 16[0m
+[0;32mI (644) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (644) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (644) wifi_ap: WiFi AP started with SSID: ESP32-S3_AP[0m
+[0;32mI (644) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (664) wifi_ap: AP IP Address: 192.168.4.1[0m
+[0;32mI (664) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (674) temp_sensor: Temperature sensor initialized and enabled[0m
+[0;32mI (674) main: Tasks created. System is now in STREAM mode.[0m
+[0;32mI (674) wifi_ap: TCP server started on port 3333[0m
+[0;32mI (684) main_task: Returned from app_main()[0m
+[0;32mI (684) main: Waiting for client connection...[0m

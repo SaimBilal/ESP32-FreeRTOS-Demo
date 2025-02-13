@@ -1,0 +1,592 @@
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For O�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (33) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan 24 2025 05:11:28[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot: efuse block revision: v1.2[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (49) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (59) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (68) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (102) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a768h (108392) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=0002a790 vaddr=3fc99c00 size=0498ch ( 18828) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=0002f124 vaddr=40374000 size=00ef4h (  3828) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=83a2ch (539180) map[0m
+[0;32mI (277) esp_image: segment 4: paddr=000b3a54 vaddr=40374ef4 size=14c48h ( 85064) load[0m
+[0;32mI (309) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (310) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (331) app_init: Application information:[0m
+[0;32mI (334) app_init: Project name:     nodma_temp_wifi[0m
+[0;32mI (340) app_init: App version:      1[0m
+[0;32mI (344) app_init: Compile time:     Jan 24 2025 05:13:52[0m
+[0;32mI (350) app_init: ELF file SHA256:  f20d2f95e...[0m
+[0;32mI (355) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (360) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (365) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (370) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (375) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (382) heap_init: At 3FCA21D0 len 00047540 (285 KiB): RAM[0m
+[0;32mI (388) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (394) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (400) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;33mW (407) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (417) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (422) spi_flash: flash io: opi_str[0m
+[0;33mW (426) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (440) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (446) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (454) main_task: Started on CPU0[0m
+[0;32mI (464) main_task: Calling app_main()[0m
+[0;32mI (464) main: Starting application...[0m
+[0;32mI (464) main: Shared buffer allocated at 0x3fca71b4[0m
+[0;32mI (484) pp: pp rom version: e7ae62f[0m
+[0;32mI (484) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (504) wifi:wifi driver task: 3fcad3b8, prio:23, stack:6656, core=0[0m
+[0;32mI (504) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (504) wifi:wifi certification version: v7.0[0m
+[0;32mI (504) wifi:config NVS flash: enabled[0m
+[0;32mI (504) wifi:config nano formating: disabled[0m
+[0;32mI (514) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (514) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (514) wifi:Init management short buffer num: 32[0m
+[0;32mI (524) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (524) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (534) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (534) wifi:Init static rx buffer num: 10[0m
+[0;32mI (544) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (544) wifi_init: rx ba win: 6[0m
+[0;32mI (544) wifi_init: accept mbox: 6[0m
+[0;32mI (554) wifi_init: tcpip mbox: 32[0m
+[0;32mI (554) wifi_init: udp mbox: 6[0m
+[0;32mI (554) wifi_init: tcp mbox: 6[0m
+[0;32mI (564) wifi_init: tcp tx win: 5760[0m
+[0;32mI (564) wifi_init: tcp rx win: 5760[0m
+[0;32mI (574) wifi_init: tcp mss: 1440[0m
+[0;32mI (574) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (584) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1064) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (1064) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (1104) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+[0;32mI (1114) wifi:mode : softAP (34:85:18:a1:70:c9)[0m
+[0;32mI (1124) wifi:Total power save buffer number: 16[0m
+[0;32mI (1124) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1124) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1124) wifi_ap: WiFi AP started with SSID: ESP32-S3_AP[0m
+[0;32mI (1124) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1134) wifi_ap: AP IP Address: 192.168.4.1[0m
+[0;32mI (1144) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (1154) temp_sensor: Temperature sensor initialized and enabled[0m
+[0;32mI (1154) main: Tasks created. System is now in STREAM mode.[0m
+[0;32mI (1154) wifi_ap: TCP server started on port 3333[0m
+[0;32mI (1164) main_task: Returned from app_main()[0m
+[0;32mI (1164) main: Waiting for client connection...[0m
+
+***ERROR*** A stack overflow in task TempTask has been detected.
+
+
+Backtrace: 0x40375b6a:0x3fcb4f10 0x4037c5a1:0x3fcb4f30 0x4037d4ee:0x3fcb4f50 0x4037e9c3:0x3fcb4fd0 0x4037d5b4:0x3fcb4ff0 0x4037d5aa:0x3fcb5020 0x40383749:0x3fc9e968 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: f20d2f95e
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375aa4
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (37) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Jan 24 2025 05:11:28[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (44) boot: efuse block revision: v1.2[0m
+[0;32mI (49) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (54) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (59) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (64) boot: Enabling RNG early entropy source...[0m
+[0;32mI (69) boot: Partition Table:[0m
+[0;32mI (73) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (80) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (88) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (95) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (103) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a768h (108392) map[0m
+[0;32mI (141) esp_image: segment 1: paddr=0002a790 vaddr=3fc99c00 size=0498ch ( 18828) load[0m
+[0;32mI (146) esp_image: segment 2: paddr=0002f124 vaddr=40374000 size=00ef4h (  3828) load[0m
+[0;32mI (148) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=83a2ch (539180) map[0m
+[0;32mI (281) esp_image: segment 4: paddr=000b3a54 vaddr=40374ef4 size=14c48h ( 85064) load[0m
+[0;32mI (314) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (314) boot: Disabling RNG early entropy source...[0m
+[0;32mI (326) cpu_start: Multicore app[0m
+[0;32mI (336) cpu_start: Pro cpu start user code[0m
+[0;32mI (336) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (336) app_init: Application information:[0m
+[0;32mI (339) app_init: Project name:     nodma_temp_wifi[0m
+[0;32mI (344) app_init: App version:      1[0m
+[0;32mI (348) app_init: Compile time:     Jan 24 2025 05:13:52[0m
+[0;32mI (354) app_init: ELF file SHA256:  f20d2f95e...[0m
+[0;32mI (360) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (365) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (369) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (374) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (379) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (386) heap_init: At 3FCA21D0 len 00047540 (285 KiB): RAM[0m
+[0;32mI (392) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (398) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (405) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;33mW (412) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (422) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (427) spi_flash: flash io: opi_str[0m
+[0;33mW (431) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (444) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (451) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (458) main_task: Started on CPU0[0m
+[0;32mI (468) main_task: Calling app_main()[0m
+[0;32mI (468) main: Starting application...[0m
+[0;32mI (468) main: Shared buffer allocated at 0x3fca71b4[0m
+[0;32mI (488) pp: pp rom version: e7ae62f[0m
+[0;32mI (488) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (508) wifi:wifi driver task: 3fcad3ec, prio:23, stack:6656, core=0[0m
+[0;32mI (508) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (508) wifi:wifi certification version: v7.0[0m
+[0;32mI (508) wifi:config NVS flash: enabled[0m
+[0;32mI (508) wifi:config nano formating: disabled[0m
+[0;32mI (518) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (518) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (518) wifi:Init management short buffer num: 32[0m
+[0;32mI (528) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (528) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (538) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (538) wifi:Init static rx buffer num: 10[0m
+[0;32mI (548) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (548) wifi_init: rx ba win: 6[0m
+[0;32mI (548) wifi_init: accept mbox: 6[0m
+[0;32mI (558) wifi_init: tcpip mbox: 32[0m
+[0;32mI (558) wifi_init: udp mbox: 6[0m
+[0;32mI (558) wifi_init: tcp mbox: 6[0m
+[0;32mI (568) wifi_init: tcp tx win: 5760[0m
+[0;32mI (568) wifi_init: tcp rx win: 5760[0m
+[0;32mI (578) wifi_init: tcp mss: 1440[0m
+[0;32mI (578) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (588) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (588) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (628) wifi:mode : softAP (34:85:18:a1:70:c9)[0m
+[0;32mI (638) wifi:Total power save buffer number: 16[0m
+[0;32mI (638) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (638) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (638) wifi_ap: WiFi AP started with SSID: ESP32-S3_AP[0m
+[0;32mI (638) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (658) wifi_ap: AP IP Address: 192.168.4.1[0m
+Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x40382870  PS      : 0x00060133  A0      : 0x8038220c  A1      : 0x3fcb5050  
+A2      : 0x3fcb5100  A3      : 0x0000000c  A4      : 0x00060023  A5      : 0x3fcb632c  
+A6      : 0x3fc9e968  A7      : 0x3fca21e4  A8      : 0x0000000d  A9      : 0x0000000c  
+A10     : 0x00000001  A11     : 0x3fcb6328  A12     : 0x00000802  A13     : 0x3fca2208  
+A14     : 0x3fca21d0  A15     : 0x0000cdcd  SAR     : 0x0000001f  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000014  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4038286d:0x3fcb5050 0x40382209:0x3fcb5070 0x4037642d:0x3fcb5090 0x40376539:0x3fcb50b0 0x40376569:0x3fcb50e0 0x403766df:0x3fcb5100 0x40376345:0x3fcb5120 0x420108ed:0x3fcb5140 0x4200aa1e:0x3fcb5170 0x4200a47a:0x3fcb51a0 0x4037d0ed:0x3fcb61c0
+
+
+
+
+ELF file SHA256: f20d2f95e
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375aa4
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (37) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Jan 24 2025 05:11:28[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (44) boot: efuse block revision: v1.2[0m
+[0;32mI (49) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (54) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (59) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (64) boot: Enabling RNG early entropy source...[0m
+[0;32mI (69) boot: Partition Table:[0m
+[0;32mI (73) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (80) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (88) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (95) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (103) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a768h (108392) map[0m
+[0;32mI (141) esp_image: segment 1: paddr=0002a790 vaddr=3fc99c00 size=0498ch ( 18828) load[0m
+[0;32mI (146) esp_image: segment 2: paddr=0002f124 vaddr=40374000 size=00ef4h (  3828) load[0m
+[0;32mI (148) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=83a2ch (539180) map[0m
+[0;32mI (281) esp_image: segment 4: paddr=000b3a54 vaddr=40374ef4 size=14c48h ( 85064) load[0m
+[0;32mI (314) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (314) boot: Disabling RNG early entropy source...[0m
+[0;32mI (326) cpu_start: Multicore app[0m
+[0;32mI (336) cpu_start: Pro cpu start user code[0m
+[0;32mI (336) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (336) app_init: Application information:[0m
+[0;32mI (339) app_init: Project name:     nodma_temp_wifi[0m
+[0;32mI (344) app_init: App version:      1[0m
+[0;32mI (348) app_init: Compile time:     Jan 24 2025 05:13:52[0m
+[0;32mI (354) app_init: ELF file SHA256:  f20d2f95e...[0m
+[0;32mI (360) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (365) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (369) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (374) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (379) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (386) heap_init: At 3FCA21D0 len 00047540 (285 KiB): RAM[0m
+[0;32mI (392) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (398) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (405) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;33mW (412) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (422) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (427) spi_flash: flash io: opi_str[0m
+[0;33mW (431) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (444) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (451) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (458) main_task: Started on CPU0[0m
+[0;32mI (468) main_task: Calling app_main()[0m
+[0;32mI (468) main: Starting application...[0m
+[0;32mI (468) main: Shared buffer allocated at 0x3fca71b4[0m
+[0;32mI (488) pp: pp rom version: e7ae62f[0m
+[0;32mI (488) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (508) wifi:wifi driver task: 3fcad3ec, prio:23, stack:6656, core=0[0m
+[0;32mI (508) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (508) wifi:wifi certification version: v7.0[0m
+[0;32mI (508) wifi:config NVS flash: enabled[0m
+[0;32mI (508) wifi:config nano formating: disabled[0m
+[0;32mI (518) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (518) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (518) wifi:Init management short buffer num: 32[0m
+[0;32mI (528) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (528) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (538) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (538) wifi:Init static rx buffer num: 10[0m
+[0;32mI (548) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (548) wifi_init: rx ba win: 6[0m
+[0;32mI (548) wifi_init: accept mbox: 6[0m
+[0;32mI (558) wifi_init: tcpip mbox: 32[0m
+[0;32mI (558) wifi_init: udp mbox: 6[0m
+[0;32mI (558) wifi_init: tcp mbox: 6[0m
+[0;32mI (568) wifi_init: tcp tx win: 5760[0m
+[0;32mI (568) wifi_init: tcp rx win: 5760[0m
+[0;32mI (578) wifi_init: tcp mss: 1440[0m
+[0;32mI (578) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (588) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (588) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (638) wifi:mode : softAP (34:85:18:a1:70:c9)[0m
+[0;32mI (638) wifi:Total power save buffer number: 16[0m
+[0;32mI (638) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (638) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (638) wifi_ap: WiFi AP started with SSID: ESP32-S3_AP[0m
+[0;32mI (638) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (658) wifi_ap: AP IP Address: 192.168.4.1[0m
+[0;32mI (658) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (668) temp_sensor: Temperature sensor initialized and enabled[0m
+[0;32mI (678) main: Tasks created. System is now in STREAM mode.[0m
+[0;32mI (678) wifi_ap: TCP server started on port 3333[0m
+[0;32mI (678) main_task: Returned from app_main()[0m
+[0;32mI (688) main: Waiting for client connection...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42039fcf  PS      : 0x00060f30  A0      : 0x82036154  A1      : 0x3fcad120  
+A2      : 0x3fcb4a00  A3      : 0x00000018  A4      : 0x000000dd  A5      : 0x3fcad164  
+A6      : 0x00000008  A7      : 0x00000000  A8      : 0x3fc9f88c  A9      : 0x3fca11e0  
+A10     : 0x00000000  A11     : 0x00000001  A12     : 0x8037d4a5  A13     : 0x3fca4b10  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000001  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x0000000c  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42039fcc:0x3fcad120 0x42036151:0x3fcad140 0x420366ee:0x3fcad190 0x420436c3:0x3fcad210 0x42043753:0x3fcad230 0x40385335:0x3fcad250 0x4037d0ed:0x3fcad280
+
+
+
+
+ELF file SHA256: f20d2f95e
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375aa4
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (37) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Jan 24 2025 05:11:28[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (44) boot: efuse block revision: v1.2[0m
+[0;32mI (49) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (54) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (59) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (64) boot: Enabling RNG early entropy source...[0m
+[0;32mI (69) boot: Partition Table:[0m
+[0;32mI (73) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (80) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (88) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (95) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (103) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a768h (108392) map[0m
+[0;32mI (141) esp_image: segment 1: paddr=0002a790 vaddr=3fc99c00 size=0498ch ( 18828) load[0m
+[0;32mI (146) esp_image: segment 2: paddr=0002f124 vaddr=40374000 size=00ef4h (  3828) load[0m
+[0;32mI (148) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=83a2ch (539180) map[0m
+[0;32mI (281) esp_image: segment 4: paddr=000b3a54 vaddr=40374ef4 size=14c48h ( 85064) load[0m
+[0;32mI (314) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (314) boot: Disabling RNG early entropy source...[0m
+[0;32mI (326) cpu_start: Multicore app[0m
+[0;32mI (336) cpu_start: Pro cpu start user code[0m
+[0;32mI (336) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (336) app_init: Application information:[0m
+[0;32mI (339) app_init: Project name:     nodma_temp_wifi[0m
+[0;32mI (344) app_init: App version:      1[0m
+[0;32mI (348) app_init: Compile time:     Jan 24 2025 05:13:52[0m
+[0;32mI (354) app_init: ELF file SHA256:  f20d2f95e...[0m
+[0;32mI (360) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (365) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (369) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (374) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (379) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (386) heap_init: At 3FCA21D0 len 00047540 (285 KiB): RAM[0m
+[0;32mI (392) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (398) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (405) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;33mW (412) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (422) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (427) spi_flash: flash io: opi_str[0m
+[0;33mW (431) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (444) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (451) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (458) main_task: Started on CPU0[0m
+[0;32mI (468) main_task: Calling app_main()[0m
+[0;32mI (468) main: Starting application...[0m
+[0;32mI (468) main: Shared buffer allocated at 0x3fca71b4[0m
+[0;32mI (488) pp: pp rom version: e7ae62f[0m
+[0;32mI (488) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (508) wifi:wifi driver task: 3fcad3ec, prio:23, stack:6656, core=0[0m
+[0;32mI (508) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (508) wifi:wifi certification version: v7.0[0m
+[0;32mI (508) wifi:config NVS flash: enabled[0m
+[0;32mI (508) wifi:config nano formating: disabled[0m
+[0;32mI (518) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (518) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (518) wifi:Init management short buffer num: 32[0m
+[0;32mI (528) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (528) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (538) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (538) wifi:Init static rx buffer num: 10[0m
+[0;32mI (548) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (548) wifi_init: rx ba win: 6[0m
+[0;32mI (548) wifi_init: accept mbox: 6[0m
+[0;32mI (558) wifi_init: tcpip mbox: 32[0m
+[0;32mI (558) wifi_init: udp mbox: 6[0m
+[0;32mI (558) wifi_init: tcp mbox: 6[0m
+[0;32mI (568) wifi_init: tcp tx win: 5760[0m
+[0;32mI (568) wifi_init: tcp rx win: 5760[0m
+[0;32mI (578) wifi_init: tcp mss: 1440[0m
+[0;32mI (578) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (588) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (588) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (638) wifi:mode : softAP (34:85:18:a1:70:c9)[0m
+[0;32mI (638) wifi:Total power save buffer number: 16[0m
+[0;32mI (638) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (638) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (638) wifi_ap: WiFi AP started with SSID: ESP32-S3_AP[0m
+[0;32mI (638) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (658) wifi_ap: AP IP Address: 192.168.4.1[0m
+[0;32mI (658) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (668) temp_sensor: Temperature sensor initialized and enabled[0m
+[0;32mI (668) main: Tasks created. System is now in STREAM mode.[0m
+[0;32mI (668) wifi_ap: TCP server started on port 3333[0m
+[0;32mI (678) main_task: Returned from app_main()[0m
+[0;32mI (688) main: Waiting for client connection...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42039fcf  PS      : 0x00060f30  A0      : 0x82036154  A1      : 0x3fcad120  
+A2      : 0x3fcb4a00  A3      : 0x00000018  A4      : 0x000000dd  A5      : 0x3fcad164  
+A6      : 0x00000008  A7      : 0x00000000  A8      : 0x3fc9f88c  A9      : 0x3fca11e0  
+A10     : 0x00000000  A11     : 0x00000001  A12     : 0x8037d4a5  A13     : 0x3fca4b10  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000001  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x0000000c  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42039fcc:0x3fcad120 0x42036151:0x3fcad140 0x420366ee:0x3fcad190 0x420436c3:0x3fcad210 0x42043753:0x3fcad230 0x40385335:0x3fcad250 0x4037d0ed:0x3fcad280
+
+
+
+
+ELF file SHA256: f20d2f95e
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375aa4
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (37) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Jan 24 2025 05:11:28[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (44) boot: efuse block revision: v1.2[0m
+[0;32mI (49) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (54) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (59) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (64) boot: Enabling RNG early entropy source...[0m
+[0;32mI (69) boot: Partition Table:[0m
+[0;32mI (73) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (80) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (88) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (95) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (103) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a768h (108392) map[0m
+[0;32mI (141) esp_image: segment 1: paddr=0002a790 vaddr=3fc99c00 size=0498ch ( 18828) load[0m
+[0;32mI (146) esp_image: segment 2: paddr=0002f124 vaddr=40374000 size=00ef4h (  3828) load[0m
+[0;32mI (148) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=83a2ch (539180) map[0m
+[0;32mI (281) esp_image: segment 4: paddr=000b3a54 vaddr=40374ef4 size=14c48h ( 85064) load[0m
+[0;32mI (314) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (314) boot: Disabling RNG early entropy source...[0m
+[0;32mI (326) cpu_start: Multicore app[0m
+[0;32mI (336) cpu_start: Pro cpu start user code[0m
+[0;32mI (336) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (336) app_init: Application information:[0m
+[0;32mI (339) app_init: Project name:     nodma_temp_wifi[0m
+[0;32mI (344) app_init: App version:      1[0m
+[0;32mI (348) app_init: Compile time:     Jan 24 2025 05:13:52[0m
+[0;32mI (354) app_init: ELF file SHA256:  f20d2f95e...[0m
+[0;32mI (360) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (365) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (369) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (374) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (379) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (386) heap_init: At 3FCA21D0 len 00047540 (285 KiB): RAM[0m
+[0;32mI (392) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (398) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (405) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;33mW (412) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (422) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (427) spi_flash: flash io: opi_str[0m
+[0;33mW (431) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (444) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (451) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (458) main_task: Started on CPU0[0m
+[0;32mI (468) main_task: Calling app_main()[0m
+[0;32mI (468) main: Starting application...[0m
+[0;32mI (468) main: Shared buffer allocated at 0x3fca71b4[0m
+[0;32mI (488) pp: pp rom version: e7ae62f[0m
+[0;32mI (488) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (508) wifi:wifi driver task: 3fcad3ec, prio:23, stack:6656, core=0[0m
+[0;32mI (508) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (508) wifi:wifi certification version: v7.0[0m
+[0;32mI (508) wifi:config NVS flash: enabled[0m
+[0;32mI (508) wifi:config nano formating: disabled[0m
+[0;32mI (518) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (518) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (518) wifi:Init management short buffer num: 32[0m
+[0;32mI (528) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (528) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (538) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (538) wifi:Init static rx buffer num: 10[0m
+[0;32mI (548) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (548) wifi_init: rx ba win: 6[0m
+[0;32mI (548) wifi_init: accept mbox: 6[0m
+[0;32mI (558) wifi_init: tcpip mbox: 32[0m
+[0;32mI (558) wifi_init: udp mbox: 6[0m
+[0;32mI (558) wifi_init: tcp mbox: 6[0m
+[0;32mI (568) wifi_init: tcp tx win: 5760[0m
+[0;32mI (568) wifi_init: tcp rx win: 5760[0m
+[0;32mI (578) wifi_init: tcp mss: 1440[0m
+[0;32mI (578) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (588) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (588) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (638) wifi:mode : softAP (34:85:18:a1:70:c9)[0m
+[0;32mI (638) wifi:Total power save buffer number: 16[0m
+[0;32mI (638) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (638) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (648) wifi_ap: WiFi AP started with SSID: ESP32-S3_AP[0m
+[0;32mI (648) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (658) wifi_ap: AP IP Address: 192.168.4.1[0m
+[0;32mI (658) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (668) temp_sensor: Temperature sensor initialized and enabled[0m
+[0;32mI (678) main: Tasks created. System is now in STREAM mode.[0m
+[0;32mI (678) wifi_ap: TCP server started on port 3333[0m
+[0;32mI (678) main_task: Returned from app_main()[0m
+[0;32mI (688) main: Waiting for client connection...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42039fcf  PS      : 0x00060f30  A0      : 0x82036154  A1      : 0x3fcad120  
+A2      : 0x3fcb4a00  A3      : 0x00000018  A4      : 0x000000dd  A5      : 0x3fcad164  
+A6      : 0x00000008  A7      : 0x00000000  A8      : 0x3fc9f88c  A9      : 0x3fca11e0  
+A10     : 0x00000000  A11     : 0x00000001  A12     : 0x8037d4a5  A13     : 0x3fca4b10  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000001  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x0000000c  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42039fcc:0x3fcad120 0x42036151:0x3fcad140 0x420366ee:0x3fcad190 0x420436c3:0x3fcad210 0x42043753:0x3fcad230 0x40385335:0x3fcad250 0x4037d0ed:0x3fcad280
+
+
+
+
+ELF file SHA256: f20d2f95e
+
+Rebooting...

@@ -1,0 +1,78 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM4 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40375b6a: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.2/components/esp_system/panic.c:463
+0x4037c5a1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.2/components/esp_system/port/esp_system_chip.c:92
+0x4037d4ee: vApplicationStackOverflowHook at C:/Espressif/frameworks/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+0x4037e9c3: vTaskSwitchContext at C:/Espressif/frameworks/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4037d5b4: _frxt_dispatch at C:/Espressif/frameworks/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037d5aa: _frxt_int_exit at C:/Espressif/frameworks/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+0x40383749: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.3.2/components/log/log.c:220
+[0m
+[0;33m--- 0x40375aa4: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.3.2/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x40382870: remove_free_block at C:/Espressif/frameworks/esp-idf-v5.3.2/components/heap/tlsf/tlsf.c:333
+ (inlined by) block_locate_free at C:/Espressif/frameworks/esp-idf-v5.3.2/components/heap/tlsf/tlsf.c:567
+ (inlined by) tlsf_malloc at C:/Espressif/frameworks/esp-idf-v5.3.2/components/heap/tlsf/tlsf.c:1015
+[0m
+[0;33m--- 0x4038286d: remove_free_block at C:/Espressif/frameworks/esp-idf-v5.3.2/components/heap/tlsf/tlsf.c:331 (discriminator 1)
+ (inlined by) block_locate_free at C:/Espressif/frameworks/esp-idf-v5.3.2/components/heap/tlsf/tlsf.c:567 (discriminator 1)
+ (inlined by) tlsf_malloc at C:/Espressif/frameworks/esp-idf-v5.3.2/components/heap/tlsf/tlsf.c:1015 (discriminator 1)
+0x40382209: multi_heap_malloc_impl at C:/Espressif/frameworks/esp-idf-v5.3.2/components/heap/multi_heap.c:211
+0x4037642d: aligned_or_unaligned_alloc at C:/Espressif/frameworks/esp-idf-v5.3.2/components/heap/heap_caps_base.c:77
+0x40376539: heap_caps_aligned_alloc_base at C:/Espressif/frameworks/esp-idf-v5.3.2/components/heap/heap_caps_base.c:150
+0x40376569: heap_caps_malloc_base at C:/Espressif/frameworks/esp-idf-v5.3.2/components/heap/heap_caps_base.c:170
+0x403766df: heap_caps_calloc_base at C:/Espressif/frameworks/esp-idf-v5.3.2/components/heap/heap_caps_base.c:284
+0x40376345: heap_caps_calloc at C:/Espressif/frameworks/esp-idf-v5.3.2/components/heap/heap_caps.c:255
+0x420108ed: temperature_sensor_install at C:/Espressif/frameworks/esp-idf-v5.3.2/components/esp_driver_tsens/src/temperature_sensor.c:105
+0x4200aa1e: temp_sensor_init at C:/Espressif/esp/nodma_temp_wifi/components/temperature_sensor/temperature_sensor.c:9
+0x4200a47a: temp_task at C:/Espressif/esp/nodma_temp_wifi/main/nodma_temp_wifi.c:28
+0x4037d0ed: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375aa4: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.3.2/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42039fcf: ieee80211_getbcnframe at ??:?
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x42039fcc: ieee80211_getbcnframe at ??:?
+0x42036151: ieee80211_beacon_alloc at ??:?
+0x420366ee: ieee80211_hostap_send_beacon_process at ??:?
+0x420436c3: ieee80211_ap_sa_query_timeout at ??:?
+0x42043753: ieee80211_timer_do_process at ??:?
+0x40385335: ppTask at ??:?
+0x4037d0ed: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375aa4: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.3.2/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42039fcf: ieee80211_getbcnframe at ??:?
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x42039fcc: ieee80211_getbcnframe at ??:?
+0x42036151: ieee80211_beacon_alloc at ??:?
+0x420366ee: ieee80211_hostap_send_beacon_process at ??:?
+0x420436c3: ieee80211_ap_sa_query_timeout at ??:?
+0x42043753: ieee80211_timer_do_process at ??:?
+0x40385335: ppTask at ??:?
+0x4037d0ed: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375aa4: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.3.2/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42039fcf: ieee80211_getbcnframe at ??:?
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x42039fcc: ieee80211_getbcnframe at ??:?
+0x42036151: ieee80211_beacon_alloc at ??:?
+0x420366ee: ieee80211_hostap_send_beacon_process at ??:?
+0x420436c3: ieee80211_ap_sa_query_timeout at ??:?
+0x42043753: ieee80211_timer_do_process at ??:?
+0x40385335: ppTask at ??:?
+0x4037d0ed: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0m

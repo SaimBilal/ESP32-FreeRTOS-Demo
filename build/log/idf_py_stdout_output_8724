@@ -1,0 +1,749 @@
+3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Fla�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (33) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan 24 2025 05:11:28[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot: efuse block revision: v1.2[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (49) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (59) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (68) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (102) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a738h (108344) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=0002a760 vaddr=3fc99c00 size=0498ch ( 18828) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=0002f0f4 vaddr=40374000 size=00f24h (  3876) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=83afch (539388) map[0m
+[0;32mI (277) esp_image: segment 4: paddr=000b3b24 vaddr=40374f24 size=14c18h ( 85016) load[0m
+[0;32mI (309) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (310) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (331) app_init: Application information:[0m
+[0;32mI (334) app_init: Project name:     nodma_temp_wifi[0m
+[0;32mI (340) app_init: App version:      1[0m
+[0;32mI (344) app_init: Compile time:     Jan 24 2025 06:25:23[0m
+[0;32mI (350) app_init: ELF file SHA256:  0e733ff3b...[0m
+[0;32mI (355) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (360) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (365) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (370) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (375) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (382) heap_init: At 3FCA29D8 len 00046D38 (283 KiB): RAM[0m
+[0;32mI (388) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (394) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (400) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;33mW (407) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (417) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (422) spi_flash: flash io: opi_str[0m
+[0;33mW (426) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (440) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (446) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (454) main_task: Started on CPU0[0m
+[0;32mI (464) main_task: Calling app_main()[0m
+[0;32mI (464) main: Starting application...[0m
+[0;32mI (474) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (484) temp_sensor: Temperature sensor initialized and enabled[0m
+[0;32mI (484) pp: pp rom version: e7ae62f[0m
+[0;32mI (484) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (504) wifi:wifi driver task: 3fcaccec, prio:23, stack:6656, core=0[0m
+[0;32mI (504) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (504) wifi:wifi certification version: v7.0[0m
+[0;32mI (504) wifi:config NVS flash: enabled[0m
+[0;32mI (504) wifi:config nano formating: disabled[0m
+[0;32mI (514) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (514) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (524) wifi:Init management short buffer num: 32[0m
+[0;32mI (524) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (524) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (534) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (534) wifi:Init static rx buffer num: 10[0m
+[0;32mI (544) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (544) wifi_init: rx ba win: 6[0m
+[0;32mI (544) wifi_init: accept mbox: 6[0m
+[0;32mI (554) wifi_init: tcpip mbox: 32[0m
+[0;32mI (554) wifi_init: udp mbox: 6[0m
+[0;32mI (564) wifi_init: tcp mbox: 6[0m
+[0;32mI (564) wifi_init: tcp tx win: 5760[0m
+[0;32mI (564) wifi_init: tcp rx win: 5760[0m
+[0;32mI (574) wifi_init: tcp mss: 1440[0m
+[0;32mI (574) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (584) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (584) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (634) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (654) wifi:mode : softAP (34:85:18:a1:70:c9)[0m
+[0;32mI (654) wifi:Total power save buffer number: 16[0m
+[0;32mI (654) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (654) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (654) wifi_ap: WiFi AP started with SSID: ESP32-S3_AP[0m
+[0;32mI (654) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (674) wifi_ap: AP IP Address: 192.168.4.1[0m
+[0;32mI (674) main: Temperature task started[0m
+[0;32mI (684) main: Tasks created. System is now in STREAM mode.[0m
+[0;32mI (684) wifi_ap: TCP server started on port 3333[0m
+[0;32mI (684) main_task: Returned from app_main()[0m
+[0;32mI (694) main: TCP Server initialized, waiting for connections[0m
+[0;32mI (14694) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (14694) wifi:station: c4:23:60:8d:6f:5d join, AID=1, bgn, 40U[0m
+[0;32mI (14904) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (14994) wifi:<ba-add>idx:2 (ifx:1, c4:23:60:8d:6f:5d), tid:0, ssn:26, winSize:64[0m
+[0;32mI (15134) wifi:[ADDBA]RX DELBA, reason:37, delete tid:0, initiator:1(originator)[0m
+[0;32mI (15134) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (15174) wifi:<ba-add>idx:2 (ifx:1, c4:23:60:8d:6f:5d), tid:0, ssn:46, winSize:64[0m
+[0;33mW (51884) main: Buffer full, dropping temperature reading[0m
+[0;32mI (51954) main: Client connected[0m
+[0;32mI (51954) main: Sent 512 temperature readings[0m
+[0;32mI (53954) main: Sent 20 temperature readings[0m
+[0;32mI (55954) main: Sent 20 temperature readings[0m
+[0;32mI (57954) main: Sent 20 temperature readings[0m
+[0;32mI (59954) main: Sent 20 temperature readings[0m
+[0;32mI (61954) main: Sent 20 temperature readings[0m
+[0;32mI (63954) main: Sent 20 temperature readings[0m
+[0;32mI (65954) main: Sent 20 temperature readings[0m
+[0;32mI (67954) main: Sent 20 temperature readings[0m
+[0;32mI (69954) main: Sent 20 temperature readings[0m
+[0;32mI (71954) main: Sent 20 temperature readings[0m
+[0;32mI (73954) main: Sent 20 temperature readings[0m
+[0;32mI (75954) main: Sent 20 temperature readings[0m
+[0;32mI (77954) main: Sent 20 temperature readings[0m
+[0;32mI (79954) main: Sent 20 temperature readings[0m
+[0;32mI (81954) main: Sent 20 temperature readings[0m
+[0;32mI (83954) main: Sent 20 temperature readings[0m
+[0;32mI (85954) main: Sent 20 temperature readings[0m
+[0;32mI (87954) main: Sent 20 temperature readings[0m
+[0;32mI (89954) main: Sent 20 temperature readings[0m
+[0;32mI (91954) main: Sent 20 temperature readings[0m
+[0;32mI (93954) main: Sent 20 temperature readings[0m
+[0;32mI (95954) main: Sent 20 temperature readings[0m
+[0;32mI (97954) main: Sent 20 temperature readings[0m
+[0;32mI (99954) main: Sent 20 temperature readings[0m
+[0;32mI (101954) main: Sent 20 temperature readings[0m
+[0;32mI (103954) main: Sent 20 temperature readings[0m
+[0;32mI (105954) main: Sent 20 temperature readings[0m
+[0;32mI (107954) main: Sent 20 temperature readings[0m
+[0;32mI (109954) main: Sent 20 temperature readings[0m
+[0;32mI (111954) main: Sent 20 temperature readings[0m
+[0;32mI (113954) main: Sent 20 temperature readings[0m
+[0;32mI (115954) main: Sent 20 temperature readings[0m
+[0;32mI (117954) main: Sent 20 temperature readings[0m
+[0;32mI (119954) main: Sent 20 temperature readings[0m
+[0;32mI (121954) main: Sent 20 temperature readings[0m
+[0;32mI (123954) main: Sent 20 temperature readings[0m
+[0;32mI (125954) main: Sent 20 temperature readings[0m
+[0;32mI (127954) main: Sent 20 temperature readings[0m
+[0;32mI (129954) main: Sent 20 temperature readings[0m
+[0;32mI (131954) main: Sent 20 temperature readings[0m
+[0;32mI (133954) main: Sent 20 temperature readings[0m
+[0;32mI (135954) main: Sent 20 temperature readings[0m
+[0;32mI (137954) main: Sent 20 temperature readings[0m
+[0;31mE (139954) main: Failed to send data: errno 104[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (33) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan 24 2025 05:11:28[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot: efuse block revision: v1.2[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (49) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (59) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (68) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (102) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a738h (108344) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=0002a760 vaddr=3fc99c00 size=0498ch ( 18828) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=0002f0f4 vaddr=40374000 size=00f24h (  3876) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=83afch (539388) map[0m
+[0;32mI (277) esp_image: segment 4: paddr=000b3b24 vaddr=40374f24 size=14c18h ( 85016) load[0m
+[0;32mI (309) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (310) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (331) app_init: Application information:[0m
+[0;32mI (334) app_init: Project name:     nodma_temp_wifi[0m
+[0;32mI (340) app_init: App version:      1[0m
+[0;32mI (344) app_init: Compile time:     Jan 24 2025 06:25:23[0m
+[0;32mI (350) app_init: ELF file SHA256:  0e733ff3b...[0m
+[0;32mI (355) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (360) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (365) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (370) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (375) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (382) heap_init: At 3FCA29D8 len 00046D38 (283 KiB): RAM[0m
+[0;32mI (388) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (394) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (400) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;33mW (407) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (417) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (422) spi_flash: flash io: opi_str[0m
+[0;33mW (426) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (440) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (447) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (454) main_task: Started on CPU0[0m
+[0;32mI (464) main_task: Calling app_main()[0m
+[0;32mI (464) main: Starting application...[0m
+[0;32mI (474) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (484) temp_sensor: Temperature sensor initialized and enabled[0m
+[0;32mI (484) pp: pp rom version: e7ae62f[0m
+[0;32mI (484) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (504) wifi:wifi driver task: 3fcacd70, prio:23, stack:6656, core=0[0m
+[0;32mI (504) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (504) wifi:wifi certification version: v7.0[0m
+[0;32mI (504) wifi:config NVS flash: enabled[0m
+[0;32mI (504) wifi:config nano formating: disabled[0m
+[0;32mI (514) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (514) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (524) wifi:Init management short buffer num: 32[0m
+[0;32mI (524) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (524) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (534) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (534) wifi:Init static rx buffer num: 10[0m
+[0;32mI (544) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (544) wifi_init: rx ba win: 6[0m
+[0;32mI (544) wifi_init: accept mbox: 6[0m
+[0;32mI (554) wifi_init: tcpip mbox: 32[0m
+[0;32mI (554) wifi_init: udp mbox: 6[0m
+[0;32mI (564) wifi_init: tcp mbox: 6[0m
+[0;32mI (564) wifi_init: tcp tx win: 5760[0m
+[0;32mI (564) wifi_init: tcp rx win: 5760[0m
+[0;32mI (574) wifi_init: tcp mss: 1440[0m
+[0;32mI (574) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (584) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (584) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (624) wifi:mode : softAP (34:85:18:a1:70:c9)[0m
+[0;32mI (634) wifi:Total power save buffer number: 16[0m
+[0;32mI (634) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (634) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (634) wifi_ap: WiFi AP started with SSID: ESP32-S3_AP[0m
+[0;32mI (634) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (654) wifi_ap: AP IP Address: 192.168.4.1[0m
+[0;32mI (654) main: Temperature task started[0m
+[0;32mI (664) main: Tasks created. System is now in STREAM mode.[0m
+[0;32mI (664) wifi_ap: TCP server started on port 3333[0m
+[0;32mI (664) main_task: Returned from app_main()[0m
+[0;32mI (674) main: TCP Server initialized, waiting for connections[0m
+[0;32mI (8684) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8684) wifi:station: c4:23:60:8d:6f:5d join, AID=1, bgn, 40U[0m
+[0;32mI (8704) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (8964) wifi:station: c4:23:60:8d:6f:5d leave, AID = 1, reason = 1, bss_flags is 756835, bss:0x3fca587c[0m
+[0;32mI (8964) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (10604) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (10604) wifi:station: c4:23:60:8d:6f:5d join, AID=1, bgn, 40U[0m
+[0;32mI (10624) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (10864) wifi:<ba-add>idx:2 (ifx:1, c4:23:60:8d:6f:5d), tid:0, ssn:29, winSize:64[0m
+[0;33mW (51864) main: Buffer full, dropping temperature reading[0m
+[0;33mW (51964) main: Buffer full, dropping temperature reading[0m
+[0;33mW (52064) main: Buffer full, dropping temperature reading[0m
+[0;33mW (52164) main: Buffer full, dropping temperature reading[0m
+[0;33mW (52264) main: Buffer full, dropping temperature reading[0m
+[0;33mW (52364) main: Buffer full, dropping temperature reading[0m
+[0;33mW (52464) main: Buffer full, dropping temperature reading[0m
+[0;33mW (52564) main: Buffer full, dropping temperature reading[0m
+[0;33mW (52664) main: Buffer full, dropping temperature reading[0m
+[0;33mW (52764) main: Buffer full, dropping temperature reading[0m
+[0;33mW (52864) main: Buffer full, dropping temperature reading[0m
+[0;33mW (52964) main: Buffer full, dropping temperature reading[0m
+[0;33mW (53064) main: Buffer full, dropping temperature reading[0m
+[0;33mW (53164) main: Buffer full, dropping temperature reading[0m
+[0;33mW (53264) main: Buffer full, dropping temperature reading[0m
+[0;33mW (53364) main: Buffer full, dropping temperature reading[0m
+[0;33mW (53464) main: Buffer full, dropping temperature reading[0m
+[0;33mW (53564) main: Buffer full, dropping temperature reading[0m
+[0;33mW (53664) main: Buffer full, dropping temperature reading[0m
+[0;33mW (53764) main: Buffer full, dropping temperature reading[0m
+[0;33mW (53864) main: Buffer full, dropping temperature reading[0m
+[0;33mW (53964) main: Buffer full, dropping temperature reading[0m
+[0;33mW (54064) main: Buffer full, dropping temperature reading[0m
+[0;33mW (54164) main: Buffer full, dropping temperature reading[0m
+[0;33mW (54264) main: Buffer full, dropping temperature reading[0m
+[0;33mW (54364) main: Buffer full, dropping temperature reading[0m
+[0;33mW (54464) main: Buffer full, dropping temperature reading[0m
+[0;33mW (54564) main: Buffer full, dropping temperature reading[0m
+[0;33mW (54664) main: Buffer full, dropping temperature reading[0m
+[0;33mW (54764) main: Buffer full, dropping temperature reading[0m
+[0;33mW (54864) main: Buffer full, dropping temperature reading[0m
+[0;33mW (54964) main: Buffer full, dropping temperature reading[0m
+[0;33mW (55064) main: Buffer full, dropping temperature reading[0m
+[0;33mW (55164) main: Buffer full, dropping temperature reading[0m
+[0;33mW (55264) main: Buffer full, dropping temperature reading[0m
+[0;33mW (55364) main: Buffer full, dropping temperature reading[0m
+[0;33mW (55464) main: Buffer full, dropping temperature reading[0m
+[0;33mW (55564) main: Buffer full, dropping temperature reading[0m
+[0;33mW (55664) main: Buffer full, dropping temperature reading[0m
+[0;33mW (55764) main: Buffer full, dropping temperature reading[0m
+[0;33mW (55864) main: Buffer full, dropping temperature reading[0m
+[0;33mW (55964) main: Buffer full, dropping temperature reading[0m
+[0;33mW (56064) main: Buffer full, dropping temperature reading[0m
+[0;33mW (56164) main: Buffer full, dropping temperature reading[0m
+[0;32mI (56174) main: Client connected[0m
+[0;32mI (56174) main: Sent 512 temperature readings[0m
+[0;32mI (58174) main: Sent 20 temperature readings[0m
+[0;32mI (60174) main: Sent 20 temperature readings[0m
+[0;32mI (62174) main: Sent 20 temperature readings[0m
+[0;32mI (64174) main: Sent 20 temperature readings[0m
+[0;32mI (66174) main: Sent 20 temperature readings[0m
+[0;32mI (68174) main: Sent 20 temperature readings[0m
+[0;32mI (70174) main: Sent 20 temperature readings[0m
+[0;32mI (72174) main: Sent 20 temperature readings[0m
+[0;32mI (74174) main: Sent 20 temperature readings[0m
+[0;32mI (76174) main: Sent 20 temperature readings[0m
+[0;32mI (78174) main: Sent 20 temperature readings[0m
+[0;32mI (80174) main: Sent 20 temperature readings[0m
+[0;32mI (82174) main: Sent 20 temperature readings[0m
+[0;32mI (84174) main: Sent 20 temperature readings[0m
+[0;32mI (86174) main: Sent 20 temperature readings[0m
+[0;32mI (88174) main: Sent 20 temperature readings[0m
+[0;32mI (90174) main: Sent 20 temperature readings[0m
+[0;32mI (92174) main: Sent 20 temperature readings[0m
+[0;32mI (94174) main: Sent 20 temperature readings[0m
+[0;32mI (96174) main: Sent 20 temperature readings[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (33) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan 24 2025 05:11:28[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot: efuse block revision: v1.2[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (49) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (59) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (68) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (102) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a738h (108344) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=0002a760 vaddr=3fc99c00 size=0498ch ( 18828) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=0002f0f4 vaddr=40374000 size=00f24h (  3876) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=83afch (539388) map[0m
+[0;32mI (277) esp_image: segment 4: paddr=000b3b24 vaddr=40374f24 size=14c18h ( 85016) load[0m
+[0;32mI (309) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (310) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (331) app_init: Application information:[0m
+[0;32mI (334) app_init: Project name:     nodma_temp_wifi[0m
+[0;32mI (340) app_init: App version:      1[0m
+[0;32mI (344) app_init: Compile time:     Jan 24 2025 06:25:23[0m
+[0;32mI (350) app_init: ELF file SHA256:  0e733ff3b...[0m
+[0;32mI (355) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (360) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (365) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (370) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (375) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (382) heap_init: At 3FCA29D8 len 00046D38 (283 KiB): RAM[0m
+[0;32mI (388) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (394) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (400) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;33mW (407) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (417) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (422) spi_flash: flash io: opi_str[0m
+[0;33mW (426) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (440) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (447) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (454) main_task: Started on CPU0[0m
+[0;32mI (464) main_task: Calling app_main()[0m
+[0;32mI (464) main: Starting application...[0m
+[0;32mI (474) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (484) temp_sensor: Temperature sensor initialized and enabled[0m
+[0;32mI (484) pp: pp rom version: e7ae62f[0m
+[0;32mI (484) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (504) wifi:wifi driver task: 3fcacd70, prio:23, stack:6656, core=0[0m
+[0;32mI (504) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (504) wifi:wifi certification version: v7.0[0m
+[0;32mI (504) wifi:config NVS flash: enabled[0m
+[0;32mI (504) wifi:config nano formating: disabled[0m
+[0;32mI (514) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (514) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (524) wifi:Init management short buffer num: 32[0m
+[0;32mI (524) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (524) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (534) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (534) wifi:Init static rx buffer num: 10[0m
+[0;32mI (544) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (544) wifi_init: rx ba win: 6[0m
+[0;32mI (544) wifi_init: accept mbox: 6[0m
+[0;32mI (554) wifi_init: tcpip mbox: 32[0m
+[0;32mI (554) wifi_init: udp mbox: 6[0m
+[0;32mI (564) wifi_init: tcp mbox: 6[0m
+[0;32mI (564) wifi_init: tcp tx win: 5760[0m
+[0;32mI (564) wifi_init: tcp rx win: 5760[0m
+[0;32mI (574) wifi_init: tcp mss: 1440[0m
+[0;32mI (574) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (584) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (584) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (634) wifi:mode : softAP (34:85:18:a1:70:c9)[0m
+[0;32mI (634) wifi:Total power save buffer number: 16[0m
+[0;32mI (634) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (634) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (634) wifi_ap: WiFi AP started with SSID: ESP32-S3_AP[0m
+[0;32mI (634) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (654) wifi_ap: AP IP Address: 192.168.4.1[0m
+[0;32mI (654) main: Temperature task started[0m
+[0;32mI (664) main: Tasks created. System is now in STREAM mode.[0m
+[0;32mI (664) wifi_ap: TCP server started on port 3333[0m
+[0;32mI (664) main_task: Returned from app_main()[0m
+[0;32mI (674) main: TCP Server initialized, waiting for connections[0m
+[0;32mI (6624) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6624) wifi:station: c4:23:60:8d:6f:5d join, AID=1, bgn, 40U[0m
+[0;32mI (6664) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (6854) wifi:<ba-add>idx:2 (ifx:1, c4:23:60:8d:6f:5d), tid:0, ssn:32, winSize:64[0m
+[0;32mI (6934) wifi:station: c4:23:60:8d:6f:5d leave, AID = 1, reason = 1, bss_flags is 756835, bss:0x3fca587c[0m
+[0;32mI (6934) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6934) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (8344) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8344) wifi:station: c4:23:60:8d:6f:5d join, AID=1, bgn, 40U[0m
+[0;32mI (8384) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (8464) wifi:<ba-add>idx:2 (ifx:1, c4:23:60:8d:6f:5d), tid:0, ssn:23, winSize:64[0m
+[0;32mI (33034) main: Client connected[0m
+[0;32mI (33034) main: Sent 324 temperature readings[0m
+[0;32mI (35034) main: Sent 20 temperature readings[0m
+[0;32mI (37034) main: Sent 20 temperature readings[0m
+[0;32mI (39034) main: Sent 20 temperature readings[0m
+[0;32mI (41034) main: Sent 20 temperature readings[0m
+[0;32mI (43034) main: Sent 20 temperature readings[0m
+[0;32mI (45034) main: Sent 20 temperature readings[0m
+[0;32mI (47034) main: Sent 20 temperature readings[0m
+[0;32mI (49034) main: Sent 20 temperature readings[0m
+[0;32mI (51034) main: Sent 20 temperature readings[0m
+[0;32mI (53034) main: Sent 20 temperature readings[0m
+[0;32mI (55034) main: Sent 20 temperature readings[0m
+[0;32mI (57034) main: Sent 20 temperature readings[0m
+[0;32mI (59034) main: Sent 20 temperature readings[0m
+[0;32mI (61034) main: Sent 20 temperature readings[0m
+[0;32mI (63034) main: Sent 20 temperature readings[0m
+[0;32mI (65034) main: Sent 20 temperature readings[0m
+[0;32mI (67034) main: Sent 20 temperature readings[0m
+[0;32mI (69034) main: Sent 20 temperature readings[0m
+[0;32mI (71034) main: Sent 20 temperature readings[0m
+[0;32mI (73034) main: Sent 20 temperature readings[0m
+[0;32mI (75034) main: Sent 20 temperature readings[0m
+[0;32mI (77034) main: Sent 20 temperature readings[0m
+[0;32mI (79034) main: Sent 20 temperature readings[0m
+[0;32mI (81034) main: Sent 20 temperature readings[0m
+[0;32mI (83034) main: Sent 20 temperature readings[0m
+[0;32mI (85034) main: Sent 20 temperature readings[0m
+[0;32mI (87034) main: Sent 20 temperature readings[0m
+[0;32mI (89034) main: Sent 20 temperature readings[0m
+[0;32mI (91034) main: Sent 20 temperature readings[0m
+[0;32mI (93034) main: Sent 20 temperature readings[0m
+[0;32mI (95034) main: Sent 20 temperature readings[0m
+[0;32mI (97034) main: Sent 20 temperature readings[0m
+[0;32mI (99034) main: Sent 20 temperature readings[0m
+[0;32mI (101034) main: Sent 20 temperature readings[0m
+[0;32mI (103034) main: Sent 20 temperature readings[0m
+[0;32mI (105034) main: Sent 20 temperature readings[0m
+[0;32mI (107034) main: Sent 20 temperature readings[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (33) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan 24 2025 05:11:28[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot: efuse block revision: v1.2[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (49) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (59) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (68) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (102) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a738h (108344) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=0002a760 vaddr=3fc99c00 size=0498ch ( 18828) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=0002f0f4 vaddr=40374000 size=00f24h (  3876) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=83afch (539388) map[0m
+[0;32mI (277) esp_image: segment 4: paddr=000b3b24 vaddr=40374f24 size=14c18h ( 85016) load[0m
+[0;32mI (309) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (310) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (331) app_init: Application information:[0m
+[0;32mI (334) app_init: Project name:     nodma_temp_wifi[0m
+[0;32mI (340) app_init: App version:      1[0m
+[0;32mI (344) app_init: Compile time:     Jan 24 2025 06:25:23[0m
+[0;32mI (350) app_init: ELF file SHA256:  0e733ff3b...[0m
+[0;32mI (355) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (360) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (365) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (370) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (375) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (382) heap_init: At 3FCA29D8 len 00046D38 (283 KiB): RAM[0m
+[0;32mI (388) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (394) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (400) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;33mW (407) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (417) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (422) spi_flash: flash io: opi_str[0m
+[0;33mW (426) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (440) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (447) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (454) main_task: Started on CPU0[0m
+[0;32mI (464) main_task: Calling app_main()[0m
+[0;32mI (464) main: Starting application...[0m
+[0;32mI (474) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (484) temp_sensor: Temperature sensor initialized and enabled[0m
+[0;32mI (484) pp: pp rom version: e7ae62f[0m
+[0;32mI (484) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (504) wifi:wifi driver task: 3fcacd70, prio:23, stack:6656, core=0[0m
+[0;32mI (504) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (504) wifi:wifi certification version: v7.0[0m
+[0;32mI (504) wifi:config NVS flash: enabled[0m
+[0;32mI (504) wifi:config nano formating: disabled[0m
+[0;32mI (514) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (514) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (524) wifi:Init management short buffer num: 32[0m
+[0;32mI (524) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (524) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (534) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (534) wifi:Init static rx buffer num: 10[0m
+[0;32mI (544) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (544) wifi_init: rx ba win: 6[0m
+[0;32mI (544) wifi_init: accept mbox: 6[0m
+[0;32mI (554) wifi_init: tcpip mbox: 32[0m
+[0;32mI (554) wifi_init: udp mbox: 6[0m
+[0;32mI (564) wifi_init: tcp mbox: 6[0m
+[0;32mI (564) wifi_init: tcp tx win: 5760[0m
+[0;32mI (564) wifi_init: tcp rx win: 5760[0m
+[0;32mI (574) wifi_init: tcp mss: 1440[0m
+[0;32mI (574) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (584) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (584) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (624) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (644) wifi:mode : softAP (34:85:18:a1:70:c9)[0m
+[0;32mI (654) wifi:Total power save buffer number: 16[0m
+[0;32mI (654) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (654) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (654) wifi_ap: WiFi AP started with SSID: ESP32-S3_AP[0m
+[0;32mI (654) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (674) wifi_ap: AP IP Address: 192.168.4.1[0m
+[0;32mI (674) main: Temperature task started[0m
+[0;32mI (674) main: Tasks created. System is now in STREAM mode.[0m
+[0;32mI (684) wifi_ap: TCP server started on port 3333[0m
+[0;32mI (684) main_task: Returned from app_main()[0m
+[0;32mI (694) main: TCP Server initialized, waiting for connections[0m
+[0;32mI (7544) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7544) wifi:station: c4:23:60:8d:6f:5d join, AID=1, bgn, 40U[0m
+[0;32mI (7574) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (7644) wifi:<ba-add>idx:2 (ifx:1, c4:23:60:8d:6f:5d), tid:0, ssn:22, winSize:64[0m
+[0;32mI (7964) wifi:station: c4:23:60:8d:6f:5d leave, AID = 1, reason = 1, bss_flags is 756835, bss:0x3fca587c[0m
+[0;32mI (7964) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7974) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (9214) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (9214) wifi:station: c4:23:60:8d:6f:5d join, AID=1, bgn, 40U[0m
+[0;32mI (9244) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (9444) wifi:<ba-add>idx:2 (ifx:1, c4:23:60:8d:6f:5d), tid:0, ssn:25, winSize:64[0m
+[0;32mI (40744) main: Client connected[0m
+[0;32mI (40744) main: Sent 401 temperature readings[0m
+[0;32mI (42744) main: Sent 20 temperature readings[0m
+[0;32mI (44744) main: Sent 20 temperature readings[0m
+[0;32mI (46744) main: Sent 20 temperature readings[0m
+[0;32mI (48744) main: Sent 20 temperature readings[0m
+[0;32mI (50744) main: Sent 20 temperature readings[0m
+[0;32mI (52744) main: Sent 20 temperature readings[0m
+[0;32mI (54744) main: Sent 20 temperature readings[0m
+[0;32mI (56744) main: Sent 20 temperature readings[0m
+[0;32mI (58744) main: Sent 20 temperature readings[0m
+[0;32mI (60744) main: Sent 20 temperature readings[0m
+[0;32mI (62744) main: Sent 20 temperature readings[0m
+[0;32mI (64744) main: Sent 20 temperature readings[0m
+[0;32mI (66744) main: Sent 20 temperature readings[0m
+[0;32mI (68744) main: Sent 20 temperature readings[0m
+[0;32mI (70744) main: Sent 20 temperature readings[0m
+[0;32mI (72744) main: Sent 20 temperature readings[0m
+[0;32mI (74744) main: Sent 20 temperature readings[0m
+[0;32mI (76744) main: Sent 20 temperature readings[0m
+[0;32mI (78744) main: Sent 20 temperature readings[0m
+[0;32mI (80744) main: Sent 20 temperature readings[0m
+[0;32mI (82744) main: Sent 20 temperature readings[0m
+[0;32mI (84744) main: Sent 20 temperature readings[0m
+[0;32mI (86744) main: Sent 20 temperature readings[0m
+[0;32mI (88744) main: Sent 20 temperature readings[0m
+[0;32mI (90744) main: Sent 20 temperature readings[0m
+[0;32mI (92744) main: Sent 20 temperature readings[0m
+[0;32mI (94744) main: Sent 20 temperature readings[0m
+[0;32mI (96744) main: Sent 20 temperature readings[0m
+[0;32mI (98744) main: Sent 20 temperature readings[0m
+[0;32mI (100744) main: Sent 20 temperature readings[0m
+[0;32mI (102744) main: Sent 20 temperature readings[0m
+[0;32mI (104744) main: Sent 20 temperature readings[0m
+[0;32mI (106744) main: Sent 20 temperature readings[0m
+[0;32mI (108744) main: Sent 20 temperature readings[0m
+[0;32mI (110744) main: Sent 20 temperature readings[0m
+[0;32mI (112744) main: Sent 20 temperature readings[0m
+[0;32mI (114744) main: Sent 20 temperature readings[0m
+[0;32mI (116744) main: Sent 20 temperature readings[0m
+[0;32mI (118744) main: Sent 20 temperature readings[0m
+[0;32mI (120744) main: Sent 20 temperature readings[0m
+[0;32mI (122744) main: Sent 20 temperature readings[0m
+[0;32mI (124744) main: Sent 20 temperature readings[0m
+[0;32mI (126744) main: Sent 20 temperature readings[0m
+[0;32mI (128744) main: Sent 20 temperature readings[0m
+[0;32mI (130744) main: Sent 20 temperature readings[0m
+[0;32mI (132744) main: Sent 20 temperature readings[0m
+[0;32mI (134744) main: Sent 20 temperature readings[0m
+[0;32mI (136744) main: Sent 20 temperature readings[0m
+[0;32mI (138744) main: Sent 20 temperature readings[0m
+[0;32mI (140744) main: Sent 20 temperature readings[0m
+[0;32mI (142744) main: Sent 20 temperature readings[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (33) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan 24 2025 05:11:28[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot: efuse block revision: v1.2[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (49) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (59) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (68) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (102) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a738h (108344) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=0002a760 vaddr=3fc99c00 size=0498ch ( 18828) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=0002f0f4 vaddr=40374000 size=00f24h (  3876) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=83afch (539388) map[0m
+[0;32mI (277) esp_image: segment 4: paddr=000b3b24 vaddr=40374f24 size=14c18h ( 85016) load[0m
+[0;32mI (309) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (310) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (331) app_init: Application information:[0m
+[0;32mI (334) app_init: Project name:     nodma_temp_wifi[0m
+[0;32mI (340) app_init: App version:      1[0m
+[0;32mI (344) app_init: Compile time:     Jan 24 2025 06:25:23[0m
+[0;32mI (350) app_init: ELF file SHA256:  0e733ff3b...[0m
+[0;32mI (355) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (360) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (365) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (370) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (375) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (382) heap_init: At 3FCA29D8 len 00046D38 (283 KiB): RAM[0m
+[0;32mI (388) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (394) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (400) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;33mW (407) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (417) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (422) spi_flash: flash io: opi_str[0m
+[0;33mW (426) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (440) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (447) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (454) main_task: Started on CPU0[0m
+[0;32mI (464) main_task: Calling app_main()[0m
+[0;32mI (464) main: Starting application...[0m
+[0;32mI (474) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (484) temp_sensor: Temperature sensor initialized and enabled[0m
+[0;32mI (484) pp: pp rom version: e7ae62f[0m
+[0;32mI (484) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (504) wifi:wifi driver task: 3fcaccec, prio:23, stack:6656, core=0[0m
+[0;32mI (504) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (504) wifi:wifi certification version: v7.0[0m
+[0;32mI (504) wifi:config NVS flash: enabled[0m
+[0;32mI (504) wifi:config nano formating: disabled[0m
+[0;32mI (514) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (514) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (524) wifi:Init management short buffer num: 32[0m
+[0;32mI (524) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (524) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (534) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (534) wifi:Init static rx buffer num: 10[0m
+[0;32mI (544) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (544) wifi_init: rx ba win: 6[0m
+[0;32mI (544) wifi_init: accept mbox: 6[0m
+[0;32mI (554) wifi_init: tcpip mbox: 32[0m
+[0;32mI (554) wifi_init: udp mbox: 6[0m
+[0;32mI (564) wifi_init: tcp mbox: 6[0m
+[0;32mI (564) wifi_init: tcp tx win: 5760[0m
+[0;32mI (564) wifi_init: tcp rx win: 5760[0m
+[0;32mI (574) wifi_init: tcp mss: 1440[0m
+[0;32mI (574) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (584) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (584) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (634) wifi:mode : softAP (34:85:18:a1:70:c9)[0m
+[0;32mI (634) wifi:Total power save buffer number: 16[0m
+[0;32mI (634) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (634) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (644) wifi_ap: WiFi AP started with SSID: ESP32-S3_AP[0m
+[0;32mI (644) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (654) wifi_ap: AP IP Address: 192.168.4.1[0m
+[0;32mI (664) main: Temperature task started[0m
+[0;32mI (664) main: Tasks created. System is now in STREAM mode.[0m
+[0;32mI (664) wifi_ap: TCP server started on port 3333[0m
+[0;32mI (674) main_task: Returned from app_main()[0m
+[0;32mI (674) main: TCP Server initialized, waiting for connections[0m
