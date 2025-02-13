@@ -1,2 +1,6 @@
 #ignore build artifacts
 build/
+
+#ignore sdkconfigs
+sdkconfig
+sdkconfig.old
