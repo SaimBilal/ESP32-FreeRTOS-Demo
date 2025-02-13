@@ -13,7 +13,7 @@ static const char *TAG = "main";
 
 // Circular buffer configuration
 #define BUFFER_SIZE 512
-#define SAMPLE_INTERVAL_MS 10
+#define SAMPLE_INTERVAL_MS 25
 #define TRANSMISSION_INTERVAL_MS 5200
 
 // Circular buffer structure
