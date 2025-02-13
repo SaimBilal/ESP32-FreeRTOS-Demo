@@ -223,7 +223,7 @@ This architecture enables **monitoring** with SMP between data acquisition, proc
 - [ESP-IDF Documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/)
 - [FreeRTOS Kernel ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-reference/system/freertos_idf.html)
 - [ESP-IDF Build System](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-guides/build-system.html)
--[Application Startup Flow](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-guides/startup.html)
+- [Application Startup Flow](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-guides/startup.html)
 
 ## Conclusion
 
